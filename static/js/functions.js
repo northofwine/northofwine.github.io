@@ -87,7 +87,6 @@ function createItem(data) {
   productTypeName = document.createElement('h5');
   productTypeName.innerHTML = data.productTypeName;
   info.appendChild(productTypeName);
-  console.log(productTypeName);
 
   title = document.createElement('h3');
   title.innerHTML = [data.productShortName, data.vintage].join(' ');
@@ -112,8 +111,6 @@ function createItem(data) {
   image = document.createElement('img');
   if (data.image) {
     image.src = '/static/images/products/thumbs/' + data.image + '.jpg';
-  //if (data.image) {
-  //  image.src = 'https://lh3.googleusercontent.com/pw/' + data.image + '=w216';
   } else {
     image.src = '/static/images/bottle.svg';
   }
