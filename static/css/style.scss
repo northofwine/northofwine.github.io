@@ -65,8 +65,11 @@ article{
   }
 
   &.text{
-    max-width: 768px;
-    .info{
+    &.full{
+      width: 100%;
+    }
+    p{
+      max-width: 768px;
       width: 100%;
     }
     img{
@@ -299,7 +302,6 @@ footer{
 @media screen and (min-width: 560px){
   article{
     &.text{
-      max-width: 768px;
       .info{
         width:calc(100% - 10.5rem);
         float: left;
@@ -335,13 +337,18 @@ footer{
   }
 }
 
+@media screen and (min-width: 1024px){
+  article{
+    &.text{
+      width: calc((100% / 2) - 1.5rem);
+    }
+  }
+}
+
 @media screen and (min-width: 1280px){
   article{
     &.product{
       width: calc((100% / 3) - 1.5rem);
-    }
-    &.text{
-      width: calc((100% / 2) - 1.5rem);
     }
   }
 }
