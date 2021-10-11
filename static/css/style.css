@@ -42,7 +42,7 @@ article.product img {
   display: block;
 }
 article.text.full {
-  width: 100%;
+  flex-basis: 100%;
 }
 article.text p {
   max-width: 768px;
