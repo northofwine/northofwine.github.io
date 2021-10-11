@@ -3,7 +3,7 @@ html {
 }
 html#background {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("/static/images/bg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("/static/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
