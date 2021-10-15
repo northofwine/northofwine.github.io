@@ -242,8 +242,14 @@ header{top: 0;}
 nav{
   padding: 1.5rem;
   display: flex;
-  -ms-overflow-style: none;
   overflow-x: scroll;
+
+  // Scrollbar fix
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .button{
     flex-shrink: 0;
