@@ -106,6 +106,18 @@ function createItem(data) {
   grapes.innerHTML = data.grapes;
   info.appendChild(grapes);
 
+  selection = document.createElement('a');
+  selection.setAttribute('target', '_blank');
+  if (data.selection && data.price) {
+    selection.innerHTML = 'I ' + data.selection.toLowerCase() + ' på Vinmonopolet - ' + data.price + ' kr';
+    selection.setAttribute('href', 'https://vinmonopolet.no/p/' + data.productId);
+    info.appendChild(selection);
+  } else if (data.selection) {
+    selection.innerHTML = 'I ' + data.selection.toLowerCase() + ' på Vinmonopolet';
+    selection.setAttribute('href', 'https://vinmonopolet.no/p/' + data.productId);
+    info.appendChild(selection);
+  }
+
   item.appendChild(info);
 
   image = document.createElement('img');
