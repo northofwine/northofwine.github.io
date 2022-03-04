@@ -1,31 +1,25 @@
 var data = [];
 
-function loadContent(data) {
-  createFilter(data);
-  createList(data);
-  setNavButtonClass(getCategory());
-
-  categories = dataCategories(data);
-
-  console.log(data);
-  console.log(categories);
-
-  sessionStorage.setItem('data', JSON.stringify(data));
-  sessionStorage.setItem('categories', categories);
-}
-
-function dataCategories(data) {
-  // Init array with "all"-category
-  var categories = ['Alle'];
-  // Find categories in data
-  for (i = 0; i < data.length; i++) {
+function setContent(data) {
+  let categories = ['Alle']; // Init categories-array with "all"-category
+  for (i = 0; i < data.length; i++) { // Find categories in data and push if not included
     if (!categories.includes(data[i].productTypeName)) {
-      // Add category to categoryList
       categories.push(data[i].productTypeName);
     }
   }
   categories.sort(); // Sort categories alphabetically
-  return categories;
+
+  sessionStorage.setItem('data', JSON.stringify(data));
+  sessionStorage.setItem('categories', JSON.stringify(categories));
+}
+
+function loadContent() {
+  data = JSON.parse(sessionStorage.getItem('data'))
+  categories = JSON.parse(sessionStorage.getItem('categories'));
+
+  createFilter(categories);
+  createList(data);
+  setNavButtonClass(getCategory());
 }
 
 function setFilter(category) {
@@ -58,16 +52,7 @@ function getCategory() {
   return category;
 }
 
-function createFilter(data) {
-  // Init categoryList with "all"-category
-  var categoryList = ['Alle'];
-  // Find categories in data
-  for (i = 0; i < data.length; i++) {
-    if (!categoryList.includes(data[i].productTypeName)) {
-      // Add category to categoryList
-      categoryList.push(data[i].productTypeName);
-    }
-  }
+function createFilter(categoryList) {
   categoryList.sort(); // Sort categories alphabetically
   nav = document.createElement('nav');
   // Create buttons for each category and add to filter
@@ -153,34 +138,24 @@ function createItem(data) {
   document.getElementById('content').appendChild(item);
 }
 
-
 function init(url, age = 86400000) {
-  let currentTimestamp = Date.now();
-  let dataTimestamp = sessionStorage.getItem('timestamp');
-  let timeDiff = (currentTimestamp - dataTimestamp);
-
   // TODO: Set age to something else than milliseconds?
+
+  let initTimestamp = Date.now();
+
+  var dataTimestamp = sessionStorage.getItem('timestamp');
+  var timeDiff = (initTimestamp - dataTimestamp);
 
   // Check if data exists in sessionStorage
   if (sessionStorage.getItem('data') && timeDiff < age ) {
-    console.log('Data exists, and is newer than ' + age / 1000 + ' seconds');
-    console.log('Data downloaded at: ' + dataTimestamp);
-    loadContent(JSON.parse(sessionStorage.getItem('data')));
+    loadContent();
   } else {
     Papa.parse(url, {
       download: true,
       header: true,
       dynamicTyping: true,
       complete: function(results) {
-
-        if (sessionStorage.getItem('data')) {
-          console.log('Data exists, but is older than ' + age / 1000 + ' seconds');
-        } else {
-          console.log('Data did not exist');
-        }
-
-        sessionStorage.setItem('timestamp', currentTimestamp);
-        console.log('Data downloaded at: ' + currentTimestamp);
+        sessionStorage.setItem('timestamp', initTimestamp);
 
         function compare( a, b ) {
           if ( a.productShortName < b.productShortName ){return -1;}
@@ -191,8 +166,8 @@ function init(url, age = 86400000) {
         results.data.sort( compare );
         data = results.data;
 
-        loadContent(data);
-        return data;
+        setContent(data);
+        loadContent()
       }
     });
   }
