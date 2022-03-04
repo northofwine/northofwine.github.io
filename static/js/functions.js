@@ -4,6 +4,28 @@ function loadContent(data) {
   createFilter(data);
   createList(data);
   setNavButtonClass(getCategory());
+
+  categories = dataCategories(data);
+
+  console.log(data);
+  console.log(categories);
+
+  sessionStorage.setItem('data', JSON.stringify(data));
+  sessionStorage.setItem('categories', categories);
+}
+
+function dataCategories(data) {
+  // Init array with "all"-category
+  var categories = ['Alle'];
+  // Find categories in data
+  for (i = 0; i < data.length; i++) {
+    if (!categories.includes(data[i].productTypeName)) {
+      // Add category to categoryList
+      categories.push(data[i].productTypeName);
+    }
+  }
+  categories.sort(); // Sort categories alphabetically
+  return categories;
 }
 
 function setFilter(category) {
@@ -132,23 +154,46 @@ function createItem(data) {
 }
 
 
-function init(url) {
-  Papa.parse(url, {
-    download: true,
-    header: true,
-    dynamicTyping: true,
-    complete: function(results) {
+function init(url, age = 86400000) {
+  let currentTimestamp = Date.now();
+  let dataTimestamp = sessionStorage.getItem('timestamp');
+  let timeDiff = (currentTimestamp - dataTimestamp);
 
-      function compare( a, b ) {
-        if ( a.productShortName < b.productShortName ){return -1;}
-        if ( a.productShortName > b.productShortName ){return 1;}
-        return 0;
+  // TODO: Set age to something else than milliseconds?
+
+  // Check if data exists in sessionStorage
+  if (sessionStorage.getItem('data') && timeDiff < age ) {
+    console.log('Data exists, and is newer than ' + age / 1000 + ' seconds');
+    console.log('Data downloaded at: ' + dataTimestamp);
+    loadContent(JSON.parse(sessionStorage.getItem('data')));
+  } else {
+    Papa.parse(url, {
+      download: true,
+      header: true,
+      dynamicTyping: true,
+      complete: function(results) {
+
+        if (sessionStorage.getItem('data')) {
+          console.log('Data exists, but is older than ' + age / 1000 + ' seconds');
+        } else {
+          console.log('Data did not exist');
+        }
+
+        sessionStorage.setItem('timestamp', currentTimestamp);
+        console.log('Data downloaded at: ' + currentTimestamp);
+
+        function compare( a, b ) {
+          if ( a.productShortName < b.productShortName ){return -1;}
+          if ( a.productShortName > b.productShortName ){return 1;}
+          return 0;
+        }
+
+        results.data.sort( compare );
+        data = results.data;
+
+        loadContent(data);
+        return data;
       }
-      results.data.sort( compare );
-      data = results.data;
-
-      loadContent(data);
-      return data
-    }
-  });
+    });
+  }
 }
