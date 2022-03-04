@@ -3,9 +3,9 @@ html {
 }
 html#background {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("/static/images/background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("/static/images/background.svg");
+  background-size: contain;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 
@@ -247,7 +247,7 @@ nav .button {
 }
 
 nav.hero {
-  width: 6rem;
+  width: 8rem;
   flex-direction: column;
 }
 nav.hero .button {
@@ -255,8 +255,8 @@ nav.hero .button {
   margin: 0 0 2px 0;
 }
 nav.hero .button img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 footer {
