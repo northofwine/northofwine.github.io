@@ -230,6 +230,22 @@ hr{
   }
 }
 
+.title{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  span{
+    font-size: .5rem;
+    line-height: .75rem;
+    vertical-align: top;
+    border-bottom: .0625rem solid $color-text-light-default;
+    padding: .2rem 0 .1rem 0;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+}
+
 header, #filter{
   position: fixed;
   left: 0;
@@ -339,6 +355,18 @@ footer{
   article{
     &.product{
       width: calc((100% / 2) - 1.5rem);
+    }
+  }
+
+  .title{
+    span{
+      font-size: .75rem;
+      line-height: .75rem;
+      vertical-align: top;
+      border-bottom: .125rem solid $color-text-light-default;
+      padding: .4rem 0 .25rem 0;
+      box-sizing: border-box;
+      display: inline-block;
     }
   }
 }

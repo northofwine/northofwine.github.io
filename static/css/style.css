@@ -18,7 +18,7 @@ body {
 
 #content {
   width: 100%;
-  padding: 5.25rem 0.75rem;
+  padding: calc(6rem - .75rem) calc(1.5rem - .75rem);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -200,6 +200,21 @@ hr {
   outline-offset: -2px;
 }
 
+.title {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.title span {
+  font-size: 0.5rem;
+  line-height: 0.75rem;
+  vertical-align: top;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.9);
+  padding: 0.2rem 0 0.1rem 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
 header, #filter {
   position: fixed;
   left: 0;
@@ -300,17 +315,27 @@ footer.filter {
   }
 
   article.product {
-    width: calc(50% - 1.5rem);
+    width: calc((100% / 2) - 1.5rem);
+  }
+
+  .title span {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    vertical-align: top;
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.9);
+    padding: 0.4rem 0 0.25rem 0;
+    box-sizing: border-box;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1024px) {
   article.text {
-    width: calc(50% - 1.5rem);
+    width: calc((100% / 2) - 1.5rem);
   }
 }
 @media screen and (min-width: 1280px) {
   article.product {
-    width: calc(33.3333333333% - 1.5rem);
+    width: calc((100% / 3) - 1.5rem);
   }
 }
 
