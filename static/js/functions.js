@@ -1,6 +1,4 @@
-var data = [];
-
-function setContent(data) {
+function setContent(data, timestamp) {
   let categories = ['Alle']; // Init categories-array with "all"-category
   for (i = 0; i < data.length; i++) { // Find categories in data and push if not included
     if (!categories.includes(data[i].productTypeName)) {
@@ -9,28 +7,20 @@ function setContent(data) {
   }
   categories.sort(); // Sort categories alphabetically
 
+  sessionStorage.setItem('timestamp', timestamp);
   sessionStorage.setItem('data', JSON.stringify(data));
   sessionStorage.setItem('categories', JSON.stringify(categories));
 }
 
-function loadContent() {
-  data = JSON.parse(sessionStorage.getItem('data'))
-  categories = JSON.parse(sessionStorage.getItem('categories'));
-
-  createFilter(categories);
-  createList(data);
-  setNavButtonClass(getCategory());
-}
-
-function setFilter(category) {
+function filterBy(category) {
   buttons = document.getElementById('filter').getElementsByTagName('a');
   if (category) {
     window.history.replaceState(null, null, '?cat=' + category);
   } else {
-    window.history.replaceState(null, null, 'produkter.html');
+    window.history.replaceState(null, null, 'utvalg.html');
   }
-  createList(data);
-  setNavButtonClass(category);
+  createList(JSON.parse(sessionStorage.getItem('data')));
+  setNavButtonClass(getFilterParams());
 }
 
 function setNavButtonClass(category) {
@@ -46,30 +36,28 @@ function setNavButtonClass(category) {
   }
 }
 
-function getCategory() {
+function getFilterParams() {
   params = new URLSearchParams(window.location.search);
   category = params.get('cat');
   return category;
 }
 
-function createFilter(categoryList) {
-  categoryList.sort(); // Sort categories alphabetically
+function createFilter(categories) {
   nav = document.createElement('nav');
   // Create buttons for each category and add to filter
-  for (i = 0; i < categoryList.length; i++) {
-    action = 'setFilter("' + categoryList[i] + '");'
+  for (i = 0; i < categories.length; i++) {
+    action = 'filterBy("' + categories[i] + '");'
     navButton = document.createElement('a');
-    navButton.innerHTML = categoryList[i];
+    navButton.innerHTML = categories[i];
     navButton.setAttribute('onClick', action);
     navButton.classList.add('button');
     nav.appendChild(navButton);
   }
   document.getElementById('filter').appendChild(nav);
-  document.getElementById('filter').style.opacity = 1;
 }
 
 function createList(data) {
-  category = getCategory(); // Get categories
+  category = getFilterParams(); // Get categories
   if (!category || category == 'Alle') { // Check if "all"-category is selected
     filteredData = data; // Skip filtering
   } else {
@@ -81,7 +69,6 @@ function createList(data) {
   for (i = 0; i < filteredData.length; i++) {
     createItem(filteredData[i])
   }
-  document.getElementById('content').style.opacity = 1;
 }
 
 function createItem(data) {
@@ -115,11 +102,11 @@ function createItem(data) {
 
   selection = document.createElement('a');
   selection.setAttribute('target', '_blank');
-  if (data.selection && data.price) {
+  if (data.productId && data.selection && data.price) {
     selection.innerHTML = 'I ' + data.selection.toLowerCase() + ' på Vinmonopolet - ' + data.price + ' kr';
     selection.setAttribute('href', 'https://vinmonopolet.no/p/' + data.productId);
     info.appendChild(selection);
-  } else if (data.selection) {
+  } else if (data.productId && data.selection) {
     selection.innerHTML = 'I ' + data.selection.toLowerCase() + ' på Vinmonopolet';
     selection.setAttribute('href', 'https://vinmonopolet.no/p/' + data.productId);
     info.appendChild(selection);
@@ -140,34 +127,34 @@ function createItem(data) {
 
 function init(url, age = 86400000) {
   // TODO: Set age to something else than milliseconds?
-
   let initTimestamp = Date.now();
-
   var dataTimestamp = sessionStorage.getItem('timestamp');
   var timeDiff = (initTimestamp - dataTimestamp);
 
   // Check if data exists in sessionStorage
   if (sessionStorage.getItem('data') && timeDiff < age ) {
-    loadContent();
+    createList(JSON.parse(sessionStorage.getItem('data'))); // Add items to HTML
+    createFilter(JSON.parse(sessionStorage.getItem('categories'))); // Add filter to HTML
+    setNavButtonClass(getFilterParams()); // Highlight selected filter
   } else {
     Papa.parse(url, {
       download: true,
       header: true,
       dynamicTyping: true,
       complete: function(results) {
-        sessionStorage.setItem('timestamp', initTimestamp);
-
         function compare( a, b ) {
           if ( a.productShortName < b.productShortName ){return -1;}
           if ( a.productShortName > b.productShortName ){return 1;}
           return 0;
         }
-
         results.data.sort( compare );
         data = results.data;
 
-        setContent(data);
-        loadContent()
+        setContent(data, initTimestamp);
+
+        createList(JSON.parse(sessionStorage.getItem('data')));
+        createFilter(JSON.parse(sessionStorage.getItem('categories')));
+        setNavButtonClass(getFilterParams());
       }
     });
   }
