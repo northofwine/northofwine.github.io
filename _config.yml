@@ -1,3 +1,10 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
+
+contentful:
+  spaces:
+    - northofwine:                                # Jekyll _data folder identifier - Required
+        space: ENV_CONTENTFUL_SPACE_ID            # Required
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN # Required
+        environment: ENV_CONTENTFUL_ENVIRONMENT   # Optional
