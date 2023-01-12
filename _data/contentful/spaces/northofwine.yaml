@@ -1,0 +1,31 @@
+---
+product:
+- sys:
+    id: 7v2TNSeM3LJ0nnAI7dSwH8
+    created_at: !ruby/object:DateTime 2023-01-12 14:33:07.585000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-12 14:33:07.585000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: Trondheimsnatt
+  image:
+    sys:
+      id: 2v0VOKa8oT2QVU24QZZgLl
+      created_at: !ruby/object:DateTime 2023-01-12 14:29:13.568000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-12 14:29:13.568000000 Z
+    title: Trondheimsnatt
+    description: ''
+    url: "//images.ctfassets.net/58mi2hzmh573/2v0VOKa8oT2QVU24QZZgLl/5e9b1896564e41795c6d58980ab0b22b/14198301.jpg"
+  product_id: '14198301'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 12.5
+  manufacturer_name: Obaya
+  country: Spania
+  region: Øvrige
+  grape_desc:
+  - Tempranillo
+  - Grenache
+  grape_pct:
+  - 80%
+  - 20%
+  sales_price: 158.8
