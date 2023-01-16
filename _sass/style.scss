@@ -35,8 +35,18 @@ table{
     background-color: rgba(0,0,0,.75);
     color: rgba(255,255,255,1);
   }
-  tbody tr:nth-child(odd){background-color: rgba(0,0,0,.1);}
-  tbody tr td:nth-child(1){background-color: rgba(255,255,255,1);}
+  tbody tr:nth-child(even){background-color: rgba(0,0,0,.05);}
+
+  // Product image
+  tbody td:nth-child(1) {
+    background: center no-repeat;
+    background-size: contain;
+    background-color: rgba(255,255,255,1);
+
+    a{
+      display: none;
+    }
+  } // Image
 
   // Cell widths
   thead th:nth-child(1) {width: 96px;} // Image

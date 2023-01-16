@@ -17,7 +17,7 @@
     			<th>Product ID</th>
     			<th>Type</th>
     			<th>Volume</th>
-    			<th>Alchohol content</th>
+    			<th>Alcohol content</th>
     			<th>Vintage</th>
     			<th>Manufacturer</th>
     			<th>GTIN</th>
@@ -31,15 +31,20 @@
     	<tbody>
 			{% for item in site.data.contentful.spaces.northofwine.product %}
 			<tr>
-        <td>
-          <img src="{{ item.image.url }}" style="height:48px;">
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'even' %}
+          <td style="background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05)), url({{ item.image.url }}?w=200)">
+        {% else %}
+          <td style="background-image: url({{ item.image.url }}?w=200)">
+        {% endif %}
+          <a href="https:{{ item.image.url }}">https:{{ item.image.url }}</a>
         </td>
 				<td>{{ item.product_short_name }}</td>
 				<td>{{ item.product_long_name }}</td>
 				<td>{{ item.product_id }}</td>
 				<td>{{ item.product_type_name }}</td>
 				<td>{{ item.volume }} cl</td>
-				<td>{{ item.alcohol_content }} %</td>
+				<td>{{ item.alcohol_content }}%</td>
 				<td>{{ item.vintage }}</td>
 				<td>{{ item.manufacturer_name }}</td>
 				<td>{{ item.gtin }}</td>
@@ -48,7 +53,7 @@
 				<td>{{ item.sub_region }}</td>
 				<td>
           {% for grape in item.grape_desc %}
-            {{ grape }} {{ item.grape_pct[forloop.index0] }}{% if forloop.last != true %},{% endif %}
+            {{ grape }}{% if item.grape_pct %} {{ item.grape_pct[forloop.index0] }}{% endif %}{% if forloop.last != true %},{% endif %}
           {% endfor %}
         </td>
 				<td>{{ item.sales_price }}</td>

@@ -27,11 +27,16 @@ table thead tr {
   background-color: rgba(0, 0, 0, 0.75);
   color: rgb(255, 255, 255);
 }
-table tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.1);
+table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
 }
-table tbody tr td:nth-child(1) {
+table tbody td:nth-child(1) {
+  background: center no-repeat;
+  background-size: contain;
   background-color: rgb(255, 255, 255);
+}
+table tbody td:nth-child(1) a {
+  display: none;
 }
 table thead th:nth-child(1) {
   width: 96px;
