@@ -7,3 +7,60 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
+
+table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 1800px;
+  border: 1px solid #000;
+
+  img{
+    height: 72px !important;
+    display: block;
+    margin: auto;
+  }
+
+  th{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  td{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  // Row colors
+  thead tr{
+    background-color: rgba(0,0,0,.75);
+    color: rgba(255,255,255,1);
+  }
+  tbody tr:nth-child(odd){background-color: rgba(0,0,0,.1);}
+  tbody tr td:nth-child(1){background-color: rgba(255,255,255,1);}
+
+  // Cell widths
+  thead th:nth-child(1) {width: 96px;} // Image
+  thead th:nth-child(2) {width: 192px;} // Short name
+  thead th:nth-child(3) {width: 192px;} // Long name
+  thead th:nth-child(4) {width: 96px;} // Product ID
+  thead th:nth-child(5) {width: 96px;} // Type
+  thead th:nth-child(6) {width: 72px;} // Volume
+  thead th:nth-child(7) {width: 72px;} // Alcohol content
+  thead th:nth-child(8) {width: 72px;} // Vintage
+  thead th:nth-child(9) {width: 192px;} // Manufacturer
+  thead th:nth-child(10) {width: 96px;} // GTIN
+  thead th:nth-child(11) {width: 144px;} // Country
+  thead th:nth-child(12) {width: 144px;} // Region
+  thead th:nth-child(13) {width: 144px;} // Sub region
+  thead th:nth-child(14) {width: 192px;} // Grapes
+  thead th:nth-child(15) {width: 96px;} // Sales price
+
+  tbody tr{
+    height: 96px;
+  }
+
+  th, td{
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}

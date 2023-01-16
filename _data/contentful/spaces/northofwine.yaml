@@ -1,27 +1,189 @@
 ---
 product:
 - sys:
-    id: 7v2TNSeM3LJ0nnAI7dSwH8
-    created_at: !ruby/object:DateTime 2023-01-12 14:33:07.585000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-12 14:33:07.585000000 Z
+    id: 22xETrwPYBnpgvCipOe91j
+    created_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
     content_type_id: product
     revision: 1
+  product_short_name: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+  product_long_name: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+  image:
+    sys:
+      id: xnuMavZPzIlHZs7g6W8JX
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.629000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:31:49.668000000 Z
+    title: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+    description: |-
+      Frankrike, Chablis
+
+      Chardonnay 100%
+
+      I bestillingsutvalget på Vinmonopolet - 615 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/xnuMavZPzIlHZs7g6W8JX/4e4b8655b3f26818706b1954bda755d1/13328601.jpg"
+  product_id: '13328601'
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.5
+  country: Frankrike
+  region: Chablis
+  sales_price: 615.0
+- sys:
+    id: 3onoodJP6nYnKv6g5ZmRwX
+    created_at: !ruby/object:DateTime 2023-01-15 15:34:15.509000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:34:15.509000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: Blei
+  product_long_name: Mas d'en Blei 2015
+  image:
+    sys:
+      id: 15822VCLRrKXCWZ9CggwJC
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.634000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:30:00.274000000 Z
+    title: Blei 2015
+    description: |-
+      Spania, Priorat
+
+      Grenache 60%, Carignan 30%, Cabernet Franc 10%
+
+      I tilleggsutvalget på Vinmonopolet - 321 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/15822VCLRrKXCWZ9CggwJC/869dd8579ba2f17d4f348c2d0931974c/14250201.jpg"
+  product_id: '14250201'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2015'
+  manufacturer_name: Mas d'en Blei 2015
+  country: Spania
+  region: Priorat
+  sales_price: 321.0
+- sys:
+    id: 3uSkQOppswaQxtENUsHq4S
+    created_at: !ruby/object:DateTime 2023-01-15 15:29:43.568000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:29:43.568000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: 'BRI 2014 '
+  product_long_name: 'Celler de l''Era BRI 2014 rouge '
+  image:
+    sys:
+      id: 2TSo2EZUrkgktNS4G4MOID
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
+    title: Celler de l'Era BRI 2011 rouge 2011
+    description: |-
+      Spania, Montsant
+
+      Cabernet Sauvignon, Carignan, Grenache
+
+      I tilleggsutvalget på Vinmonopolet - 278 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2014'
+  country: Spania
+  region: Montsant
+  sales_price: 321.0
+- sys:
+    id: 5qVm9NGBWhcuKsAfJOVvrt
+    created_at: !ruby/object:DateTime 2023-01-15 15:25:48.962000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:25:48.962000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: BRI 2011
+  product_long_name: 'Celler de l''Era BRI 2011 rouge '
+  image:
+    sys:
+      id: 2TSo2EZUrkgktNS4G4MOID
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
+    title: Celler de l'Era BRI 2011 rouge 2011
+    description: |-
+      Spania, Montsant
+
+      Cabernet Sauvignon, Carignan, Grenache
+
+      I tilleggsutvalget på Vinmonopolet - 278 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
+  product_id: '12382901'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2011'
+  country: Spania
+  region: Montsant
+  sales_price: 278.0
+- sys:
+    id: 3rhZTmkXmLgtgg2hIw70fo
+    created_at: !ruby/object:DateTime 2023-01-15 15:18:59.784000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:18:59.784000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: Rosso di Montalcino “Le Tracce” DOC
+  product_long_name: Podere Giardino Rosso di Montalcino “Le Tracce” DOC
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2020'
+  country: Italia
+  region: Toscana
+  sub_region: Montalcino
+- sys:
+    id: 4ujww1SoJAelwvYzAL2IZ6
+    created_at: !ruby/object:DateTime 2023-01-15 15:03:50.846000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:14:18.285000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: " Brunello di Montalcino “Le Tracce” 2016"
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2016'
+  country: Italia
+  region: Toscana
+  sub_region: Montalcino
+  sales_price: 749.0
+- sys:
+    id: 4PTwe3zoBqRvpzldjF7izq
+    created_at: !ruby/object:DateTime 2023-01-15 15:12:28.964000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:12:28.964000000 Z
+    content_type_id: product
+    revision: 1
+  product_short_name: Brunello di Montalcino “Le Tracce” 2017
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 1.5
+  vintage: '2017'
+  country: Italia
+  region: Toscana
+  sub_region: Montalcino
+  sales_price: 723.0
+- sys:
+    id: 7v2TNSeM3LJ0nnAI7dSwH8
+    created_at: !ruby/object:DateTime 2023-01-12 14:33:07.585000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-15 15:08:12.837000000 Z
+    content_type_id: product
+    revision: 3
   product_short_name: Trondheimsnatt
   image:
     sys:
-      id: 2v0VOKa8oT2QVU24QZZgLl
-      created_at: !ruby/object:DateTime 2023-01-12 14:29:13.568000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-12 14:29:13.568000000 Z
+      id: 7dlz3ymuSbQXbtX9cRb9hE
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.608000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 11:37:42.204000000 Z
     title: Trondheimsnatt
-    description: ''
-    url: "//images.ctfassets.net/58mi2hzmh573/2v0VOKa8oT2QVU24QZZgLl/5e9b1896564e41795c6d58980ab0b22b/14198301.jpg"
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/7dlz3ymuSbQXbtX9cRb9hE/549e4a77a9c0574c528847c031f67b82/14198301.jpg"
   product_id: '14198301'
   product_type_name: Rødvin
   volume: 75
   alcohol_content: 12.5
   manufacturer_name: Obaya
   country: Spania
-  region: Øvrige
+  region: Rioja
   grape_desc:
   - Tempranillo
   - Grenache
