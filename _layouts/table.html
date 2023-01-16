@@ -5,38 +5,93 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="{{ "/assets/js/table.js" | relative_url }}"></script>
   </head>
   <body>
     {{ content }}
-    <table>
+
+
+    <table class="sortable">
     	<thead>
     		<tr>
     			<th>Image</th>
-    			<th>Short name</th>
+    			<th aria-sort="ascending">
+            <button>
+              Short name
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
     			<th>Long name</th>
-    			<th>Product ID</th>
-    			<th>Type</th>
-    			<th>Volume</th>
-    			<th>Alcohol content</th>
-    			<th>Vintage</th>
-    			<th>Manufacturer</th>
-    			<th>GTIN</th>
-    			<th>Country</th>
-    			<th>Region</th>
-    			<th>Sub region</th>
-    			<th>Grapes</th>
-    			<th>Sales price</th>
+    			<th>
+            <button>
+              Product ID
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Type
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            Volume
+          </th>
+    			<th>
+            Alcohol content
+          </th>
+    			<th>
+            <button>
+              Vintage
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Manufacturer
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            GTIN
+          </th>
+    			<th>
+            <button>
+              Country
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Region
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Sub region
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Grapes
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
+    			<th>
+            <button>
+              Sales price
+              <span aria-hidden="true"></span>
+            </button>
+          </th>
     		</tr>
     	</thead>
     	<tbody>
-			{% for item in site.data.contentful.spaces.northofwine.product %}
+      {% assign sorted = site.data.contentful.spaces.northofwine.product | sort_natural: 'product_short_name' %}
+			{% for item in sorted %}
 			<tr>
-        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-        {% if thecycle == 'even' %}
-          <td style="background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05)), url({{ item.image.url }}?w=200)">
-        {% else %}
-          <td style="background-image: url({{ item.image.url }}?w=200)">
-        {% endif %}
+        <td style="background-image: url({{ item.image.url }}?w=200)">
           <a href="https:{{ item.image.url }}">https:{{ item.image.url }}</a>
         </td>
 				<td>{{ item.product_short_name }}</td>
@@ -61,5 +116,6 @@
 			{% endfor %}
     	</tbody>
     </table>
+
   </body>
 </html>

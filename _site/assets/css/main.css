@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #ffffff;
   color: #000000;
@@ -18,10 +19,17 @@ table img {
 table th {
   font-size: 12px;
   line-height: 16px;
+  font-weight: normal;
+  position: relative;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: left;
 }
 table td {
   font-size: 16px;
   line-height: 24px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 table thead tr {
   background-color: rgba(0, 0, 0, 0.75);
@@ -33,10 +41,13 @@ table tbody tr:nth-child(even) {
 table tbody td:nth-child(1) {
   background: center no-repeat;
   background-size: contain;
-  background-color: rgb(255, 255, 255);
+  background-blend-mode: multiply;
 }
 table tbody td:nth-child(1) a {
   display: none;
+}
+table tbody tr {
+  height: 96px;
 }
 table thead th:nth-child(1) {
   width: 96px;
@@ -83,12 +94,44 @@ table thead th:nth-child(14) {
 table thead th:nth-child(15) {
   width: 96px;
 }
-table tbody tr {
-  height: 96px;
-}
-table th, table td {
+table.sortable th button {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
   padding: 12px;
-  box-sizing: border-box;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  color: unset;
+  cursor: pointer;
 }
+table.sortable th button span {
+  position: absolute;
+  right: 12px;
+}
+table.sortable th button:focus, table.sortable th button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+table.sortable th[aria-sort=descending] span::after {
+  content: "▼";
+}
+table.sortable th[aria-sort=ascending] span::after {
+  content: "▲";
+}
+table.show-unsorted-icon th:not([aria-sort]) button span::after {
+  content: "♢";
+}
+table.sortable th:not([aria-sort]) button:focus span::after, table.sortable th:not([aria-sort]) button:hover span::after {
+  content: "▼";
+}
+
+/* Focus and hover styling */
 
 /*# sourceMappingURL=main.css.map */

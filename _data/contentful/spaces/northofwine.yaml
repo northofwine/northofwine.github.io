@@ -1,6 +1,22 @@
 ---
 product:
 - sys:
+    id: 4ujww1SoJAelwvYzAL2IZ6
+    created_at: !ruby/object:DateTime 2023-01-15 15:03:50.846000000 Z
+    updated_at: !ruby/object:DateTime 2023-01-16 14:09:05.079000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Brunello di Montalcino “Le Tracce” 2016
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2016'
+  country: Italia
+  region: Toscana
+  sub_region: Montalcino
+  sales_price: 749.0
+- sys:
     id: 22xETrwPYBnpgvCipOe91j
     created_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
     updated_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
@@ -130,22 +146,6 @@ product:
   country: Italia
   region: Toscana
   sub_region: Montalcino
-- sys:
-    id: 4ujww1SoJAelwvYzAL2IZ6
-    created_at: !ruby/object:DateTime 2023-01-15 15:03:50.846000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-15 15:14:18.285000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: " Brunello di Montalcino “Le Tracce” 2016"
-  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2016'
-  country: Italia
-  region: Toscana
-  sub_region: Montalcino
-  sales_price: 749.0
 - sys:
     id: 4PTwe3zoBqRvpzldjF7izq
     created_at: !ruby/object:DateTime 2023-01-15 15:12:28.964000000 Z

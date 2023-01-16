@@ -23,11 +23,18 @@ table{
   th{
     font-size: 12px;
     line-height: 16px;
+    font-weight: normal;
+    position: relative;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: left;
   }
 
   td{
     font-size: 16px;
     line-height: 24px;
+    padding: 12px;
+    box-sizing: border-box;
   }
 
   // Row colors
@@ -41,14 +48,15 @@ table{
   tbody td:nth-child(1) {
     background: center no-repeat;
     background-size: contain;
-    background-color: rgba(255,255,255,1);
-
+    background-blend-mode: multiply;
     a{
       display: none;
     }
   } // Image
 
-  // Cell widths
+  // Sizing
+  tbody tr{height: 96px;}
+
   thead th:nth-child(1) {width: 96px;} // Image
   thead th:nth-child(2) {width: 192px;} // Short name
   thead th:nth-child(3) {width: 192px;} // Long name
@@ -65,12 +73,44 @@ table{
   thead th:nth-child(14) {width: 192px;} // Grapes
   thead th:nth-child(15) {width: 96px;} // Sales price
 
-  tbody tr{
-    height: 96px;
+  // Sorting button
+  &.sortable th button {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    padding: 12px;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    color: unset;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      right: 12px;
+    }
+
+    &:focus ,&:hover{
+      background-color: rgba(255,255,255,.25);
+    }
   }
 
-  th, td{
-    padding: 12px;
-    box-sizing: border-box;
-  }
+  &.sortable th[aria-sort="descending"] span::after {content: "▼";}
+  &.sortable th[aria-sort="ascending"] span::after {content: "▲";}
+  &.show-unsorted-icon th:not([aria-sort]) button span::after {content: "♢";}
+
+  &.sortable th:not([aria-sort]) button:focus span::after,
+  &.sortable th:not([aria-sort]) button:hover span::after {content: "▼";}
+
+
 }
+
+
+/* Focus and hover styling */
