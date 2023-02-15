@@ -6,14 +6,17 @@
     {% include nav.html %}
 
     <section id="content">
-      {% for item in site.data.contentful.spaces.northofwine.person %}
+
+      {% assign sorted = site.data.contentful.spaces.northofwine.person | sort_natural: 'name' %}
+
+      {% for person in sorted %}
         <article class="person">
-          <img src="{{ item.image.url }}?w=384">
+          <img src="{{ person.image.url }}?w=384">
           <div>
-            <h2>{{ item.name }}</h2>
-            {{ item.description | markdownify }}
-            <a class="bullet" href="mailto:{{ item.email }}">
-              {{ site.data.icons.email-outline }}<span>{{ item.email }}</span>
+            <h2>{{ person.name }}</h2>
+            {{ person.description | markdownify }}
+            <a class="bullet" href="mailto:{{ person.email }}">
+              {{ site.data.icons.email-outline }}<span>{{ person.email }}</span>
             </a>
           </div>
         </article>

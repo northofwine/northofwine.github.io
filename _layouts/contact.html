@@ -28,9 +28,11 @@
 
             <hr>
 
-            {% for item in site.data.contentful.spaces.northofwine.person %}
-            <a class="bullet" href="mailto:{{ item.email }}">
-              {{ site.data.icons.email-outline }}<span>{{ item.email }}</span>
+            {% assign sorted = site.data.contentful.spaces.northofwine.person | sort_natural: 'name' %}
+
+            {% for person in sorted %}
+            <a class="bullet" href="mailto:{{ person.email }}">
+              {{ site.data.icons.email-outline }}<span>{{ person.email }}</span>
             </a>
             {% endfor %}
           </div>
