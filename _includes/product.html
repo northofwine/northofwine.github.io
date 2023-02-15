@@ -1,0 +1,39 @@
+<article class="product">
+
+  <div class="content">
+    {% if item.image.url %}
+      <img src="{{ item.image.url }}?h=384">
+    {% else %}
+      <img src="{{ "/assets/images/bottle_default.jpg" | relative_url }}">
+    {% endif %}
+
+    <h6>{{ item.product_type_name }}</h6>
+
+    {% if item.country and item.region and item.sub_region %}
+      <p class="meta">{{ item.country }}, {{ item.region }}, {{ item.sub_region }}</small>
+    {% else if item.country and item.region %}
+      <p class="meta">{{ item.country }}, {{ item.region }}</p>
+    {% else if item.country %}
+      <p class="meta">{{ item.country }}</p>
+    {% endif %}
+
+    <h4>{{ item.product_short_name }}</h4>
+  </div>
+
+  {% assign price_split = item.sales_price | round: 2 | split: "." %}
+  {% assign integral = price_split[0] %}
+  {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+
+  {% if item.product_id and item.sales_price %}
+    <a class="button" href="http://vinmonopolet.no/p/{{ item.product_id }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" /></svg>
+      <span>{{ integral }},{{ fractional }} kr</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z" /></svg>
+    </a>
+  {% else if item.sales_price %}
+    <a class="button unavailable">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.73,22.73L1.27,1.27L0,2.54L4.39,6.93L6.6,11.59L5.25,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H14.46L15.84,18.38C15.34,18.74 15,19.33 15,20A2,2 0 0,0 17,22C17.67,22 18.26,21.67 18.62,21.16L21.46,24L22.73,22.73M7.42,15A0.25,0.25 0 0,1 7.17,14.75L7.2,14.63L8.1,13H10.46L12.46,15H7.42M15.55,13C16.3,13 16.96,12.59 17.3,11.97L20.88,5.5C20.96,5.34 21,5.17 21,5A1,1 0 0,0 20,4H6.54L15.55,13M7,18A2,2 0 0,0 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20A2,2 0 0,0 7,18Z" /></svg>
+      <span>{{ integral }},{{ fractional }} kr</span>
+    </a>
+  {% endif %}
+</article>

@@ -1,0 +1,15 @@
+{% include head.html %}
+  <body>
+
+    <div id="background"></div>
+
+    {% include nav.html %}
+
+    <section id="content">
+      {% assign sorted = site.data.contentful.spaces.northofwine.product | sort_natural: 'product_short_name' %}
+      {% for item in sorted %}
+        {% include product.html item=item %}
+      {% endfor %}
+    </section>
+  </body>
+</html>

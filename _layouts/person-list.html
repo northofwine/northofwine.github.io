@@ -1,0 +1,23 @@
+{% include head.html %}
+  <body>
+
+    <div id="background"></div>
+
+    {% include nav.html %}
+
+    <section id="content">
+      {% for item in site.data.contentful.spaces.northofwine.person %}
+        <article class="person">
+          <img src="{{ item.image.url }}?w=384">
+          <div>
+            <h2>{{ item.name }}</h2>
+            {{ item.description | markdownify }}
+            <a class="bullet" href="mailto:{{ item.email }}">
+              {{ site.data.icons.email-outline }}<span>{{ item.email }}</span>
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </section>
+  </body>
+</html>
