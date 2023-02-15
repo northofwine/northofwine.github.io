@@ -1,0 +1,40 @@
+{% include head.html %}
+  <body>
+
+    <div id="background"></div>
+
+    {% include nav.html %}
+
+    <section id="content">
+        <article class="person">
+          <div>
+            <h2>Kontakt</h2>
+            <h3> {{ site.data.company.name }}</h3>
+            <p class="bullet">
+              {{ site.data.icons.business }}
+              <span>{{ site.data.company.org-number }}</span>
+            </p>
+            <a class="bullet" href="mailto:{{ site.data.company.email }}">
+              {{ site.data.icons.email-outline }}
+              <span>{{ site.data.company.email }}</span>
+            </a>
+            <p class="bullet">
+              {{ site.data.icons.map-marker }}
+              <span>
+                {{ site.data.company.street }}<br>
+                {{ site.data.company.zip }}, {{ site.data.company.city }}
+              </span>
+            </p>
+
+            <hr>
+
+            {% for item in site.data.contentful.spaces.northofwine.person %}
+            <a class="bullet" href="mailto:{{ item.email }}">
+              {{ site.data.icons.email-outline }}<span>{{ item.email }}</span>
+            </a>
+            {% endfor %}
+          </div>
+        </article>
+    </section>
+  </body>
+</html>

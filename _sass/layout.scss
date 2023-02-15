@@ -108,14 +108,15 @@ article.person{
   }
 }
 
-a.bullet{
+.bullet{
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   line-height: 24px;
   color: $color-text-black-primary;
 
-  display: block;
+  display: flex;
   overflow: hidden;
+  margin: 0 0 12px 0;
 
   &:hover{
     text-decoration: none;
@@ -128,9 +129,12 @@ a.bullet{
 
   svg{
     width: 24px;
+    height: 24px;
+    display: block;
     margin-right: 4px;
     line-height: 24px;
     vertical-align: top;
+    align-self: flex-start;
   }
 }
 
@@ -189,6 +193,11 @@ a.button{
   }
 }
 
+hr{
+  margin: 24px 0;
+  border: 1px solid $color-text-black-primary;
+}
+
 // TYPOGRAPHY
 
 h2{
@@ -196,6 +205,13 @@ h2{
   font-size: 30px;
   line-height: 36px;
   margin: 0 0 24px 0;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 12px 0;
 }
 
 h4{
