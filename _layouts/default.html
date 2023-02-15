@@ -1,10 +1,18 @@
 {% include head.html %}
   <body>
 
+    <div id="background" class="index"></div>
+
     {% include nav.html %}
 
     <section id="content">
-      {{ content }}
+      <div id="hero">
+        {{ content }}
+        <a class="button" href="/utvalg">
+          <span>Vårt utvalg</span>
+          {{ site.data.icons.arrow-right }}
+        </a>
+      </div>
     </section>
     
   </body>

@@ -11,11 +11,20 @@ $productColumns: 4;
 
 #background{
   position: fixed;
+  z-index: -100;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(115deg, rgba(0,0,0,1) 0%, rgba(12,12,12,1) 100%);
+  background: linear-gradient(115deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 100%);
+
+  &.index{
+    background: 
+      url("/assets/images/aurora.svg") no-repeat right bottom,
+      linear-gradient(115deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 100%)
+      ;
+    background-size: contain;
+  }
 }
 
 body{
@@ -63,6 +72,41 @@ $color-button-gray-active: rgba(192,192,192,1);
 $color-button-gray-disabled: rgba(204,204,204,.25);
 
 $color-background-white: rgba(255,255,255,1);
+
+#hero{
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
+  h1{
+    background-color: $color-button-dark-default;
+    color: $color-text-white-primary;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .button{
+    align-self: end;
+    width: auto;
+
+    background-color: $color-button-dark-default;
+    color: $color-text-white-primary;
+    fill:  $color-text-white-primary;
+
+    transition: gap 250ms, padding 250ms, background-color  250ms;
+
+    span{
+      flex-grow: 0;
+    }
+
+    &:hover{
+      gap: 20px;
+      background-color: $color-button-dark-hover;
+    }
+  }
+
+}
 
 article.product{
   position: relative;
@@ -200,6 +244,10 @@ hr{
 
 // TYPOGRAPHY
 
+h1{
+  font-family: 'Raleway', sans-serif;
+}
+
 h2{
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
@@ -301,6 +349,13 @@ nav#sidebar #logo img{
 }
 
 @mixin sidebar-l{
+  #hero{
+    h1{
+      font-size: 72px;
+      line-height: 72px;
+      padding: 24px;
+    }
+  }
   nav#sidebar{width: 120px;}
   nav#sidebar #logo img{width: 96px;}
   nav#sidebar a{padding: 12px 24px;}
@@ -309,6 +364,8 @@ nav#sidebar #logo img{
 }
 
 @mixin sidebar-m{
+  #hero{
+  }
   nav#sidebar{width: 72px;}
   nav#sidebar #logo img{width: 48px;}
   nav#sidebar a{padding: 12px;}
@@ -317,6 +374,19 @@ nav#sidebar #logo img{
 }
 
 @mixin sidebar-s{
+  #hero{
+    h1{
+      font-size: 64px;
+      line-height: 64px;
+      padding: 12px;
+    }
+    .button{
+      width:100%;
+      span{
+        flex: 1 1 auto;
+      }
+    }
+  }
   nav#sidebar{width: 48px;}
   nav#sidebar #logo img{width: 24px;}
   nav#sidebar a{padding: 12px;}
