@@ -33,10 +33,13 @@ body{
   display: flex;
   flex-direction: row;
   gap: $gridGap;
+  background-color: #000;
+  min-height: -webkit-fill-available;
 
   &.table{
     padding: 0;
     display: block;
+    background-color: #fff;
   }
 }
 
@@ -51,7 +54,7 @@ section#content{
   align-content: start;
 
   &.filtered{
-    padding-top: 48px;
+    padding-top: 52px;
   }
 }
 
@@ -121,7 +124,7 @@ $color-background-white: rgba(255,255,255,1);
 
 article.product{
   position: relative;
-  min-width: 240px;
+  min-width: 220px;
   flex-basis: 25%;
   flex-grow: 1;
   display: flex;
@@ -264,7 +267,7 @@ select#types{
   font-size: 16px;
   line-height: 24px;
   padding: 12px;
-  margin-top: -48px;
+  margin-top: -52px;
   border: 0;
   appearance: none;
 
@@ -464,20 +467,19 @@ nav#sidebar #logo img{
   body{padding: $paddingBodyM;}
   select#types{width: calc(100% - 4px - 120px - ($paddingBodyM * 2));}
   nav#sidebar{top: $paddingBodyM;}
-  nav#sidebar ul{height: calc(100vh - ($paddingBodyM * 2));}
+  nav#sidebar ul{height: auto;}
+  nav#sidebar ul span{display: none;}
 }
 
 @mixin content-s{
   body{padding: $paddingBodyS;}
   select#types{width: calc(100% - 4px - 72px - ($paddingBodyS * 2));}
   nav#sidebar{top: $paddingBodyS;}
-  nav#sidebar ul{height: calc(100vh - ($paddingBodyS * 2));}
 }
 
 @mixin content-xs{
   body{padding: $paddingBodyXS;}
   nav#sidebar{top: $paddingBodyXS;}
-  nav#sidebar ul{height: calc(100vh - ($paddingBodyXS * 2));}
 }
 
 @include content-xxl;
