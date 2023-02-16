@@ -33,6 +33,11 @@ body{
   display: flex;
   flex-direction: row;
   gap: $gridGap;
+
+  &.table{
+    padding: 0;
+    display: block;
+  }
 }
 
 section#content{

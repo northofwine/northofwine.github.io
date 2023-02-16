@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <script src="{{ "/assets/js/table.js" | relative_url }}"></script>
-  </head>
-  <body>
-    {{ content }}
-
+{% include head.html %}
+  <body class="table">
 
     <table class="sortable">
     	<thead>
@@ -118,4 +108,5 @@
     </table>
 
   </body>
+  <script src="/assets/js/table.js"></script>
 </html>
