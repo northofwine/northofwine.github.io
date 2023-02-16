@@ -42,6 +42,12 @@ section#content{
   flex-wrap: wrap;
   gap: $gridGap;
   max-width: 1024px;
+  position: relative;
+  align-content: start;
+
+  &.filtered{
+    padding-top: 48px;
+  }
 }
 
 $paddingBodyXS: 12px;
@@ -127,6 +133,10 @@ article.product{
     display: block;
     margin: auto;
     height: 192px;
+  }
+
+  &.hidden{
+    display: none;
   }
 
 }
@@ -240,6 +250,27 @@ a.button{
 hr{
   margin: 24px 0;
   border: 1px solid $color-text-black-primary;
+}
+
+select#types{
+  position: fixed;
+  z-index: 100; 
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px;
+  margin-top: -48px;
+  border: 0;
+  appearance: none;
+
+  background-color: $color-button-dark-default;
+  color: $color-text-white-primary;
+  fill:  $color-text-white-primary;
+
+  &::before{
+    content: "Velg type";
+    display: block;
+  }
 }
 
 // TYPOGRAPHY
@@ -387,7 +418,8 @@ nav#sidebar #logo img{
       }
     }
   }
-  nav#sidebar{width: 48px;}
+  select#types {width: calc(100% - 4px - 48px - ($paddingBodyS * 2));}
+  nav#sidebar {width: 48px;}
   nav#sidebar #logo img{width: 24px;}
   nav#sidebar a{padding: 12px;}
   nav#sidebar .icon{display: block;}
@@ -412,6 +444,7 @@ nav#sidebar #logo img{
 
 @mixin content-l{
   body{padding: $paddingBodyL;}
+  select#types{width: calc(100% - 4px - 120px - ($paddingBodyL * 2));}
   nav#sidebar{top: $paddingBodyL;}
   nav#sidebar ul{height: calc(100vh - ($paddingBodyL * 2));}
   article.person{
@@ -424,12 +457,14 @@ nav#sidebar #logo img{
 
 @mixin content-m{
   body{padding: $paddingBodyM;}
+  select#types{width: calc(100% - 4px - 120px - ($paddingBodyM * 2));}
   nav#sidebar{top: $paddingBodyM;}
   nav#sidebar ul{height: calc(100vh - ($paddingBodyM * 2));}
 }
 
 @mixin content-s{
   body{padding: $paddingBodyS;}
+  select#types{width: calc(100% - 4px - 72px - ($paddingBodyS * 2));}
   nav#sidebar{top: $paddingBodyS;}
   nav#sidebar ul{height: calc(100vh - ($paddingBodyS * 2));}
 }

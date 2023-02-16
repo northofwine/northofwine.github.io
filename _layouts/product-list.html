@@ -5,11 +5,13 @@
 
     {% include nav.html %}
 
-    <section id="content">
+    <section id="content" class="filtered">
       {% assign sorted = site.data.contentful.spaces.northofwine.product | sort_natural: 'product_short_name' %}
       {% for item in sorted %}
         {% include product.html item=item %}
       {% endfor %}
     </section>
   </body>
+  <script src="/assets/js/filter.js"></script>
+
 </html>
