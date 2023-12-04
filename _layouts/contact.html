@@ -10,10 +10,16 @@
           <div>
             <h2>Kontakt</h2>
             <h3> {{ site.data.company.name }}</h3>
-            <p class="bullet">
-              {{ site.data.icons.business }}
-              <span>{{ site.data.company.org-number }}</span>
-            </p>
+
+            {% assign sorted = site.data.contentful.spaces.northofwine.person | sort_natural: 'name'%}
+            {% for person in site.data.contentful.spaces.northofwine.person reversed %}
+              {% if person.phone %}
+                <a class="bullet" href="tel:{{ person.phone }}">
+                  {{ site.data.icons.phone }}
+                  <span>{{ person.phone | slice: 0, 2}} {{ person.phone | slice: 2, 2}} {{ person.phone | slice: 4, 2}} {{ person.phone | slice: 6, 2}} <br>{{ person.name }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
             <a class="bullet" href="mailto:{{ site.data.company.email }}">
               {{ site.data.icons.email-outline }}
               <span>{{ site.data.company.email }}</span>
@@ -24,6 +30,10 @@
                 {{ site.data.company.street }}<br>
                 {{ site.data.company.zip }}, {{ site.data.company.city }}
               </span>
+            </p>
+            <p class="bullet">
+              {{ site.data.icons.business }}
+              <span>Org.nr. {{ site.data.company.org-number }}</span>
             </p>
 
             <hr>
