@@ -1,70 +1,79 @@
 ---
+manufacturer:
+- sys:
+    id: 2nsB6peKhoWhiPCasUF3zY
+    created_at: !ruby/object:DateTime 2023-12-04 11:26:08.644000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 11:26:43.363000000 Z
+    content_type_id: manufacturer
+    revision: 2
+  name: De Andrés Sisters
+  description: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis dolor et enim ultrices, vitae porta massa dapibus. Phasellus molestie dui non odio ultrices efficitur. Vivamus id pretium ipsum. Nam ut urna lorem. Vestibulum semper eleifend ipsum, eu rhoncus metus suscipit vitae. Cras dignissim felis sem, at molestie nibh accumsan in.
+
+    Vestibulum quis semper dolor. Etiam eu nunc maximus mauris pellentesque tincidunt a nec erat. Vestibulum egestas ultrices porta. Suspendisse congue purus non tellus vestibulum lobortis. Integer eu urna nec nunc tempor mollis. Duis at fermentum orci. Sed lobortis, ipsum id dictum iaculis, sapien velit commodo nulla, ac aliquam nibh felis ac magna.
+  link: https://www.deandressisters.com/
+  image:
+    sys:
+      id: 4FLy8JiOKaobrZx7xvOe8D
+      created_at: !ruby/object:DateTime 2023-12-04 11:25:29.941000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-04 11:25:29.941000000 Z
+    title: Image / De Andrés Sisters
+    description: ''
+    url: "//images.ctfassets.net/58mi2hzmh573/4FLy8JiOKaobrZx7xvOe8D/575593e1bb0590605e1b931f694eab43/MG_0160web.jpg"
+  logo:
+    sys:
+      id: 4CUoOA2YSqaWhp7S6idcXL
+      created_at: !ruby/object:DateTime 2023-12-04 11:23:17.309000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-04 11:23:17.309000000 Z
+    title: Logo / De Andres Sisters
+    description: ''
+    url: "//images.ctfassets.net/58mi2hzmh573/4CUoOA2YSqaWhp7S6idcXL/9075b0697a5f9fdabcbbaf2d488a1098/cropped-DAS_LOGO_black-01.png"
 product:
 - sys:
-    id: y0A0RCMEePNxQELXm7CPB
-    created_at: !ruby/object:DateTime 2023-01-17 17:40:24.721000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:30:39.060000000 Z
+    id: 2YS4pheDQqw9C80rQvyjLU
+    created_at: !ruby/object:DateTime 2023-12-04 11:10:18.431000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 11:10:18.431000000 Z
     content_type_id: product
-    revision: 2
-  product_short_name: 'Metaphore '
-  product_long_name: Domaine Batard Langelier Metaphore 2017
-  image:
-    sys:
-      id: 4uNuJBtwITT3wsXvR6r7fb
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.613000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:34:45.953000000 Z
-    title: Domaine Batard Langelier Metaphore 2017
-    description: |-
-      Frankrike, Loire, Muscadet Sèvre et Maine
-
-      Melon de Bourgogne 100%
-
-      I bestillingsutvalget på Vinmonopolet - 239 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/4uNuJBtwITT3wsXvR6r7fb/858503aa89f15bf55774afa6907e14ab/10826201.jpg"
-  product_type_name: Hvitvin
+    revision: 1
+  product_short_name: Weingut Höllerer Wolfsgraben Sweigelt
+  product_long_name: Weingut Höllerer Wolfsgraben Sweigelt
   volume: 75
-  alcohol_content: 12.0
-  vintage: '2017'
-  country: Frankroke
-  region: Loire
-  sub_region: Muscadet Sèvre et Maine
-  sales_price: 239.0
+  alcohol_content: 12.5
+  manufacturer_name: Weingut Höllerer Wolfsgraben Sweigelt
+  country: Østerike
+  region: Kamptal
+  grape_desc:
+  - Sweigelt
+  grape_pct:
+  - 100%
+  sales_price: 221.0
 - sys:
-    id: 3tkb5j98iTK4N1WDguE8WL
-    created_at: !ruby/object:DateTime 2023-01-17 17:42:59.278000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:30:21.607000000 Z
+    id: 49mVGGWbhLtRX0M1ZfLRso
+    created_at: !ruby/object:DateTime 2023-12-04 11:06:45.480000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 11:06:45.480000000 Z
     content_type_id: product
-    revision: 2
-  product_short_name: 'Didascalie '
-  product_long_name: Domaine Batard Langelier Didascalie 2016
-  image:
-    sys:
-      id: 79otqBtx7vrvfpzwFt4sIZ
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.603000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:35:33.161000000 Z
-    title: Domaine Batard Langelier Didascalie 2016
-    description: |-
-      Frankrike, Loire, Muscadet Sèvre et Maine
-
-      Melon de Bourgogne 100%
-
-      I bestillingsutvalget på Vinmonopolet - 233 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/79otqBtx7vrvfpzwFt4sIZ/c9b6db5323c6f94dac9fafb72450ad7f/10826101.jpg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.0
-  vintage: '2016'
-  country: Frankrike
-  region: Loire
-  sub_region: Muscadet Sèvre et Maine
-  sales_price: 233.0
+    revision: 1
+  product_short_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  product_type_name: Rødvin
+  volume: 1500
+  alcohol_content: 14.0
+  manufacturer_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  country: Italia
+  region: Toscana
+  grape_desc:
+  - Sangiovese grosso
+  grape_pct:
+  - 100%
+  sales_price: 1580.0
 - sys:
     id: 2xsAqCG8RmMwiltAr4I4AH
     created_at: !ruby/object:DateTime 2023-01-17 16:08:15.079000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:29:59.255000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 10:09:54.409000000 Z
     content_type_id: product
-    revision: 2
-  product_short_name: " Prosecco Treviso"
+    revision: 6
+  product_short_name: " Prosecco Treviso Frizzante"
+  product_long_name: " Prosecco Treviso Frizzante DOC"
   image:
     sys:
       id: 3MlrI5woMS71OAh8q7VrmV
@@ -76,130 +85,203 @@ product:
   product_type_name: Musserende vin
   volume: 150
   alcohol_content: 11.0
+  manufacturer_name: Cantina di Soligo
   country: Italia
   region: Veneto
   sub_region: Treviso
-  sales_price: 250.0
 - sys:
-    id: 2gkUoMHmKHN5TnPZJskt1M
-    created_at: !ruby/object:DateTime 2023-01-17 15:44:03.969000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:29:38.099000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: " l'Affranchie Blanc de Blancs Premier Cru Millesime"
-  product_long_name: Laurent-Gabriel l'Affranchie Blanc de Blancs Premier Cru Millesime
-  image:
-    sys:
-      id: 5AeChVMOrbUO1a7FmyhNoF
-      created_at: !ruby/object:DateTime 2023-02-02 09:59:26.530000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:59:26.530000000 Z
-    title: Laurent-Gabriel l'Affranchie Blanc de Blancs Premier Cru Millesime 2012
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/5AeChVMOrbUO1a7FmyhNoF/1feb05ea2773e279cc354c8c4f036c82/DSC_0060.jpeg"
-  product_type_name: Musserende vin
-  volume: 75
-  alcohol_content: 12.5
-  vintage: '2012'
-  manufacturer_name: Laurent-Gabriel l
-  country: Frankrike
-  region: Champagne
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 1496.0
-- sys:
-    id: 5lfnpRg9l4NiBjX9m1GW5E
-    created_at: !ruby/object:DateTime 2023-01-19 11:32:51.030000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:29:19.494000000 Z
+    id: 501A4iauHPoMahR3AtS0rv
+    created_at: !ruby/object:DateTime 2023-01-17 17:26:42.794000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:54:51.020000000 Z
     content_type_id: product
     revision: 6
-  product_short_name: 'Brunello di Montalcino '
-  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  product_short_name: Prosecco Valdobbiadene
+  product_long_name: Soligo Col de Mez Prosecco Valdobbiadene DOCG
   image:
     sys:
-      id: 65HTosagttCEfpEguVcakY
-      created_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
-    title: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/65HTosagttCEfpEguVcakY/0900946d59cf8a6a88293ee0c7a671e8/DSC_0063.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2016'
-  manufacturer_name: Podere Giardino
-  country: Italia
-  region: " Toscana"
-  sub_region: " Montalcino  "
-  grape_desc:
-  - Sangiovese grosso
-  grape_pct:
-  - 100%
-  sales_price: 750.0
-- sys:
-    id: vtwRcUSMoY4QKJTHX9FyF
-    created_at: !ruby/object:DateTime 2023-01-19 08:56:57.522000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:29:03.611000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Grauer Burgunder '
-  product_long_name: Matthias Müller Bopparder Hamm Grauer Burgunder Trocken 2017
-  image:
-    sys:
-      id: 7CG4KDUcjeJHuIgSKGw2us
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.557000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:43:03.312000000 Z
-    title: Matthias Müller Bopparder Hamm AN DER RABENLEI Riesling Trocken „Großes
-      Gewächs” 2017
+      id: 6BIFww6DbP0CetpVlhvMMk
+      created_at: !ruby/object:DateTime 2023-01-16 08:39:52.267000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-16 08:39:52.267000000 Z
+    title: Soligo Col de Mez Prosecco Valdobbiadene DOCG
     description: |-
-      Tyskland, Mittelrhein
+      Italia, Veneto, Valdobbiadene
 
-      Riesling 100%
-
-      I bestillingsutvalget på Vinmonopolet - 398 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/7CG4KDUcjeJHuIgSKGw2us/06410645e730ae7d4e37796343d8e437/13853401.jpg"
-  product_type_name: Hvitvin
+      Glera 100%
+    url: "//images.ctfassets.net/58mi2hzmh573/6BIFww6DbP0CetpVlhvMMk/9e4f13ceb5a72ab339e407308f2ce49e/DSC02002.jpg"
+  product_type_name: Musserende vin
   volume: 75
-  alcohol_content: 12.5
-  vintage: '2017'
-  country: Tyskland
-  region: Mittelrhein
-  sales_price: 215.0
+  alcohol_content: 11.0
+  manufacturer_name: Cantina di Soligo
+  country: Italia
+  region: Veneto
+  sub_region: Valdobbiadene
+  sales_price: 211.0
+- sys:
+    id: 1KPOwIOP9rOEhqGIUp6Qmr
+    created_at: !ruby/object:DateTime 2023-01-17 16:06:02.059000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:54:24.350000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Soligo Prosecco Treviso DOC Spumante
+  product_long_name: Soligo Prosecco Treviso DOC Spumante
+  image:
+    sys:
+      id: 59ZFpPymrGDqyTe2OyOw5P
+      created_at: !ruby/object:DateTime 2023-01-17 15:24:10.376000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 12:21:46.570000000 Z
+    title: Soligo Prosecco Treviso DOC
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/59ZFpPymrGDqyTe2OyOw5P/2f8331895da7db542dff8139ed4cdcef/DSC02004.jpg"
+  product_type_name: Musserende vin
+  volume: 75
+  alcohol_content: 11.0
+  manufacturer_name: 'Cantina di Soligo '
+  country: Italia
+  region: Veneto
+  sub_region: Treviso
 - sys:
     id: 3cGaegLrSNTENqa8Arczix
     created_at: !ruby/object:DateTime 2023-01-19 09:00:24.104000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:28:41.415000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:52:38.484000000 Z
     content_type_id: product
-    revision: 2
+    revision: 4
   product_short_name: Weisser Burgunder Trocken
   product_long_name: Matthias Müller Bopparder Hamm Weisser Burgunder Trocken
+  image:
+    sys:
+      id: 1kPSuBcf2yjkKWKyJEIhlS
+      created_at: !ruby/object:DateTime 2023-03-13 11:25:56.071000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:25:56.071000000 Z
+    title: Weisser Burgunder Trocken
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/1kPSuBcf2yjkKWKyJEIhlS/49ee4b1f607291f17eda79d6771127a6/DSC_0079.jpg"
   product_type_name: Hvitvin
   volume: 75
   alcohol_content: 12.5
   vintage: '2021'
   country: Tyskland
   region: Mittelrhein
-  sales_price: 220.0
+  sales_price: 260.0
+- sys:
+    id: 1nQiF9oGAxgHD11YaFAYZY
+    created_at: !ruby/object:DateTime 2023-02-23 11:10:22.972000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:52:06.112000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: NORWAY SEAFOOD FESTIVAL ROUGE
+  product_long_name: 'Fonsalade F de Fonsalade Rouge '
+  image:
+    sys:
+      id: 2LbXz6a3ru3BY7fesCc2JI
+      created_at: !ruby/object:DateTime 2023-03-13 11:24:55.740000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:24:55.740000000 Z
+    title: NORWAY SEAFOOD FESTIVAL rød
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2LbXz6a3ru3BY7fesCc2JI/384401d001266185aeb9bbb0c1acd5de/DSC_0081.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Fonsalade
+  country: 'Frankrike '
+  region: Langedoc
+  sub_region: 'Saint Chinian '
+  grape_desc:
+  - Grenache
+  - Syrah
+  grape_pct:
+  - 50%
+  - 50%
+  sales_price: 208.0
+- sys:
+    id: 2c4FFqFBIV8FQvxMo1zl96
+    created_at: !ruby/object:DateTime 2023-01-19 09:34:24.539000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:50:42.568000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Stocco Le Pianure Rosè
+  product_long_name: Stocco Le Pianure Rosè
+  image:
+    sys:
+      id: Q60OXYVjFO6YXotqFs2cD
+      created_at: !ruby/object:DateTime 2023-03-13 11:29:21.799000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:29:21.799000000 Z
+    title: Stocco Le Pianure Rosè
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/Q60OXYVjFO6YXotqFs2cD/e0315113a3a6197310da2317294dcb3e/DSC_0084.jpg"
+  product_type_name: Rosévin
+  volume: 75
+  alcohol_content: 12.5
+  manufacturer_name: Soc. agr. Stocco
+  country: Italia
+  region: Friuli
+  grape_desc:
+  - Merlot
+  grape_pct:
+  - 100%
 - sys:
     id: 3TUXz1m3HRzTrPn3q9LWmV
     created_at: !ruby/object:DateTime 2023-01-19 11:36:28.963000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:28:23.245000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:49:17.567000000 Z
     content_type_id: product
-    revision: 3
-  product_short_name: 'Benedetti Amarone '
+    revision: 7
+  product_short_name: 'Amarone '
   product_long_name: Benedetti Amarone Croce del Gal Black
+  image:
+    sys:
+      id: 1JwbQdtvX3QksvBWB18i3k
+      created_at: !ruby/object:DateTime 2023-03-13 11:20:42.277000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:20:42.277000000 Z
+    title: Amarone
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/1JwbQdtvX3QksvBWB18i3k/7b7571e7a2ff6abaf6b2e132874d8111/DSC_0075.jpg"
   product_type_name: Rødvin
   volume: 75
   alcohol_content: 15.0
+  manufacturer_name: 'Benedetti '
   country: Italia
+  region: Veneto
+  grape_desc:
+  - Corvina
+  - Rondinella
+  sales_price: 550.0
+- sys:
+    id: 4rDU5crM73xxNc88qZv3xo
+    created_at: !ruby/object:DateTime 2023-01-19 11:20:59.427000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:46:40.640000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Chianti Classico
+  product_long_name: 'Villa Calcinaia Chianti Classico DOCG '
+  image:
+    sys:
+      id: x4FAafhFIXWxov7EModTn
+      created_at: !ruby/object:DateTime 2023-03-14 10:09:08.197000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-14 10:09:08.197000000 Z
+    title: Chianti Classico
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/x4FAafhFIXWxov7EModTn/14e4abe8f1921c6a964237574794e073/DSC_0080.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2019'
+  manufacturer_name: Villa Calcinaia
+  country: Italia,
+  region: " Toscana"
+  sub_region: Chianti Classico
+  grape_desc:
+  - Sangiovese
+  - Canaiolo
+  grape_pct:
+  - 90%
+  - 10%
+  sales_price: 321.0
 - sys:
     id: 7qLe7M4fjXXXRJeUy6UpMN
     created_at: !ruby/object:DateTime 2023-01-19 11:11:18.814000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:27:49.836000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:45:49.687000000 Z
     content_type_id: product
-    revision: 5
-  product_short_name: Barbera d’Asti Superiore
+    revision: 7
+  product_short_name: Aresca Barbera d’Asti Superiore
   product_long_name: Aresca Barbera d’Asti Superiore La Rossa 2020
   image:
     sys:
@@ -223,45 +305,1086 @@ product:
   - Barbera
   grape_pct:
   - 100%
-  sales_price: 190.0
+  sales_price: 220.0
 - sys:
-    id: 52epssqs7Lygn2lEMnfy8B
-    created_at: !ruby/object:DateTime 2023-01-19 09:02:41.337000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:27:31.356000000 Z
+    id: OHOBNLzBhbM0saxBx18Yz
+    created_at: !ruby/object:DateTime 2023-01-17 15:38:38.524000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:44:56.259000000 Z
+    content_type_id: product
+    revision: 8
+  product_short_name: Laurent-Gabriel Premier Cru Grande Reserve Rose
+  product_long_name: Laurent-Gabriel Premier Cru Grande Reserve Rose
+  image:
+    sys:
+      id: 5VUjuB1GlHeiZdqmGVW80b
+      created_at: !ruby/object:DateTime 2023-02-02 09:59:59.545000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:59:59.545000000 Z
+    title: Laurent-Gabriel Premier Cru Grande Reserve Rose
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/5VUjuB1GlHeiZdqmGVW80b/f18c01e57237520d7e62b8ff5d77cb0e/DSC_0061.jpeg"
+  product_id: '15187601'
+  product_type_name: Musserende vin
+  volume: 75
+  alcohol_content: 12.5
+  manufacturer_name: 'Laurent-Gabriel '
+  country: Frankrike
+  region: Champagne
+  grape_desc:
+  - Pinot Noir
+  grape_pct:
+  - 100%
+  sales_price: 499.0
+- sys:
+    id: 6TFjYaFpGQWOikLvkmbXUs
+    created_at: !ruby/object:DateTime 2023-11-30 11:54:41.730000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:36:52.175000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Weingut Höllerer Landwein Grüner Veltliner 1 Lt
+  product_long_name: Weingut Höllerer Landwein Grüner Veltliner 1 Lt
+  product_type_name: Hvitvin
+  volume: 100
+  alcohol_content: 13.0
+  manufacturer_name: Weingut Höllerer Landwein Grüner Veltliner 1 Lt
+  country: Østerike
+  region: Kamptal
+  sales_price: 216.0
+- sys:
+    id: 6Ydzf2X0txwMFw2koXCrle
+    created_at: !ruby/object:DateTime 2023-11-30 11:56:42.003000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:36:12.992000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Weingut Höllerer Alte Reben Grüner Veltliner
+  product_long_name: Weingut Höllerer Alte Reben Grüner Veltliner
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 13.0
+  manufacturer_name: Weingut Höllerer Alte Reben Grüner Veltliner
+  country: Østerike
+  region: Kamptal
+  grape_desc:
+  - " Grüner Veltliner"
+  grape_pct:
+  - 100%
+  sales_price: 271.0
+- sys:
+    id: 4ukDHddxsZKrDeXVvHpd7c
+    created_at: !ruby/object:DateTime 2023-12-01 14:00:13.678000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:34:17.343000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Aresca Moscato d'Asti Fiore d'Autunno
+  product_long_name: Aresca Moscato d'Asti Fiore d'Autunno
+  image:
+    sys:
+      id: 73loUYoSDE9cfnn33Orxd1
+      created_at: !ruby/object:DateTime 2023-12-01 14:15:18.337000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:15:18.337000000 Z
+    title: Aresca Moscato d'Asti Fiore d'Autunno
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/73loUYoSDE9cfnn33Orxd1/e783cbce7d180f7957b72df25723252d/NoW-20231129-015.jpg"
+  product_type_name: Musserende vin
+  volume: 75
+  alcohol_content: 12.0
+  country: Italia
+  region: Piemonte
+  grape_desc:
+  - Muskadet
+  grape_pct:
+  - 100%
+- sys:
+    id: 10oGqfGYUH2ZObu8eJIOy0
+    created_at: !ruby/object:DateTime 2023-10-16 00:19:28.790000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:30:23.033000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: 'Casa de Vila Nova Alvarinho late harvest '
+  product_long_name: 'Casa de Vila Nova Alvarinho late harvest '
+  image:
+    sys:
+      id: 7Gz5qRFiLIZ7pQc6IXyOyq
+      created_at: !ruby/object:DateTime 2023-12-01 14:18:13.455000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:18:13.455000000 Z
+    title: 'Casa de Vila Nova Alvarinho late harvest '
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/7Gz5qRFiLIZ7pQc6IXyOyq/78aaaedaa0f3fe5bfb4bafdd4c2af85d/NoW-20231129-014.jpg"
+  product_type_name: Hvitvin
+  volume: 50
+  alcohol_content: 14.0
+  vintage: '2018'
+  manufacturer_name: 'Casa de Vila Nova '
+  country: Portugal
+  grape_desc:
+  - Alvarinho
+  grape_pct:
+  - 100%
+  sales_price: 296.0
+- sys:
+    id: 2rsexzevp14tqZ3WDXux22
+    created_at: !ruby/object:DateTime 2023-10-16 00:17:53.338000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:29:40.107000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Casa de Vila Nova Avesso Reserva
+  product_long_name: Casa de Vila Nova Avesso Reserva
+  image:
+    sys:
+      id: CUcddDG0RG5ofKSj1mOWa
+      created_at: !ruby/object:DateTime 2023-12-01 14:22:14.863000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:22:14.863000000 Z
+    title: Casa de Vila Nova Avesso Reserva
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/CUcddDG0RG5ofKSj1mOWa/143d31795c8beb6b2e62d62ff70d77bc/NoW-20231129-012.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Casa de Vila Nova Avesso Reserva
+  country: Portugal
+  grape_desc:
+  - Alvarinho
+  grape_pct:
+  - 100%
+  sales_price: 358.0
+- sys:
+    id: 2whkDOmm3ZPY1KhDiEdScs
+    created_at: !ruby/object:DateTime 2023-01-17 17:34:11.698000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:26:30.893000000 Z
+    content_type_id: product
+    revision: 7
+  product_short_name: 'Jean Durup Père & Fils Petit Chablis '
+  product_long_name: 'Jean Durup Père & Fils Petit Chablis '
+  image:
+    sys:
+      id: 73ixO4nbXSppCBp1g8aqvx
+      created_at: !ruby/object:DateTime 2023-12-01 14:36:50.155000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:36:50.155000000 Z
+    title: Jean Durup Père & Fils Petit Chablis 22
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/73ixO4nbXSppCBp1g8aqvx/e81e7dbaf5708fa4b16f9458fe620287/NoW-20231129-002.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: 'Jean Durup '
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 306.0
+- sys:
+    id: MXXw3QUC0Mac5e3GIPS0S
+    created_at: !ruby/object:DateTime 2023-01-19 09:50:59.230000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:24:07.734000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Ch. la Gasparde Prestige 2016
+  product_long_name: J. Janoueix Ch. la Gasparde Prestige 2016
+  image:
+    sys:
+      id: 7BhF6hx4Z3IIbeJdss81fa
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.539000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:46:27.439000000 Z
+    title: J. Janoueix Ch. la Gasparde Prestige 2015
+    description: |-
+      Frankrike, Bordeaux, Côtes de Bordeaux
+
+      Merlot 85%, Cabernet Franc 12%, Cabernet sauvignon 3%
+
+      I tilleggsutvalget på Vinmonopolet - 326 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/7BhF6hx4Z3IIbeJdss81fa/02968882efb1c335b41330e3e9f04ea8/12383001.jpg"
+  product_id: '12383001'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 13.5
+  vintage: '2016'
+  manufacturer_name: J. Janoueix
+  gtin: '3700025027613'
+  country: Frankrike
+  region: Bordeaux
+  sub_region: Côtes de Bordeaux
+  grape_desc:
+  - Merlot
+  - Cabernet Franc
+  - Cabernet Sauvignon
+  grape_pct:
+  - 85%
+  - 12%
+  - 3%
+  sales_price: 348.0
+- sys:
+    id: 6CmW0nXrCIs4zElMiWoOOU
+    created_at: !ruby/object:DateTime 2023-12-01 14:38:33.542000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-04 09:18:43.268000000 Z
+    content_type_id: product
+    revision: 6
+  product_short_name: J. Janoueix Ch. la Gasparde Prestige 2011
+  product_long_name: J. Janoueix Ch. la Gasparde Prestige 2011
+  image:
+    sys:
+      id: 7ttPnfT0FUWGPXPu0cn672
+      created_at: !ruby/object:DateTime 2023-12-01 14:38:48.387000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:38:48.387000000 Z
+    title: J. Janoueix Ch. la Gasparde Prestige 2011
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/7ttPnfT0FUWGPXPu0cn672/aa6673d1537c30aae340355476c46960/NoW-20231129-024.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 13.5
+  vintage: '2011'
+  country: Bordeaux
+  region: Côtes de Bordeaux
+  grape_desc:
+  - Merlot
+  - Cabernet Franc
+  - Cabernet Savignon
+  sales_price: 268.0
+- sys:
+    id: 5BwUPTBl0RVtp23JO7vwSW
+    created_at: !ruby/object:DateTime 2023-01-17 17:32:19.742000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:35:26.960000000 Z
+    content_type_id: product
+    revision: 7
+  product_short_name: Jean Durup Père & Fils Chablis Premier Cru L Homme Mort 2022
+  product_long_name: Jean Durup Père & Fils Chablis Premier Cru L Homme Mort 2022
+  image:
+    sys:
+      id: IZ3CnTPQhZb2lCFoyxaNE
+      created_at: !ruby/object:DateTime 2023-12-01 14:34:49.282000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:34:49.282000000 Z
+    title: Jean Durup Père & Fils Chablis Premier Cru L Homme Mort 2022
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/IZ3CnTPQhZb2lCFoyxaNE/cae4dc177195b0d15b4fd71652404c54/NoW-20231129-006.jpg"
+  product_id: '13328701'
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.5
+  vintage: '2020'
+  manufacturer_name: 'Jean Durup Père & Fils '
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 487.0
+  description: Mineralitet. Grillet/stekt fisk
+- sys:
+    id: 7EXQgnIFRUieHaiidDi4RF
+    created_at: !ruby/object:DateTime 2023-10-16 00:11:01.043000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:33:17.928000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Jean Durup Chablis Marche du Roi
+  product_long_name: Jean Durup Chablis Marche du Roi
+  image:
+    sys:
+      id: 2KrRG5Qg5gxojv419LLJdl
+      created_at: !ruby/object:DateTime 2023-12-01 14:33:05.257000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:33:05.257000000 Z
+    title: Jean Durup Chablis Marche du Roi
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2KrRG5Qg5gxojv419LLJdl/39ff7f7d6c84d5d784513f59b273c410/NoW-20231129-004.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 359.0
+  description: God fruktighet, ikke for strukturert, aperitif og kokt sjømat
+- sys:
+    id: 3QksAMTz2vbB2zqeFZqwna
+    created_at: !ruby/object:DateTime 2023-10-16 00:07:54.980000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:32:22.620000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Jean Durup Chablis Premier Cru Vau de Vei
+  product_long_name: Jean Durup Chablis Premier Cru Vau de Vei
+  image:
+    sys:
+      id: 1lx4NAIWRKpLPC8vPnSBgH
+      created_at: !ruby/object:DateTime 2023-12-01 14:31:56.475000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:31:56.475000000 Z
+    title: Jean Durup Chablis Premier Cru Vau de Vei
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/1lx4NAIWRKpLPC8vPnSBgH/847e59b77fa74b9dadfe732f5fa1ae8a/NoW-20231129-005.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 473.0
+  description: Syre og sitrus, Østers og skalldyr
+- sys:
+    id: 6mt8C6b5siZPwsONhg0EJm
+    created_at: !ruby/object:DateTime 2023-10-16 00:09:36.265000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:31:11.921000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: 'Jean Durup Chablis Vigne de la Reine '
+  product_long_name: 'Jean Durup Chablis Vigne de la Reine '
+  image:
+    sys:
+      id: 4tQ6bmRzADQAHAbbN3Vlti
+      created_at: !ruby/object:DateTime 2023-12-01 14:30:53.863000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:30:53.863000000 Z
+    title: 'Jean Durup Chablis Vigne de la Reine '
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/4tQ6bmRzADQAHAbbN3Vlti/51a981530402080f93ea17cb036799b6/NoW-20231129-007.jpg"
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 359.0
+  description: Høy syre, ikke aperitiff, til sjømat
+- sys:
+    id: 2baRo7HURVs2GrXuqCZNVW
+    created_at: !ruby/object:DateTime 2023-10-16 00:03:32.031000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:30:04.313000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Jean Durup Chablis Premier Cru Montee Tonnerre
+  product_long_name: Jean Durup Chablis Premier Cru Montee Tonnerre
+  image:
+    sys:
+      id: 6yg0GyYejBDkqSAU1L3GWf
+      created_at: !ruby/object:DateTime 2023-12-01 14:29:45.138000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:29:45.138000000 Z
+    title: Jean Durup Chablis Premier Cru Montee Tonnerre
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/6yg0GyYejBDkqSAU1L3GWf/43b10615a185b05fd1c814cc7c46d661/NoW-20231129-003.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 473.0
+  description: Syre++, struktur, mineralitet. Ikke aperitiff
+- sys:
+    id: 6MVEju5b19VrFUbRavYQBt
+    created_at: !ruby/object:DateTime 2023-10-16 00:01:14.594000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:28:50.464000000 Z
+    content_type_id: product
+    revision: 6
+  product_short_name: Jean Durup Chablis Vieilles Vignes Centenaires 1920
+  product_long_name: Jean Durup Chablis Vieilles Vignes Centenaires 1920
+  image:
+    sys:
+      id: 4HFNrwDoQvNBkgb2FILRB3
+      created_at: !ruby/object:DateTime 2023-12-01 14:28:29.096000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:28:29.096000000 Z
+    title: Jean Durup Chablis Vieilles Vignes Centenaires 1920
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/4HFNrwDoQvNBkgb2FILRB3/1e249234b4096720b348d1c122afd19d/NoW-20231129-011.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 922.0
+  description: Druestokker fra 1920
+- sys:
+    id: 6pmjy6dexs9brvSggmm2EI
+    created_at: !ruby/object:DateTime 2023-12-01 14:26:58.516000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:27:43.140000000 Z
     content_type_id: product
     revision: 2
-  product_short_name: 'FEUERLAY Riesling '
-  product_long_name: Matthias Müller Bopparder Hamm FEUERLAY Riesling Trocken 2017
+  product_short_name: Jean Durup Chablis Vieilles Vignes 2022
+  product_long_name: Jean Durup Chablis Vieilles Vignes
+  image:
+    sys:
+      id: zOjCIEAhZmOVQ0SaEWs0g
+      created_at: !ruby/object:DateTime 2023-12-01 14:27:23.697000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:27:23.697000000 Z
+    title: Jean Durup Chablis Vieilles Vignes
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/zOjCIEAhZmOVQ0SaEWs0g/1fd167ff4dd7da1102547f941232104b/NoW-20231129-009.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 372.0
+- sys:
+    id: QIZTibsnTPpioyQkisIAk
+    created_at: !ruby/object:DateTime 2023-10-16 00:16:12.664000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:23:17.813000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Casa de Vila Nova Alvarinho
+  product_long_name: Casa de Vila Nova Alvarinho
+  image:
+    sys:
+      id: 2vDmsPDX7aNHVEWSRv5gCy
+      created_at: !ruby/object:DateTime 2023-12-01 14:23:02.999000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:23:02.999000000 Z
+    title: Casa de Vila Nova Alvarinho
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2vDmsPDX7aNHVEWSRv5gCy/ee0b27292df2a147cf81ba8624657835/NoW-20231129-013.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Casa de Vila Nova
+  country: Portugal
+  grape_desc:
+  - Alvarinho
+  grape_pct:
+  - 100%
+  sales_price: 205.0
+- sys:
+    id: 7v1qmzOKaFH6HaGvfePR0Z
+    created_at: !ruby/object:DateTime 2023-01-17 17:35:43.246000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:21:29.501000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: 'Jean Durup Père & Fils Chablis '
+  product_long_name: Jean Durup Père & Fils Chablis
+  image:
+    sys:
+      id: 4QYcklgQRsKX6qVpYw2dMP
+      created_at: !ruby/object:DateTime 2023-12-01 14:21:03.571000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:21:03.571000000 Z
+    title: 'Jean Durup Père & Fils Chablis '
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/4QYcklgQRsKX6qVpYw2dMP/b735861c2c854ab2565026ed3d12ce5a/NoW-20231129-008.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Jean Durup
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 345.0
+- sys:
+    id: 5Mi6f5ybH61lylWGKGmZ5B
+    created_at: !ruby/object:DateTime 2023-11-30 11:46:49.587000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:16:49.781000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Laura Weber Frühlingsplätzchen Spätburgunder -R-
+  product_long_name: Laura Weber Frühlingsplätzchen Spätburgunder -R-
+  image:
+    sys:
+      id: nDtV3vj4qlIrwuW47qjtR
+      created_at: !ruby/object:DateTime 2023-12-01 14:16:31.593000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:16:31.593000000 Z
+    title: Laura Weber Frühlingsplätzchen Spätburgunder -R-
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/nDtV3vj4qlIrwuW47qjtR/3a1725428c833c5e5d3da1f837f220e7/NoW-20231129-019.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 13.0
+  country: Tyskland
+  region: Nahe
+  grape_desc:
+  - Pinot Noire
+  grape_pct:
+  - 100%
+  sales_price: 412.0
+- sys:
+    id: 7jaV3IWgcdYGEng3LGUoiF
+    created_at: !ruby/object:DateTime 2023-11-30 11:43:31.145000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:09:00.210000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Laura Weber HALENBERG Riesling -trocken "Edition L"
+  product_long_name: Laura Weber HALENBERG Riesling -trocken "Edition L"
+  image:
+    sys:
+      id: 2AhmxPuxBCH1dgMRta5W0z
+      created_at: !ruby/object:DateTime 2023-12-01 14:05:28.529000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:05:28.529000000 Z
+    title: Laura Weber Riesling vom Grünschiefer trocken
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2AhmxPuxBCH1dgMRta5W0z/3de6349f0e620d5d2896b3775f0ec354/NoW-20231129-021.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 13.0
+  country: Tyskland
+  region: Nahe
+  grape_desc:
+  - Riesling
+  grape_pct:
+  - 100%
+  sales_price: 385.0
+- sys:
+    id: 6ekAvDCjfFYCGCafZo0cJz
+    created_at: !ruby/object:DateTime 2023-11-30 11:41:26.805000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:05:51.286000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Laura Weber Riesling vom Grünschiefer trocken
+  product_long_name: Laura Weber Riesling vom Grünschiefer trocken
+  image:
+    sys:
+      id: 2AhmxPuxBCH1dgMRta5W0z
+      created_at: !ruby/object:DateTime 2023-12-01 14:05:28.529000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:05:28.529000000 Z
+    title: Laura Weber Riesling vom Grünschiefer trocken
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2AhmxPuxBCH1dgMRta5W0z/3de6349f0e620d5d2896b3775f0ec354/NoW-20231129-021.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 13.0
+  manufacturer_name: Laura Weber Riesling vom Grünschiefer trocken
+  country: Tyskland
+  region: Nahe
+  grape_desc:
+  - Riesling
+  grape_pct:
+  - 100%
+  sales_price: 250.0
+- sys:
+    id: 1uJgwLDkrWu045nyQ8oi7Q
+    created_at: !ruby/object:DateTime 2023-11-30 11:38:44.053000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:04:40.522000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Laura Weber Riesling Trocken
+  product_long_name: Laura Weber Riesling Trocken
+  image:
+    sys:
+      id: 6iehDPi3JkPJgoysW9PGPo
+      created_at: !ruby/object:DateTime 2023-12-01 14:04:16.552000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:04:16.552000000 Z
+    title: Laura Weber Riesling Trocken
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/6iehDPi3JkPJgoysW9PGPo/3790d8bf9503635e46f33516a0c6405b/NoW-20231129-022.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 13.0
+  manufacturer_name: Laura Weber Riesling Trocken
+  country: Tyskland
+  region: Nahe
+  grape_desc:
+  - Riesling
+  grape_pct:
+  - 100%
+  sales_price: 225.0
+- sys:
+    id: 6NmoZc7Sy6NbUx3vVh3qP7
+    created_at: !ruby/object:DateTime 2023-11-30 11:45:05.675000000 Z
+    updated_at: !ruby/object:DateTime 2023-12-01 14:02:51.858000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Laura Weber Chardonnay No. 5
+  product_long_name: Laura Weber Chardonnay No. 5
+  image:
+    sys:
+      id: tesK1DW3rjz0XOMQGp4l2
+      created_at: !ruby/object:DateTime 2023-12-01 14:02:23.627000000 Z
+      updated_at: !ruby/object:DateTime 2023-12-01 14:02:23.627000000 Z
+    title: Laura Weber Chardonnay No. 5
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/tesK1DW3rjz0XOMQGp4l2/87da43f95b23f36b1ec2662dfdb951f0/NoW-20231129-023.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 13.0
+  country: Tyskland
+  region: Nahe
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 330.0
+- sys:
+    id: 67ZkrUPQ2t7klPKauOMPhK
+    created_at: !ruby/object:DateTime 2023-10-16 00:05:17.968000000 Z
+    updated_at: !ruby/object:DateTime 2023-11-30 11:28:22.229000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: Jean Durup Chablis Carre de Cesar
+  product_long_name: Jean Durup Chablis Carre de Cesar
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: 'Jean Durup '
+  country: Frankrike
+  region: Chablis
+  sales_price: 359.0
+  description: Perfekt til østers
+- sys:
+    id: 1zS1B8E7hJzgUuDpwMc6Bs
+    created_at: !ruby/object:DateTime 2023-01-19 12:13:04.136000000 Z
+    updated_at: !ruby/object:DateTime 2023-10-16 02:14:43.743000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Åge Aleksandersen
+  product_long_name: Åge Aleksandersen, Valtravieso
+  image:
+    sys:
+      id: 4OpzwTo2SSJf5lcju8Yc6I
+      created_at: !ruby/object:DateTime 2023-01-16 08:30:16.773000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-16 08:30:16.773000000 Z
+    title: Åge Aleksandersen
+    description: |-
+      Spania, Ribero del Duero
+
+      Tempranillo 90%,Cabernet Sauvignon 10%
+
+      I tilleggsutvalget på Vinmonopolet - 378 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/4OpzwTo2SSJf5lcju8Yc6I/156bb8a5ed0a0d97a8c95b3e51fd5a6f/DSC01992.jpg"
+  product_id: '15085201'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2018'
+  manufacturer_name: Valtravieso
+  gtin: '8437002719159'
+  country: Spania
+  region: Castilla y Leon
+  sub_region: 'Ribero del Duero '
+  grape_desc:
+  - Tempranillo
+  - Cabernet Savignon
+  grape_pct:
+  - 90%
+  - 10%
+  sales_price: 342.0
+- sys:
+    id: 5ZtYVO9iKtZ3XqBXOp5tgt
+    created_at: !ruby/object:DateTime 2023-10-16 00:23:55.200000000 Z
+    updated_at: !ruby/object:DateTime 2023-10-16 00:24:14.159000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: Ch. Haut-Sarpe 2011
+  product_long_name: J. Janoueix Ch. Haut-Sarpe Saint Emilion Grand Cru
+  image:
+    sys:
+      id: 4CdenZ3s23PimbAhDS7I72
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.597000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:36:34.249000000 Z
+    title: J. Janoueix Ch. Haut-Sarpe 2015
+    description: |-
+      Frankrike, Bordeaux, Saint-Emilion
+
+      Merlot 70%, Cabernet Sauvignon 30%
+
+      I bestillingsutvalget på Vinmonopolet - 778 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/4CdenZ3s23PimbAhDS7I72/ba1a3976d5ad7e798ca756a6f817a887/12356101.jpg"
+  product_id: '12356101'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2011'
+  manufacturer_name: 'J. Janoueix '
+  country: Frankrike
+  region: Bordeaux
+  sub_region: Saint-Emilion
+  grape_desc:
+  - Merlot
+  - Cabernet Franc
+  grape_pct:
+  - 70%
+  - 30%
+  sales_price: 778.0
+- sys:
+    id: BCXDGiYR7xsrjujWTeyJp
+    created_at: !ruby/object:DateTime 2023-01-19 09:56:27.859000000 Z
+    updated_at: !ruby/object:DateTime 2023-10-16 00:23:30.584000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Ch. Haut-Sarpe 2015
+  product_long_name: J. Janoueix Ch. Haut-Sarpe Saint Emilion Grand Cru
+  image:
+    sys:
+      id: 4CdenZ3s23PimbAhDS7I72
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.597000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:36:34.249000000 Z
+    title: J. Janoueix Ch. Haut-Sarpe 2015
+    description: |-
+      Frankrike, Bordeaux, Saint-Emilion
+
+      Merlot 70%, Cabernet Sauvignon 30%
+
+      I bestillingsutvalget på Vinmonopolet - 778 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/4CdenZ3s23PimbAhDS7I72/ba1a3976d5ad7e798ca756a6f817a887/12356101.jpg"
+  product_id: '12356101'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2105'
+  manufacturer_name: 'J. Janoueix '
+  country: Frankrike
+  region: Bordeaux
+  sub_region: Saint-Emilion
+  grape_desc:
+  - Merlot
+  - Cabernet Franc
+  grape_pct:
+  - 70%
+  - 30%
+  sales_price: 778.0
+- sys:
+    id: 22xETrwPYBnpgvCipOe91j
+    created_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-16 12:53:50.945000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+  product_long_name: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+  image:
+    sys:
+      id: xnuMavZPzIlHZs7g6W8JX
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.629000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:31:49.668000000 Z
+    title: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
+    description: |-
+      Frankrike, Chablis
+
+      Chardonnay 100%
+
+      I bestillingsutvalget på Vinmonopolet - 615 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/xnuMavZPzIlHZs7g6W8JX/4e4b8655b3f26818706b1954bda755d1/13328601.jpg"
+  product_id: '13328601'
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.5
+  manufacturer_name: Jean Durup Père & Fils
+  country: Frankrike
+  region: Chablis
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 615.0
+- sys:
+    id: 2gkUoMHmKHN5TnPZJskt1M
+    created_at: !ruby/object:DateTime 2023-01-17 15:44:03.969000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-16 12:52:07.619000000 Z
+    content_type_id: product
+    revision: 6
+  product_short_name: Laurent-Gabriel l'Affranchie Blanc de Blancs Premier Cru Millesime
+    2012
+  product_long_name: Laurent-Gabriel l'Affranchie Blanc de Blancs Premier Cru Millesime
+  image:
+    sys:
+      id: 5AeChVMOrbUO1a7FmyhNoF
+      created_at: !ruby/object:DateTime 2023-02-02 09:59:26.530000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:59:26.530000000 Z
+    title: Laurent-Gabriel l'Affranchie Blanc de Blancs Premier Cru Millesime 2012
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/5AeChVMOrbUO1a7FmyhNoF/1feb05ea2773e279cc354c8c4f036c82/DSC_0060.jpeg"
+  product_type_name: Musserende vin
+  volume: 75
+  alcohol_content: 12.5
+  vintage: '2012'
+  manufacturer_name: Laurent-Gabriel
+  country: Frankrike
+  region: Champagne
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 1496.0
+- sys:
+    id: 2WXFfjSO1ZYRdjM71gH3Vx
+    created_at: !ruby/object:DateTime 2023-01-19 11:13:50.607000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-16 12:49:41.639000000 Z
+    content_type_id: product
+    revision: 6
+  product_short_name: Aresca Barbera magnum
+  product_long_name: 'Aresca Piemonte DOC Barbera Magnum '
+  image:
+    sys:
+      id: 4mZaUc7qMB5YMNDOlzjrEl
+      created_at: !ruby/object:DateTime 2023-02-02 09:56:03.742000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:56:03.742000000 Z
+    title: Aresca Piemonte DOC Barbera Magnum 2021
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/4mZaUc7qMB5YMNDOlzjrEl/cb2abe1ed9411f2ac28d21c40200f37a/DSC_0073.jpeg"
+  product_type_name: Rødvin
+  volume: 150
+  alcohol_content: 125.0
+  manufacturer_name: Aresca
+  country: Italia
+  region: Piemonte
+  grape_desc:
+  - Barbera
+  grape_pct:
+  - 100%
+  sales_price: 299.0
+- sys:
+    id: 34NHCVYKFsbNUxrnaUAunV
+    created_at: !ruby/object:DateTime 2023-01-19 10:52:40.232000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-13 11:35:35.013000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Saint Joseph Rouge
+  product_long_name: Les 7 Pierres AOP Saint Joseph Rouge
+  image:
+    sys:
+      id: 44em2HBXCWs5XNgjJxBSsK
+      created_at: !ruby/object:DateTime 2023-03-13 11:35:14.193000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:35:14.193000000 Z
+    title: les 7 pierres Saint Joseph Rouge
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/44em2HBXCWs5XNgjJxBSsK/00dd0fe85cab98c9b92ebb09840e0a17/DSC_0087.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2019'
+  manufacturer_name: 'Les 7 Pierres '
+  country: Frankrike
+  region: Rhône
+  sub_region: Saint Joseph
+  grape_desc:
+  - Syrha
+  grape_pct:
+  - 100%
+  sales_price: 380.0
+- sys:
+    id: 50YsHgTbN41PpeYsx2Isfa
+    created_at: !ruby/object:DateTime 2023-01-19 10:50:26.119000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-13 11:33:51.775000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Les 7 Pierres Côtes du Rhône
+  product_long_name: Les 7 Pierres AOP Côtes du Rhône Villages
+  image:
+    sys:
+      id: 70VqGar9kr174Xso4ENo1U
+      created_at: !ruby/object:DateTime 2023-03-13 11:32:53.417000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:32:53.417000000 Z
+    title: Les 7 Pierres Côtes du Rhône
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/70VqGar9kr174Xso4ENo1U/86ce251488f7c6d34a44ddb14d5df407/DSC_0086.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2020'
+  manufacturer_name: Les 7 Pierres
+  country: Frankrike
+  region: Rhône
+  grape_desc:
+  - Granache
+  - Syrha
+  sales_price: 269.0
+- sys:
+    id: zetXvNHxPBJdr2BuzCzEI
+    created_at: !ruby/object:DateTime 2023-02-23 11:11:44.406000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-13 11:27:32.850000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: NORWAY SEAFOOD FESTIVAL Riesling
+  product_long_name: Matthias Müller Rheinschiefer Trocken 2017
+  image:
+    sys:
+      id: 2LbXz6a3ru3BY7fesCc2JI
+      created_at: !ruby/object:DateTime 2023-03-13 11:24:55.740000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:24:55.740000000 Z
+    title: NORWAY SEAFOOD FESTIVAL rød
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2LbXz6a3ru3BY7fesCc2JI/384401d001266185aeb9bbb0c1acd5de/DSC_0081.jpg"
   product_type_name: Hvitvin
   volume: 75
   alcohol_content: 12.5
   vintage: '2017'
+  manufacturer_name: Matthias Müller
   country: Tyskland
   region: Mittelrhein
-  sales_price: 190.0
+  grape_desc:
+  - Riesling
+  grape_pct:
+  - 100%
+  sales_price: 208.0
 - sys:
-    id: 4DVJo0iT9HxF9aqyZKBPRR
-    created_at: !ruby/object:DateTime 2023-01-19 09:05:03.728000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:27:08.207000000 Z
+    id: 2876ArVCBM9p0J8sKNTtun
+    created_at: !ruby/object:DateTime 2023-01-19 11:35:30.913000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-13 11:20:11.894000000 Z
     content_type_id: product
-    revision: 2
-  product_short_name: KIESELGALLENSCHIEFER
-  product_long_name: Matthias Müller Bopparder Hamm VOM KIESELGALLENSCHIEFER Riesling
-    Trocken 2021
+    revision: 5
+  product_short_name: Amarone Classico
+  product_long_name: Benedetti Amarone Classico
+  image:
+    sys:
+      id: 6W7voyOMjIBNfVlepDfZYK
+      created_at: !ruby/object:DateTime 2023-03-13 11:19:41.728000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-13 11:19:41.728000000 Z
+    title: Amarone Classico
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/6W7voyOMjIBNfVlepDfZYK/21c36c09f92e4266ab5bdd17ef774ff2/DSC_0078.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  manufacturer_name: 'Benedetti '
+  country: Italia
+  region: Veneto
+  grape_desc:
+  - Corvina
+  - Rondinella
+  sales_price: 650.0
+- sys:
+    id: 3Cfa3Y4IsVEb1Itw8n1DAU
+    created_at: !ruby/object:DateTime 2023-01-19 11:58:30.803000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:37:10.247000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Stocco Le Pianure Pinot Nero
+  product_long_name: Stocco Le Pianure Pinot Nero
+  image:
+    sys:
+      id: yiz41hGKlMQZUWLfDz0vC
+      created_at: !ruby/object:DateTime 2023-01-17 15:23:11.832000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 12:33:35.627000000 Z
+    title: Stocco Le Pianure Pinot Nero
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/yiz41hGKlMQZUWLfDz0vC/32b7f3014c97635defe1199de2f62a03/DSC02005.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 12.0
+  manufacturer_name: Soc. agr. Stocco
+  country: " Italia"
+  region: " Friuli"
+  grape_desc:
+  - Pinot Nero
+  grape_pct:
+  - 100%
+  sales_price: 170.0
+- sys:
+    id: VWOwIdSNqkyxlxd9N6Wnx
+    created_at: !ruby/object:DateTime 2023-01-19 09:27:36.548000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:32:24.102000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Stocco Le Pianure Sauvignon
+  product_long_name: Stocco Le Pianure Sauvignon
+  image:
+    sys:
+      id: 7gRxrdWtSGP2G5aB8Davtj
+      created_at: !ruby/object:DateTime 2023-01-16 09:05:27.300000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 12:30:31.497000000 Z
+    title: Stocco Le Pianure Sauvignon
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/7gRxrdWtSGP2G5aB8Davtj/4889be01e57717479909937977291572/DSC02009.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.0
+  manufacturer_name: Soc. agr. Stocco
+  country: Italia
+  region: Fruili
+  grape_desc:
+  - Sauvignon
+  grape_pct:
+  - 100%
+  sales_price: 170.0
+- sys:
+    id: 523lH6mfzqrAkcPf6mrXzV
+    created_at: !ruby/object:DateTime 2023-01-19 09:30:13.753000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:31:44.839000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: Stocco Le Pianure Pinor Grigio
+  product_long_name: Stocco Le Pianure Pinor Grigio
+  image:
+    sys:
+      id: 15VzJQF12kVbZ9uP1flFb4
+      created_at: !ruby/object:DateTime 2023-01-17 15:18:58.760000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 12:26:27.971000000 Z
+    title: Stocco Le Pianure Pinot Grigio
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/15VzJQF12kVbZ9uP1flFb4/9697f4dbefb1079c2953decc62c1631b/DSC02006.jpg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.0
+  manufacturer_name: Soc. agr. Stocco
+  country: Italia
+  region: Friuli
+  grape_desc:
+  - Pinor Grigio
+  grape_pct:
+  - 100%
+- sys:
+    id: 2ixhwxsjDESByYcwhy5KAP
+    created_at: !ruby/object:DateTime 2023-01-19 09:24:37.778000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:31:27.288000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Stocco Le Pianure Chardonnnay
+  product_long_name: " Stocco Le Pianure Chardonnnay"
+  image:
+    sys:
+      id: 2T6NwK5VgNvvzlLAd4C6Uy
+      created_at: !ruby/object:DateTime 2023-01-17 15:22:23.542000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 12:31:05.180000000 Z
+    title: Stocco Le Pianure Chardonnay
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2T6NwK5VgNvvzlLAd4C6Uy/1d9ba7b9e0b7efb2bfbad7afa6c6050a/DSC02008.jpg"
   product_type_name: Hvitvin
   volume: 75
   alcohol_content: 12.5
-  vintage: '2021'
-  country: Tyskland
-  region: Mittelrhein
-  sales_price: 260.0
+  manufacturer_name: Soc. agr.  Stocco
+  country: Italia
+  region: Friulie
+  grape_desc:
+  - Chardonnay
+  grape_pct:
+  - 100%
+  sales_price: 170.0
+- sys:
+    id: 2hUi2a5HizMk5UnXyUTynw
+    created_at: !ruby/object:DateTime 2023-01-17 15:57:21.851000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:24:02.637000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: 'Soligo Allungo Frizzante '
+  product_long_name: Soligo Allungo Frizzante (skrukork)
+  image:
+    sys:
+      id: 2JGKG12tQ9HvC32YdQFGIN
+      created_at: !ruby/object:DateTime 2023-01-16 08:50:18.051000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-16 08:50:18.051000000 Z
+    title: Soligo Allungo Frizzante (skrukork)
+    description: Italia, Veneto, Treviso
+    url: "//images.ctfassets.net/58mi2hzmh573/2JGKG12tQ9HvC32YdQFGIN/60dc5d6d3ec7a70cd1dfe6b57bad704d/DSC01996.jpg"
+  product_type_name: Musserende vin
+  volume: 75
+  alcohol_content: 12.0
+  manufacturer_name: Cantina di Soligo
+  country: Italia
+  region: Veneto
+  sub_region: Treviso
+  sales_price: 149.0
 - sys:
     id: 5iGcQNEW0F5mAEl9Ad7jF0
     created_at: !ruby/object:DateTime 2023-01-17 17:28:21.564000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:26:32.459000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:18:24.042000000 Z
     content_type_id: product
-    revision: 3
-  product_short_name: Prosecco Valdobbiadene
+    revision: 4
+  product_short_name: Prosecco Valdobbiadene magnum
   product_long_name: Soligo Col de Mez Prosecco Valdobbiadene DOCG magnum
   image:
     sys:
@@ -274,33 +1397,367 @@ product:
   product_type_name: Musserende vin
   volume: 150
   alcohol_content: 12.0
+  manufacturer_name: Cantina di Soligo
   country: Italia
   region: Veneto
   sub_region: Valdobbiadene
   sales_price: 400.0
 - sys:
-    id: 52cj7SvomTAQbryQAiAiuy
-    created_at: !ruby/object:DateTime 2023-01-17 16:03:08.206000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:25:43.329000000 Z
+    id: vtwRcUSMoY4QKJTHX9FyF
+    created_at: !ruby/object:DateTime 2023-01-19 08:56:57.522000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:12:54.740000000 Z
     content_type_id: product
-    revision: 2
-  product_short_name: 'Soligo Prosecco '
-  product_long_name: Soligo Prosecco Treviso DOC Frizzante (skrukork)
+    revision: 4
+  product_short_name: 'Matthias Müller  Grauer Burgunder '
+  product_long_name: Matthias Müller Bopparder Hamm Grauer Burgunder Trocken 2017
   image:
     sys:
-      id: 3MlrI5woMS71OAh8q7VrmV
-      created_at: !ruby/object:DateTime 2023-01-17 15:20:16.372000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:20:16.372000000 Z
-    title: Soligo Prosecco Treviso DOC Frizzante (skrukork)
+      id: 201aTCnMeicKOzX706mjF6
+      created_at: !ruby/object:DateTime 2023-02-02 10:07:44.586000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 10:07:44.586000000 Z
+    title: Matthias Müller Bopparder Hamm Weisser Burgunder Trocken
     description:
-    url: "//images.ctfassets.net/58mi2hzmh573/3MlrI5woMS71OAh8q7VrmV/f1044b62c92d1b7ce4a5ef468a13f953/DSC02014.jpg"
-  product_type_name: Musserende vin
+    url: "//images.ctfassets.net/58mi2hzmh573/201aTCnMeicKOzX706mjF6/d6f29526b25a59731cd7392e3b5e2fec/DSC_0052.jpeg"
+  product_type_name: Hvitvin
   volume: 75
-  alcohol_content: 11.0
+  alcohol_content: 12.5
+  vintage: '2017'
+  manufacturer_name: 'Matthias Müller '
+  country: Tyskland
+  region: Mittelrhein
+  sales_price: 215.0
+- sys:
+    id: 52epssqs7Lygn2lEMnfy8B
+    created_at: !ruby/object:DateTime 2023-01-19 09:02:41.337000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:10:42.955000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: Matthias Müller FEUERLAY Riesling Trocken 2017
+  product_long_name: Matthias Müller Bopparder Hamm FEUERLAY Riesling Trocken 2017
+  image:
+    sys:
+      id: 3nngzDJWxbTqqUQv5ukFHN
+      created_at: !ruby/object:DateTime 2023-02-02 09:57:40.168000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-03 10:58:34.723000000 Z
+    title: Matthias Müller Bopparder Hamm FEUERLAY Riesling Trocken 2017
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/3nngzDJWxbTqqUQv5ukFHN/5dd94443497d6113a3c777b4d175cd79/DSC_0062.jpeg"
+  product_type_name: Hvitvin
+  volume: 75
+  alcohol_content: 12.5
+  vintage: '2017'
+  manufacturer_name: 'Matthias Müller '
+  country: Tyskland
+  region: Mittelrhein
+  sales_price: 190.0
+- sys:
+    id: f68GdCOhzjl7X0olRjRpf
+    created_at: !ruby/object:DateTime 2023-01-19 11:17:21.762000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 12:01:05.342000000 Z
+    content_type_id: product
+    revision: 5
+  product_short_name: 'Cappone Chianti Classico '
+  product_long_name: 'Cappone Chianti Classico DOCG '
+  image:
+    sys:
+      id: 5AWWEfM8bRX402X6Escv35
+      created_at: !ruby/object:DateTime 2023-02-02 09:52:56.734000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-10 10:06:24.670000000 Z
+    title: 'Capponi Chianti Classico DOCG '
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/5AWWEfM8bRX402X6Escv35/f86ee899b82bb0db9867a1ea44bb3806/DSC_0065.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2020'
+  manufacturer_name: Villa Calcinaia
+  country: " Italia"
+  region: " Toscana"
+  sub_region: " Chianti Classico"
+  grape_desc:
+  - Sangiovese
+  grape_pct:
+  - 100%
+  sales_price: 265.0
+- sys:
+    id: 2diL0wLWxc3sd8j5A6rxqu
+    created_at: !ruby/object:DateTime 2023-01-19 11:29:37.265000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 11:59:09.955000000 Z
+    content_type_id: product
+    revision: 8
+  product_short_name: Brunello di Montalcino “Le Tracce” 2017
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  image:
+    sys:
+      id: 65HTosagttCEfpEguVcakY
+      created_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
+    title: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/65HTosagttCEfpEguVcakY/0900946d59cf8a6a88293ee0c7a671e8/DSC_0063.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2017'
+  manufacturer_name: Podere Giardino
   country: Italia
-  region: Veneto
-  sub_region: Treviso
-  sales_price: 149.0
+  region: Toscana
+  sub_region: 'Montalcino '
+  grape_desc:
+  - Sangiovese grosso
+  grape_pct:
+  - 100%
+  sales_price: 720.0
+- sys:
+    id: 5lfnpRg9l4NiBjX9m1GW5E
+    created_at: !ruby/object:DateTime 2023-01-19 11:32:51.030000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 11:58:31.758000000 Z
+    content_type_id: product
+    revision: 7
+  product_short_name: Brunello di Montalcino  “Le Tracce” 2016
+  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+  image:
+    sys:
+      id: 65HTosagttCEfpEguVcakY
+      created_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
+    title: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/65HTosagttCEfpEguVcakY/0900946d59cf8a6a88293ee0c7a671e8/DSC_0063.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2016'
+  manufacturer_name: Podere Giardino
+  country: Italia
+  region: " Toscana"
+  sub_region: " Montalcino  "
+  grape_desc:
+  - Sangiovese grosso
+  grape_pct:
+  - 100%
+  sales_price: 750.0
+- sys:
+    id: 4TQuU7J50clezID9chqeBP
+    created_at: !ruby/object:DateTime 2023-01-19 09:43:17.159000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 11:57:24.138000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: Château Haute Terrasse
+  product_long_name: 'Château Haute Terrasse AOC Castillon Cotes de Bordeaux '
+  image:
+    sys:
+      id: 6eh2KLskTeVBA0iWP4DKcG
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.688000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:11:12.572000000 Z
+    title: Château Haute Terrasse
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/6eh2KLskTeVBA0iWP4DKcG/da1f45d35a8698002b7f44b93a4126cb/7000.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2017'
+  manufacturer_name: Château Haute Terrasse
+  country: Frankrike
+  region: Bordeaux
+  sub_region: Côtes de Bordeaux
+  grape_desc:
+  - Merlot
+  - Cabernet Sauvignon
+  - Cabernet Franc
+  grape_pct:
+  - 58%
+  - 30%
+  - 12%
+  sales_price: 273.0
+- sys:
+    id: 2G6hk7g2ZuJCNC2sSlcjQ0
+    created_at: !ruby/object:DateTime 2023-01-19 11:23:25.137000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 13:14:33.350000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Chianti Classico Riserva
+  product_long_name: 'Villa Calcinaia Chianti Classico Riserva DOCG '
+  image:
+    sys:
+      id: 2x4mhevVeHNmFfHHNHMESF
+      created_at: !ruby/object:DateTime 2023-02-02 09:49:57.253000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 09:52:25.790000000 Z
+    title: Villa Calcinaia Chianti Classico Riserva DOCG 2018
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/2x4mhevVeHNmFfHHNHMESF/d77f64aa37fe1be7e0ea272bd56f7adf/DSC_0066.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.5
+  vintage: '2018'
+  manufacturer_name: Villa Calcinaia
+  country: Italia
+  region: Toscana
+  sub_region: Chianti Classico
+  grape_desc:
+  - Sangiovese
+  grape_pct:
+  - 100%
+  sales_price: 440.0
+- sys:
+    id: 5qVm9NGBWhcuKsAfJOVvrt
+    created_at: !ruby/object:DateTime 2023-01-15 15:25:48.962000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 13:13:27.817000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: BRI 2011
+  product_long_name: 'Celler de l''Era BRI 2011 rouge '
+  image:
+    sys:
+      id: 2TSo2EZUrkgktNS4G4MOID
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
+    title: Celler de l'Era BRI 2011 rouge 2011
+    description: |-
+      Spania, Montsant
+
+      Cabernet Sauvignon, Carignan, Grenache
+
+      I tilleggsutvalget på Vinmonopolet - 278 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
+  product_id: '12382901'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2011'
+  manufacturer_name: Celler de l'Era
+  country: Spania
+  region: Montsant
+  sales_price: 278.0
+- sys:
+    id: 3uSkQOppswaQxtENUsHq4S
+    created_at: !ruby/object:DateTime 2023-01-15 15:29:43.568000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 13:13:02.814000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: 'BRI 2014 '
+  product_long_name: 'Celler de l''Era BRI 2014 rouge '
+  image:
+    sys:
+      id: 2TSo2EZUrkgktNS4G4MOID
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
+    title: Celler de l'Era BRI 2011 rouge 2011
+    description: |-
+      Spania, Montsant
+
+      Cabernet Sauvignon, Carignan, Grenache
+
+      I tilleggsutvalget på Vinmonopolet - 278 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2014'
+  manufacturer_name: 'Celler de l''Era '
+  country: Spania
+  region: Montsant
+  sales_price: 321.0
+- sys:
+    id: 4l4OMhO3iMRxb0mDOBczNh
+    created_at: !ruby/object:DateTime 2023-01-19 09:53:39.836000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 12:49:30.054000000 Z
+    content_type_id: product
+    revision: 2
+  product_short_name: Ch. La Croix-Toulifaut Pomerol
+  product_long_name: 'J. Janoueix Ch. La Croix-Toulifaut Pomerol '
+  image:
+    sys:
+      id: 1HSdCce3QeDEKdi50e7kFZ
+      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.551000000 Z
+      updated_at: !ruby/object:DateTime 2023-01-15 14:46:57.072000000 Z
+    title: J. Janoueix Ch. La Croix-Toulifaut Pomerol 2015
+    description: |-
+      Frankrike, Bordeaux, Pomerol
+
+      Merlot 85%, Cabernet Franc 15%
+
+      I bestillingsutvalget på Vinmonopolet - 750 kr
+    url: "//images.ctfassets.net/58mi2hzmh573/1HSdCce3QeDEKdi50e7kFZ/29f13d2e6ea1cc9e630e24dd0574e447/12356001.jpg"
+  product_id: '12356001'
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  vintage: '2015'
+  manufacturer_name: J. Janoueix
+  gtin: '3700025017812'
+  country: Frankrike
+  region: Bordeaux
+  sub_region: Pomerol
+  grape_desc:
+  - Merlot
+  - Cabernet Franc
+  grape_pct:
+  - 85%
+  - 15%
+  sales_price: 750.0
+- sys:
+    id: 3zhNRHlChGQVKfr6RauVF7
+    created_at: !ruby/object:DateTime 2023-01-19 10:58:26.443000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 12:47:10.259000000 Z
+    content_type_id: product
+    revision: 4
+  product_short_name: Fonsalade Petit Bonheur
+  product_long_name: 'Fonsalade Petit Bonheur Rouge '
+  image:
+    sys:
+      id: 1IUIlE1vI8A5vmKWZmCfsV
+      created_at: !ruby/object:DateTime 2023-02-02 10:07:08.400000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 10:07:08.400000000 Z
+    title: Fonsalade Petit Bonheur Rouge 2020
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/1IUIlE1vI8A5vmKWZmCfsV/6815fae6ee6084e627d18355a45c7b11/DSC_0058.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: 'Fonsalade '
+  country: Frankrike
+  region: Langedoc
+  sub_region: Saint Chinian
+  grape_desc:
+  - Grenache
+  - Syrah
+  - Mourvedre
+  grape_pct:
+  - 60%
+  - 20%
+  - 20%
+  sales_price: 199.0
+- sys:
+    id: 4tcEebgZbDnBXYq5XMWXAy
+    created_at: !ruby/object:DateTime 2023-01-19 11:01:36.162000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-22 09:44:14.002000000 Z
+    content_type_id: product
+    revision: 3
+  product_short_name: 'Fonsalade F '
+  product_long_name: 'Fonsalade F de Fonsalade Rouge '
+  image:
+    sys:
+      id: 1meSmb9HM6KptMH3vuVXmF
+      created_at: !ruby/object:DateTime 2023-02-02 10:01:21.506000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-02 10:01:21.506000000 Z
+    title: Fonsalade F de Fonsalade Rouge 2020
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/1meSmb9HM6KptMH3vuVXmF/f7dd89dc21c5d6a95e962fba53207776/DSC_0053.jpeg"
+  product_type_name: Rødvin
+  volume: 75
+  alcohol_content: 14.0
+  manufacturer_name: Fonsalade
+  country: 'Frankrike '
+  region: Langedoc
+  sub_region: 'Saint Chinian '
+  grape_desc:
+  - Grenache
+  - Syrah
+  grape_pct:
+  - 50%
+  - 50%
+  sales_price: 219.0
 - sys:
     id: 4auDTQ5GvmMBPGnW7S9a96
     created_at: !ruby/object:DateTime 2023-01-19 11:06:45.072000000 Z
@@ -332,230 +1789,6 @@ product:
   grape_pct:
   - 100%
   sales_price: 490.0
-- sys:
-    id: 2WXFfjSO1ZYRdjM71gH3Vx
-    created_at: !ruby/object:DateTime 2023-01-19 11:13:50.607000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:25:02.961000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: 'Barbera '
-  product_long_name: 'Aresca Piemonte DOC Barbera Magnum '
-  image:
-    sys:
-      id: 4mZaUc7qMB5YMNDOlzjrEl
-      created_at: !ruby/object:DateTime 2023-02-02 09:56:03.742000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:56:03.742000000 Z
-    title: Aresca Piemonte DOC Barbera Magnum 2021
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/4mZaUc7qMB5YMNDOlzjrEl/cb2abe1ed9411f2ac28d21c40200f37a/DSC_0073.jpeg"
-  product_type_name: Rødvin
-  volume: 150
-  alcohol_content: 125.0
-  manufacturer_name: Aresca
-  country: Italia
-  region: Piemonte
-  grape_desc:
-  - Barbera
-  grape_pct:
-  - 100%
-  sales_price: 240.0
-- sys:
-    id: 501A4iauHPoMahR3AtS0rv
-    created_at: !ruby/object:DateTime 2023-01-17 17:26:42.794000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:24:39.834000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Prosecco Valdobbiadene
-  product_long_name: Soligo Col de Mez Prosecco Valdobbiadene DOCG
-  image:
-    sys:
-      id: 59ZFpPymrGDqyTe2OyOw5P
-      created_at: !ruby/object:DateTime 2023-01-17 15:24:10.376000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:24:10.376000000 Z
-    title: Soligo Col de Mez Prosecco Valdobbiadene DOCG
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/59ZFpPymrGDqyTe2OyOw5P/2f8331895da7db542dff8139ed4cdcef/DSC02004.jpg"
-  volume: 75
-  alcohol_content: 11.0
-  country: Italia
-  region: Veneto
-  sub_region: Valdobbiadene
-  sales_price: 200.0
-- sys:
-    id: 2diL0wLWxc3sd8j5A6rxqu
-    created_at: !ruby/object:DateTime 2023-01-19 11:29:37.265000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:23:32.432000000 Z
-    content_type_id: product
-    revision: 7
-  product_short_name: Brunello di Montalcino “Le Tracce”
-  product_long_name: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
-  image:
-    sys:
-      id: 65HTosagttCEfpEguVcakY
-      created_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:58:43.971000000 Z
-    title: Podere Giardino Brunello di Montalcino “Le Tracce” DOCG 2016
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/65HTosagttCEfpEguVcakY/0900946d59cf8a6a88293ee0c7a671e8/DSC_0063.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2017'
-  manufacturer_name: Podere Giardino
-  country: Italia
-  region: Toscana
-  sub_region: 'Montalcino '
-  grape_desc:
-  - Sangiovese grosso
-  grape_pct:
-  - 100%
-  sales_price: 720.0
-- sys:
-    id: 2whkDOmm3ZPY1KhDiEdScs
-    created_at: !ruby/object:DateTime 2023-01-17 17:34:11.698000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:23:00.468000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: 'Petit Chablis '
-  product_long_name: 'Jean Durup Père & Fils Petit Chablis '
-  image:
-    sys:
-      id: d9sHxABadz7WSmjB8pQbj
-      created_at: !ruby/object:DateTime 2023-02-02 10:02:43.610000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 10:02:43.610000000 Z
-    title: Jean Durup Père & Fils  Chablis Petite Chablis
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/d9sHxABadz7WSmjB8pQbj/853dd1a600eda86d1ae4c60f6e6b35f8/DSC_0054.jpeg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 14.0
-  manufacturer_name: 'Jean Durup '
-  country: Frankrike
-  region: Chablis
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 285.0
-- sys:
-    id: 18AmGraQnFWTWwUpce31GD
-    created_at: !ruby/object:DateTime 2023-01-19 09:46:58.008000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:22:32.719000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: 'Château Champion '
-  product_long_name: Château Champion ST Emilion GRAND CRU 2015
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2015'
-  manufacturer_name: Château Champion
-  country: Frankrike
-  region: Bordeaux
-  sub_region: Saint-Emilion
-  grape_desc:
-  - Merlot
-  - Cabernet Franc
-  - Cabernet Sauvignon
-  grape_pct:
-  - 75%
-  - 13%
-  - 12%
-  sales_price: 399.0
-- sys:
-    id: 6rcemx0QKUiTmLmk6SVWYq
-    created_at: !ruby/object:DateTime 2023-01-19 12:06:31.324000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:22:02.447000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: 'Celler de l''Era BRI '
-  product_long_name: Celler de l'Era BRI 2014
-  image:
-    sys:
-      id: 2TSo2EZUrkgktNS4G4MOID
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
-    title: Celler de l'Era BRI 2011 rouge 2011
-    description: |-
-      Spania, Montsant
-
-      Cabernet Sauvignon, Carignan, Grenache
-
-      I tilleggsutvalget på Vinmonopolet - 278 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
-  product_id: '12382901'
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2014'
-  manufacturer_name: 'Celler de l''Era '
-  country: Spania
-  region: Catalonia
-  sub_region: Montsant
-  grape_desc:
-  - Syrah
-  - Grenache
-  - Carignan
-  grape_pct:
-  - 12%
-  - 69%
-  - 19%
-  sales_price: 299.0
-- sys:
-    id: 34NHCVYKFsbNUxrnaUAunV
-    created_at: !ruby/object:DateTime 2023-01-19 10:52:40.232000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:21:39.383000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Saint Joseph Rouge
-  product_long_name: Les 7 Pierres AOP Saint Joseph Rouge
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2019'
-  manufacturer_name: 'Les 7 Pierres '
-  country: Frankrike
-  region: Rhône
-  sub_region: Saint Joseph
-  grape_desc:
-  - Syrha
-  grape_pct:
-  - 100%
-  sales_price: 380.0
-- sys:
-    id: 5wKEQ125FUlrn1PJuucZ79
-    created_at: !ruby/object:DateTime 2023-01-19 09:06:52.885000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:21:05.975000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: Bopparder Hamm FEUERLAY
-  product_long_name: Matthias Müller Bopparder Hamm FEUERLAY Riesling Kabinett fruchtsüß
-    2017
-  image:
-    sys:
-      id: 6GV5LiYpoBXC2o5kLH8byq
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.698000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-03 10:59:21.977000000 Z
-    title: Matthias Müller Bopparder Hamm MANDELSTEIN Riesling Spätlese fruchtsüß
-      2021
-    description: |-
-      Tyskland, Mittelrhein,
-
-      Riesling 100%
-    url: "//images.ctfassets.net/58mi2hzmh573/6GV5LiYpoBXC2o5kLH8byq/5c5fc880728dc4b6c8c1ffcc3b20bbb2/3000.jpg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.5
-  vintage: '2017'
-  manufacturer_name: 'Matthias Müller '
-  country: Tyskland
-  region: Mittelrhein
-  sub_region: 'Bopparder Hamm '
-  grape_desc:
-  - Riesling
-  grape_pct:
-  - 100%
-  sales_price: 220.0
 - sys:
     id: 1ZLUwcOZ41yetPNOkgMcfW
     created_at: !ruby/object:DateTime 2023-01-19 10:42:48.733000000 Z
@@ -657,75 +1890,6 @@ product:
   - 100%
   sales_price: 230.0
 - sys:
-    id: 7pmE9zdtWzoKQeYIPL8fBU
-    created_at: !ruby/object:DateTime 2023-01-19 09:14:21.863000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:16:18.772000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Bopparder Hamm MANDELSTEIN '
-  product_long_name: 'Matthias Müller Bopparder Hamm MANDELSTEIN Riesling Spätlese
-    fruchtsüß '
-  image:
-    sys:
-      id: 6GV5LiYpoBXC2o5kLH8byq
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.698000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-03 10:59:21.977000000 Z
-    title: Matthias Müller Bopparder Hamm MANDELSTEIN Riesling Spätlese fruchtsüß
-      2021
-    description: |-
-      Tyskland, Mittelrhein,
-
-      Riesling 100%
-    url: "//images.ctfassets.net/58mi2hzmh573/6GV5LiYpoBXC2o5kLH8byq/5c5fc880728dc4b6c8c1ffcc3b20bbb2/3000.jpg"
-  product_id: '13853401'
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 8.5
-  vintage: '2021'
-  manufacturer_name: 'Matthias Müller '
-  country: Tyskland
-  region: Mittelrhein
-  sub_region: Bopparder Hamm
-  grape_desc:
-  - Riesling
-  grape_pct:
-  - 100%
-  sales_price: 398.0
-- sys:
-    id: 6pEv5w6J8XhJqlad6BKS1v
-    created_at: !ruby/object:DateTime 2023-01-19 08:53:41.141000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:14:52.782000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Rheinschiefer Trocken '
-  product_long_name: Matthias Müller Rheinschiefer Trocken 2017
-  image:
-    sys:
-      id: LIuGcxct0LzkFxeCr6qJq
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.660000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:26:14.228000000 Z
-    title: Matthias Müller Rheinschiefer Trocken 2017
-    description: |-
-      Tyskland, Mittelrhein,
-
-      Riesling 100%
-
-      I tilleggsutvalget på Vinmonopolet - 208 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/LIuGcxct0LzkFxeCr6qJq/9c3328a144857b982fcf735ceba5e51d/11099701.jpg"
-  product_id: '11099701'
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.5
-  vintage: '2017'
-  manufacturer_name: Matthias Müller
-  country: Tyskland
-  region: Mittelrhein
-  grape_desc:
-  - Riesling
-  grape_pct:
-  - 100%
-  sales_price: 208.0
-- sys:
     id: 3YEqGAwIbCLjZtFJPcXk9y
     created_at: !ruby/object:DateTime 2023-01-19 12:22:43.583000000 Z
     updated_at: !ruby/object:DateTime 2023-02-15 13:12:39.466000000 Z
@@ -756,99 +1920,6 @@ product:
   - 80%
   - 20%
   sales_price: 159.0
-- sys:
-    id: 5BwUPTBl0RVtp23JO7vwSW
-    created_at: !ruby/object:DateTime 2023-01-17 17:32:19.742000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:11:26.388000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Chablis Premier Cru L Homme Mort '
-  product_long_name: Jean Durup Père & Fils Chablis Premier Cru L Homme Mort 2020
-  image:
-    sys:
-      id: 5rfJTdiXzm6sHk1QBjMnn9
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.533000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:48:40.721000000 Z
-    title: Jean Durup Père & Fils Chablis Premier Cru L Homme Mort 2020
-    description: |-
-      Frankrike, Chablis
-
-      Chardonnay 100%
-
-      I bestillingsutvalget på Vinmonopolet - 399 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/5rfJTdiXzm6sHk1QBjMnn9/c298db2e690428be6acdab44ea7c8d7d/13328701.jpg"
-  product_id: '13328701'
-  volume: 75
-  alcohol_content: 12.5
-  vintage: '2020'
-  manufacturer_name: 'Jean Durup Père & Fils '
-  country: Frankrike
-  region: Chablis
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 399.0
-- sys:
-    id: 22xETrwPYBnpgvCipOe91j
-    created_at: !ruby/object:DateTime 2023-01-16 09:12:03.178000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:10:08.116000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: Chablis Grand Cru Vaudesirs
-  product_long_name: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
-  image:
-    sys:
-      id: xnuMavZPzIlHZs7g6W8JX
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.629000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:31:49.668000000 Z
-    title: Jean Durup Père & Fils Chablis Grand Cru Vaudesirs
-    description: |-
-      Frankrike, Chablis
-
-      Chardonnay 100%
-
-      I bestillingsutvalget på Vinmonopolet - 615 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/xnuMavZPzIlHZs7g6W8JX/4e4b8655b3f26818706b1954bda755d1/13328601.jpg"
-  product_id: '13328601'
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.5
-  manufacturer_name: Jean Durup Père & Fils
-  country: Frankrike
-  region: Chablis
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 615.0
-- sys:
-    id: OHOBNLzBhbM0saxBx18Yz
-    created_at: !ruby/object:DateTime 2023-01-17 15:38:38.524000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:07:41.092000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: 'Laurent-Gabriel '
-  product_long_name: Laurent-Gabriel Premier Cru Grande Reserve Rose
-  image:
-    sys:
-      id: 5VUjuB1GlHeiZdqmGVW80b
-      created_at: !ruby/object:DateTime 2023-02-02 09:59:59.545000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:59:59.545000000 Z
-    title: Laurent-Gabriel Premier Cru Grande Reserve Rose
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/5VUjuB1GlHeiZdqmGVW80b/f18c01e57237520d7e62b8ff5d77cb0e/DSC_0061.jpeg"
-  product_id: '15187601'
-  product_type_name: Musserende vin
-  volume: 75
-  alcohol_content: 12.5
-  country: Frankrike
-  region: Champagne
-  grape_desc:
-  - Pinot Noir
-  grape_pct:
-  - 100%
-  sales_price: 474.0
 - sys:
     id: 5hJwIrWQWP9rM1U1Wc28KX
     created_at: !ruby/object:DateTime 2023-01-17 15:30:28.576000000 Z
@@ -883,83 +1954,6 @@ product:
   - Pinot Noir
   - Pinot Menunier
   sales_price: 452.0
-- sys:
-    id: MXXw3QUC0Mac5e3GIPS0S
-    created_at: !ruby/object:DateTime 2023-01-19 09:50:59.230000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:04:56.622000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Ch. la Gasparde Prestige '
-  product_long_name: J. Janoueix Ch. la Gasparde Prestige 2015
-  image:
-    sys:
-      id: 7BhF6hx4Z3IIbeJdss81fa
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.539000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:46:27.439000000 Z
-    title: J. Janoueix Ch. la Gasparde Prestige 2015
-    description: |-
-      Frankrike, Bordeaux, Côtes de Bordeaux
-
-      Merlot 85%, Cabernet Franc 12%, Cabernet sauvignon 3%
-
-      I tilleggsutvalget på Vinmonopolet - 326 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/7BhF6hx4Z3IIbeJdss81fa/02968882efb1c335b41330e3e9f04ea8/12383001.jpg"
-  product_id: '12383001'
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 13.5
-  vintage: '2015'
-  manufacturer_name: J. Janoueix
-  gtin: '3700025027613'
-  country: Frankrike
-  region: Bordeaux
-  sub_region: Côtes de Bordeaux
-  grape_desc:
-  - Merlot
-  - Cabernet Franc
-  - Cabernet Sauvignon
-  grape_pct:
-  - 85%
-  - 12%
-  - 3%
-  sales_price: 367.0
-- sys:
-    id: BCXDGiYR7xsrjujWTeyJp
-    created_at: !ruby/object:DateTime 2023-01-19 09:56:27.859000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-15 13:04:21.654000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Ch. Haut-Sarpe '
-  product_long_name: J. Janoueix Ch. Haut-Sarpe Saint Emilion Grand Cru
-  image:
-    sys:
-      id: 4CdenZ3s23PimbAhDS7I72
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.597000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:36:34.249000000 Z
-    title: J. Janoueix Ch. Haut-Sarpe 2015
-    description: |-
-      Frankrike, Bordeaux, Saint-Emilion
-
-      Merlot 70%, Cabernet Sauvignon 30%
-
-      I bestillingsutvalget på Vinmonopolet - 778 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/4CdenZ3s23PimbAhDS7I72/ba1a3976d5ad7e798ca756a6f817a887/12356101.jpg"
-  product_id: '12356101'
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2105'
-  manufacturer_name: 'J. Janoueix '
-  country: Frankrike
-  region: Bordeaux
-  sub_region: Saint-Emilion
-  grape_desc:
-  - Merlot
-  - Cabernet Franc
-  grape_pct:
-  - 70%
-  - 30%
-  sales_price: 778.0
 - sys:
     id: 1Jkr2zbOFv33aGJrd5Gdhu
     created_at: !ruby/object:DateTime 2023-01-17 17:47:48.655000000 Z
@@ -1065,25 +2059,6 @@ product:
   - 20%
   sales_price: 488.0
 - sys:
-    id: 50YsHgTbN41PpeYsx2Isfa
-    created_at: !ruby/object:DateTime 2023-01-19 10:50:26.119000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 11:00:44.762000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: 'Côtes du Rhône Villages '
-  product_long_name: Les 7 Pierres AOP Côtes du Rhône Villages
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2020'
-  manufacturer_name: Les 7 Pierres
-  country: Frankrike
-  region: Rhône
-  grape_desc:
-  - Granache
-  - Syrha
-  sales_price: 269.0
-- sys:
     id: 2uFF3fVDlrduXiSSxmETjr
     created_at: !ruby/object:DateTime 2023-01-19 11:04:18.144000000 Z
     updated_at: !ruby/object:DateTime 2023-02-10 10:55:22.468000000 Z
@@ -1117,37 +2092,6 @@ product:
   - 80%
   - 20%
   sales_price: 345.0
-- sys:
-    id: 4rDU5crM73xxNc88qZv3xo
-    created_at: !ruby/object:DateTime 2023-01-19 11:20:59.427000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 10:52:50.883000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Chianti Classico DOCG
-  product_long_name: 'Villa Calcinaia Chianti Classico DOCG '
-  image:
-    sys:
-      id: 2x4mhevVeHNmFfHHNHMESF
-      created_at: !ruby/object:DateTime 2023-02-02 09:49:57.253000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:52:25.790000000 Z
-    title: Villa Calcinaia Chianti Classico Riserva DOCG 2018
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/2x4mhevVeHNmFfHHNHMESF/d77f64aa37fe1be7e0ea272bd56f7adf/DSC_0066.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2019'
-  manufacturer_name: Villa Calcinaia
-  country: Italia,
-  region: " Toscana"
-  sub_region: Chianti Classico
-  grape_desc:
-  - Sangiovese
-  - Canaiolo
-  grape_pct:
-  - 90%
-  - 10%
-  sales_price: 309.0
 - sys:
     id: 55vZDmpWONoZPQd4GszWMY
     created_at: !ruby/object:DateTime 2023-01-19 12:24:30.056000000 Z
@@ -1210,94 +2154,6 @@ product:
   - 100%
   sales_price: 316.0
 - sys:
-    id: 3zhNRHlChGQVKfr6RauVF7
-    created_at: !ruby/object:DateTime 2023-01-19 10:58:26.443000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 10:24:43.864000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: 'Fonsalade Petit Bonheur Rouge '
-  product_long_name: 'Fonsalade Petit Bonheur Rouge '
-  image:
-    sys:
-      id: 1IUIlE1vI8A5vmKWZmCfsV
-      created_at: !ruby/object:DateTime 2023-02-02 10:07:08.400000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 10:07:08.400000000 Z
-    title: Fonsalade Petit Bonheur Rouge 2020
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/1IUIlE1vI8A5vmKWZmCfsV/6815fae6ee6084e627d18355a45c7b11/DSC_0058.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  manufacturer_name: 'Fonsalade '
-  country: Frankrike
-  region: Langedoc
-  sub_region: Saint Chinian
-  grape_desc:
-  - Grenache
-  - Syrah
-  - Mourvedre
-  grape_pct:
-  - 60%
-  - 20%
-  - 20%
-  sales_price: 199.0
-- sys:
-    id: 7v1qmzOKaFH6HaGvfePR0Z
-    created_at: !ruby/object:DateTime 2023-01-17 17:35:43.246000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 10:19:11.512000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: 'Jean Durup Père & Fils Chablis '
-  product_long_name: Jean Durup Père & Fils Chablis
-  image:
-    sys:
-      id: 5NODlNEczDlVdc9z1mmxnj
-      created_at: !ruby/object:DateTime 2023-02-02 09:54:37.835000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:54:37.835000000 Z
-    title: Jean Durup Père & Fils Chablis
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/5NODlNEczDlVdc9z1mmxnj/1f70c1fd7bd9fde0977af26b170c8a83/DSC_0074.jpeg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 14.0
-  manufacturer_name: Jean Durup
-  country: Frankrike
-  region: Chablis
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 320.0
-- sys:
-    id: f68GdCOhzjl7X0olRjRpf
-    created_at: !ruby/object:DateTime 2023-01-19 11:17:21.762000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 10:10:51.760000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: 'Cappon Chianti Classico DOCG '
-  product_long_name: 'Cappone Chianti Classico DOCG '
-  image:
-    sys:
-      id: 5AWWEfM8bRX402X6Escv35
-      created_at: !ruby/object:DateTime 2023-02-02 09:52:56.734000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-10 10:06:24.670000000 Z
-    title: 'Capponi Chianti Classico DOCG '
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/5AWWEfM8bRX402X6Escv35/f86ee899b82bb0db9867a1ea44bb3806/DSC_0065.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2020'
-  manufacturer_name: Villa Calcinaia
-  country: " Italia"
-  region: " Toscana"
-  sub_region: " Chianti Classico"
-  grape_desc:
-  - Sangiovese
-  grape_pct:
-  - 100%
-  sales_price: 265.0
-- sys:
     id: 1Zic7xjj34IruErH37XiKu
     created_at: !ruby/object:DateTime 2023-01-19 12:01:11.403000000 Z
     updated_at: !ruby/object:DateTime 2023-02-10 09:46:42.575000000 Z
@@ -1357,59 +2213,6 @@ product:
   grape_pct:
   - 100%
   sales_price: 190.0
-- sys:
-    id: 523lH6mfzqrAkcPf6mrXzV
-    created_at: !ruby/object:DateTime 2023-01-19 09:30:13.753000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 09:39:32.044000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Stocco Le Pianure Pinor Grigio
-  product_long_name: Stocco Le Pianure Pinor Grigio
-  image:
-    sys:
-      id: 2T6NwK5VgNvvzlLAd4C6Uy
-      created_at: !ruby/object:DateTime 2023-01-17 15:22:23.542000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:22:23.542000000 Z
-    title: Stocco Le Pianure Pinor Grigio
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/2T6NwK5VgNvvzlLAd4C6Uy/1d9ba7b9e0b7efb2bfbad7afa6c6050a/DSC02008.jpg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.0
-  manufacturer_name: Soc. agr. Stocco
-  country: Italia
-  region: Friuli
-  grape_desc:
-  - Pinor Grigio
-  grape_pct:
-  - 100%
-- sys:
-    id: VWOwIdSNqkyxlxd9N6Wnx
-    created_at: !ruby/object:DateTime 2023-01-19 09:27:36.548000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 09:38:27.319000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: Stocco Le Pianure Sauvignon
-  product_long_name: Stocco Le Pianure Sauvignon
-  image:
-    sys:
-      id: 15VzJQF12kVbZ9uP1flFb4
-      created_at: !ruby/object:DateTime 2023-01-17 15:18:58.760000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:18:58.760000000 Z
-    title: Stocco Le Pianure Chardonnnay
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/15VzJQF12kVbZ9uP1flFb4/9697f4dbefb1079c2953decc62c1631b/DSC02006.jpg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.0
-  manufacturer_name: Soc. agr. Stocco
-  country: Italia
-  region: Fruili
-  grape_desc:
-  - Sauvignon
-  grape_pct:
-  - 100%
-  sales_price: 170.0
 - sys:
     id: 77lk66olC0mTgsMknZQnQl
     created_at: !ruby/object:DateTime 2023-01-19 11:09:35.331000000 Z
@@ -1481,305 +2284,6 @@ product:
   - 10%
   sales_price: 321.0
 - sys:
-    id: 20Vy2A6jquOZzzIjEeEmMa
-    created_at: !ruby/object:DateTime 2023-01-19 12:09:09.119000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 09:18:11.441000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Celler de l'Era BRI 2011
-  product_long_name: Celler de l'Era BRI 2011
-  image:
-    sys:
-      id: 2TSo2EZUrkgktNS4G4MOID
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
-    title: Celler de l'Era BRI 2011 rouge 2011
-    description: |-
-      Spania, Montsant
-
-      Cabernet Sauvignon, Carignan, Grenache
-
-      I tilleggsutvalget på Vinmonopolet - 278 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
-  product_id: '12382901'
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2011'
-  manufacturer_name: 'Celler de l''Era '
-  gtin: '8437013047555'
-  country: Spania
-  region: Catalonia
-  sub_region: 'Montsant '
-  grape_desc:
-  - Syrah
-  - Grenache
-  - Carignan
-  - Cabernet Savignon
-  sales_price: 277.2
-- sys:
-    id: 2ixhwxsjDESByYcwhy5KAP
-    created_at: !ruby/object:DateTime 2023-01-19 09:24:37.778000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-10 09:15:38.943000000 Z
-    content_type_id: product
-    revision: 4
-  product_short_name: Stocco Le Pianure Chardonnnay
-  product_long_name: " Stocco Le Pianure Chardonnnay"
-  image:
-    sys:
-      id: 15VzJQF12kVbZ9uP1flFb4
-      created_at: !ruby/object:DateTime 2023-01-17 15:18:58.760000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:18:58.760000000 Z
-    title: Stocco Le Pianure Chardonnnay
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/15VzJQF12kVbZ9uP1flFb4/9697f4dbefb1079c2953decc62c1631b/DSC02006.jpg"
-  product_type_name: Hvitvin
-  volume: 75
-  alcohol_content: 12.5
-  manufacturer_name: Soc. agr.  Stocco
-  country: Italia
-  region: Friulie
-  grape_desc:
-  - Chardonnay
-  grape_pct:
-  - 100%
-  sales_price: 170.0
-- sys:
-    id: 4tcEebgZbDnBXYq5XMWXAy
-    created_at: !ruby/object:DateTime 2023-01-19 11:01:36.162000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-02 10:15:21.236000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Fonsalade F de Fonsalade Rouge
-  product_long_name: Fonsalade F de Fonsalade Rouge 2020
-  image:
-    sys:
-      id: 1meSmb9HM6KptMH3vuVXmF
-      created_at: !ruby/object:DateTime 2023-02-02 10:01:21.506000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 10:01:21.506000000 Z
-    title: Fonsalade F de Fonsalade Rouge 2020
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/1meSmb9HM6KptMH3vuVXmF/f7dd89dc21c5d6a95e962fba53207776/DSC_0053.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2020'
-  country: 'Frankrike, Langedoc, Saint Chinian  '
-  region: Langedoc
-  sub_region: 'Saint Chinian '
-  sales_price: 200.0
-- sys:
-    id: 2G6hk7g2ZuJCNC2sSlcjQ0
-    created_at: !ruby/object:DateTime 2023-01-19 11:23:25.137000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-02 10:12:40.079000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: Chianti Classico Riserva
-  product_long_name: 'Villa Calcinaia Chianti Classico Riserva DOCG 2018 '
-  image:
-    sys:
-      id: 2x4mhevVeHNmFfHHNHMESF
-      created_at: !ruby/object:DateTime 2023-02-02 09:49:57.253000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-02 09:52:25.790000000 Z
-    title: Villa Calcinaia Chianti Classico Riserva DOCG 2018
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/2x4mhevVeHNmFfHHNHMESF/d77f64aa37fe1be7e0ea272bd56f7adf/DSC_0066.jpeg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 13.5
-  vintage: '2018'
-  country: Italia
-  region: Toscana
-  sub_region: Greve in Chianti
-  sales_price: 260.0
-- sys:
-    id: 1zS1B8E7hJzgUuDpwMc6Bs
-    created_at: !ruby/object:DateTime 2023-01-19 12:13:04.136000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 12:35:21.869000000 Z
-    content_type_id: product
-    revision: 2
-  product_short_name: Åge Aleksandersen
-  product_long_name: Åge Aleksandersen, Valtravieso
-  image:
-    sys:
-      id: 4OpzwTo2SSJf5lcju8Yc6I
-      created_at: !ruby/object:DateTime 2023-01-16 08:30:16.773000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-16 08:30:16.773000000 Z
-    title: Åge Aleksandersen
-    description: |-
-      Spania, Ribero del Duero
-
-      Tempranillo 90%,Cabernet Sauvignon 10%
-
-      I tilleggsutvalget på Vinmonopolet - 378 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/4OpzwTo2SSJf5lcju8Yc6I/156bb8a5ed0a0d97a8c95b3e51fd5a6f/DSC01992.jpg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2018'
-  country: Spania
-  region: 'Ribero del Duero '
-  sales_price: 378.0
-- sys:
-    id: 3Cfa3Y4IsVEb1Itw8n1DAU
-    created_at: !ruby/object:DateTime 2023-01-19 11:58:30.803000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 12:02:20.342000000 Z
-    content_type_id: product
-    revision: 3
-  product_short_name: Stocco Le Pianure Pinot Nero
-  product_long_name: Stocco Le Pianure Pinot Nero
-  image:
-    sys:
-      id: 28yiXkpAL0TwKXCMnad2pg
-      created_at: !ruby/object:DateTime 2023-01-16 08:53:24.977000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-16 08:53:24.977000000 Z
-    title: Stocco Pinot Nero Violis
-    description: |-
-      Italia, Friuli, Udine
-
-      Pinot Nero 100%
-    url: "//images.ctfassets.net/58mi2hzmh573/28yiXkpAL0TwKXCMnad2pg/2ec4520d17a4d4a050bf72b39fdfb240/DSC02011.jpg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 12.0
-  country: " Italia"
-  region: " Friuli"
-  sub_region: Udinei
-  sales_price: 160.0
-- sys:
-    id: 2876ArVCBM9p0J8sKNTtun
-    created_at: !ruby/object:DateTime 2023-01-19 11:35:30.913000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 11:35:30.913000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Benedetti Amarone Classico
-  product_long_name: Benedetti Amarone Classico
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-- sys:
-    id: 4l4OMhO3iMRxb0mDOBczNh
-    created_at: !ruby/object:DateTime 2023-01-19 09:53:39.836000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 09:53:39.836000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: J. Janoueix Ch. La Croix-Toulifaut Pomerol 2015
-  product_long_name: J. Janoueix Ch. La Croix-Toulifaut Pomerol 2015
-  image:
-    sys:
-      id: 1HSdCce3QeDEKdi50e7kFZ
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.551000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:46:57.072000000 Z
-    title: J. Janoueix Ch. La Croix-Toulifaut Pomerol 2015
-    description: |-
-      Frankrike, Bordeaux, Pomerol
-
-      Merlot 85%, Cabernet Franc 15%
-
-      I bestillingsutvalget på Vinmonopolet - 750 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/1HSdCce3QeDEKdi50e7kFZ/29f13d2e6ea1cc9e630e24dd0574e447/12356001.jpg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2015'
-  country: Frankrike
-  region: Bordeaux
-  sub_region: Pomerol
-  sales_price: 750.0
-- sys:
-    id: 4TQuU7J50clezID9chqeBP
-    created_at: !ruby/object:DateTime 2023-01-19 09:43:17.159000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 09:43:17.159000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Château Haute Terrasse
-  product_long_name: Château Haute Terrasse AOC Castillon Cotes de Bordeaux 2015
-  image:
-    sys:
-      id: 6eh2KLskTeVBA0iWP4DKcG
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.688000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:11:12.572000000 Z
-    title: Château Haute Terrasse
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/6eh2KLskTeVBA0iWP4DKcG/da1f45d35a8698002b7f44b93a4126cb/7000.jpg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2016'
-  country: Frankrike
-  region: Bordeaux
-  sub_region: Côtes de Bordeaux
-  sales_price: 326.0
-- sys:
-    id: 2c4FFqFBIV8FQvxMo1zl96
-    created_at: !ruby/object:DateTime 2023-01-19 09:34:24.539000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-19 09:34:24.539000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Stocco Le Pianure Rosè
-  product_long_name: Stocco Le Pianure Rosè
-  image:
-    sys:
-      id: 6qwWCgppYBxtHI9zvWmaaI
-      created_at: !ruby/object:DateTime 2023-01-16 08:51:44.236000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-16 08:51:44.236000000 Z
-    title: Stocco Pinot Grigio Ramato
-    description: |-
-      Italia, Friuli, Udine
-
-      Pinot Grigio 100%
-    url: "//images.ctfassets.net/58mi2hzmh573/6qwWCgppYBxtHI9zvWmaaI/45fe25abedf9a07f82556e4fc0dc33d6/DSC02007.jpg"
-  product_type_name: Rosévin
-  volume: 75
-  alcohol_content: 12.5
-  country: Italia
-  region: Friuli
-  sales_price: 170.0
-- sys:
-    id: 1KPOwIOP9rOEhqGIUp6Qmr
-    created_at: !ruby/object:DateTime 2023-01-17 16:06:02.059000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-17 16:06:02.059000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Soligo Prosecco Treviso DOC Spumante
-  product_long_name: Soligo Prosecco Treviso DOC Spumante
-  image:
-    sys:
-      id: 3MlrI5woMS71OAh8q7VrmV
-      created_at: !ruby/object:DateTime 2023-01-17 15:20:16.372000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-17 15:20:16.372000000 Z
-    title: Soligo Prosecco Treviso DOC Frizzante (skrukork)
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/3MlrI5woMS71OAh8q7VrmV/f1044b62c92d1b7ce4a5ef468a13f953/DSC02014.jpg"
-  volume: 75
-  alcohol_content: 11.0
-  country: Italia
-  region: Veneto
-  sub_region: Treviso
-  sales_price: 179.0
-- sys:
-    id: 2hUi2a5HizMk5UnXyUTynw
-    created_at: !ruby/object:DateTime 2023-01-17 15:57:21.851000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-17 15:57:21.851000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: 'Soligo Allungo Frizzante '
-  product_long_name: Soligo Allungo Frizzante (skrukork)
-  image:
-    sys:
-      id: 2JGKG12tQ9HvC32YdQFGIN
-      created_at: !ruby/object:DateTime 2023-01-16 08:50:18.051000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-16 08:50:18.051000000 Z
-    title: Soligo Allungo Frizzante (skrukork)
-    description: Italia, Veneto, Treviso
-    url: "//images.ctfassets.net/58mi2hzmh573/2JGKG12tQ9HvC32YdQFGIN/60dc5d6d3ec7a70cd1dfe6b57bad704d/DSC01996.jpg"
-  volume: 75
-  alcohol_content: 12.0
-  country: Italia
-  region: Veneto
-  sub_region: Treviso
-  sales_price: 149.0
-- sys:
     id: 3sCl06Jsv4DcI1lFboNjRf
     created_at: !ruby/object:DateTime 2023-01-17 15:53:35.344000000 Z
     updated_at: !ruby/object:DateTime 2023-01-17 15:53:35.344000000 Z
@@ -1802,105 +2306,31 @@ product:
   region: Catalonia
   sub_region: Penedes
   sales_price: 224.0
-- sys:
-    id: 3vNrdYRTz0v7zuXFII6kUC
-    created_at: !ruby/object:DateTime 2023-01-17 15:50:16.500000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-17 15:50:16.500000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Moli Parellada - Cava Mercat Brut Nature Gran Reserva
-  product_long_name: Moli Parellada - Cava Mercat Brut Nature Gran Reserva
-  image:
-    sys:
-      id: kTBIAb4kU2zymDmqpyJIS
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.672000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:17:36.086000000 Z
-    title: Moli Parellada - Cava Mercat Brut Nature Gran Reserva
-    description: |-
-      Spania, Catalonia, Penedes
-
-      I tilleggsutvalget på Vinmonopolet - 289 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/kTBIAb4kU2zymDmqpyJIS/2a02f1f0b43cfe195d27df42870e00c5/14250101.jpg"
-  product_id: '14250101'
-  volume: 75
-  alcohol_content: 12.0
-  country: Spania
-  region: Catalonia
-  sub_region: Penedes
-  sales_price: 289.0
-- sys:
-    id: 3uSkQOppswaQxtENUsHq4S
-    created_at: !ruby/object:DateTime 2023-01-15 15:29:43.568000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-15 15:29:43.568000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: 'BRI 2014 '
-  product_long_name: 'Celler de l''Era BRI 2014 rouge '
-  image:
-    sys:
-      id: 2TSo2EZUrkgktNS4G4MOID
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
-    title: Celler de l'Era BRI 2011 rouge 2011
-    description: |-
-      Spania, Montsant
-
-      Cabernet Sauvignon, Carignan, Grenache
-
-      I tilleggsutvalget på Vinmonopolet - 278 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2014'
-  country: Spania
-  region: Montsant
-  sales_price: 321.0
-- sys:
-    id: 5qVm9NGBWhcuKsAfJOVvrt
-    created_at: !ruby/object:DateTime 2023-01-15 15:25:48.962000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-15 15:25:48.962000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: BRI 2011
-  product_long_name: 'Celler de l''Era BRI 2011 rouge '
-  image:
-    sys:
-      id: 2TSo2EZUrkgktNS4G4MOID
-      created_at: !ruby/object:DateTime 2023-01-15 11:35:40.584000000 Z
-      updated_at: !ruby/object:DateTime 2023-01-15 14:38:49.708000000 Z
-    title: Celler de l'Era BRI 2011 rouge 2011
-    description: |-
-      Spania, Montsant
-
-      Cabernet Sauvignon, Carignan, Grenache
-
-      I tilleggsutvalget på Vinmonopolet - 278 kr
-    url: "//images.ctfassets.net/58mi2hzmh573/2TSo2EZUrkgktNS4G4MOID/9ebe72815570d438923d4994c210b27c/12382901.jpg"
-  product_id: '12382901'
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.0
-  vintage: '2011'
-  country: Spania
-  region: Montsant
-  sales_price: 278.0
-- sys:
-    id: 3rhZTmkXmLgtgg2hIw70fo
-    created_at: !ruby/object:DateTime 2023-01-15 15:18:59.784000000 Z
-    updated_at: !ruby/object:DateTime 2023-01-15 15:18:59.784000000 Z
-    content_type_id: product
-    revision: 1
-  product_short_name: Rosso di Montalcino “Le Tracce” DOC
-  product_long_name: Podere Giardino Rosso di Montalcino “Le Tracce” DOC
-  product_type_name: Rødvin
-  volume: 75
-  alcohol_content: 14.5
-  vintage: '2020'
-  country: Italia
-  region: Toscana
-  sub_region: Montalcino
 person:
+- sys:
+    id: 2LBXpbV3dUcS3bz7ZeO2tD
+    created_at: !ruby/object:DateTime 2023-02-05 13:42:35.575000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-25 08:35:11.564000000 Z
+    content_type_id: person
+    revision: 8
+  name: Frode Hofstad
+  description: "Frode is an educated chef, waiter, sommelier and he have a Master
+    Degree in Service Management from University in Stavanger. He has worked as F&B
+    manager at Radisson in Stavanger and Radisson Trondheim for 4 years and CEO /
+    co-owner for 13 years at 5-star Britannia Hotel in Trondheim. He currently works
+    with P-Hotels, Quality Skifer Hotel Oppdal and Ciabatta. His great passion is
+    for food and wine and at his spare time he is an avid hunter for grouse and deer.
+    \n\nFrode is co-owner of North of Wine and work with product range, sales and
+    marketing. \n"
+  email: frode.hofstad@northofwine.no
+  image:
+    sys:
+      id: EXQZKCtoEesXJ5ibxlxy2
+      created_at: !ruby/object:DateTime 2023-02-05 13:45:20.135000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-05 13:45:20.135000000 Z
+    title: frode-hofstad
+    description:
+    url: "//images.ctfassets.net/58mi2hzmh573/EXQZKCtoEesXJ5ibxlxy2/17c14b011906faa6892a4afb82e792fb/frode-hofstad.jpg"
 - sys:
     id: 3NRlkkCZ2qJXeqsWBLJth8
     created_at: !ruby/object:DateTime 2023-02-05 13:43:32.829000000 Z
@@ -1943,26 +2373,6 @@ person:
     title: roe-strommen
     description:
     url: "//images.ctfassets.net/58mi2hzmh573/4JXU7QKt7ipI2maow0cuA2/be8aede351549139c55ba8b3b7caa206/roe-strommen.jpg"
-- sys:
-    id: 2LBXpbV3dUcS3bz7ZeO2tD
-    created_at: !ruby/object:DateTime 2023-02-05 13:42:35.575000000 Z
-    updated_at: !ruby/object:DateTime 2023-02-05 15:34:41.785000000 Z
-    content_type_id: person
-    revision: 4
-  name: Frode Hofstad
-  description: |-
-    Frode har bakgrunn som kokk, servitør og vinkelner, samt en MD fra Hotellhøgskolen i Stavanger. Han har jobbet som Food and Beverage Manager ved Radisson Royal i Stavanger og Royal Garden Hotel i Trondheim, samt 13 år som administrerende direktør ved Britannia Hotel. Hans store lidenskap er mat og drikke samt at han er en ivrig rype- og hjortejeger.
-
-    Frode er medeier i North of Wine og jobber med produktsortimentet, salg og markedsføring.
-  email: frode.hofstad@northofwine.no
-  image:
-    sys:
-      id: EXQZKCtoEesXJ5ibxlxy2
-      created_at: !ruby/object:DateTime 2023-02-05 13:45:20.135000000 Z
-      updated_at: !ruby/object:DateTime 2023-02-05 13:45:20.135000000 Z
-    title: frode-hofstad
-    description:
-    url: "//images.ctfassets.net/58mi2hzmh573/EXQZKCtoEesXJ5ibxlxy2/17c14b011906faa6892a4afb82e792fb/frode-hofstad.jpg"
 - sys:
     id: 5EbnScBpS8czkvUTS80k1r
     created_at: !ruby/object:DateTime 2023-02-05 13:41:49.320000000 Z

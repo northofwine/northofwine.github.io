@@ -170,6 +170,33 @@ article.person{
   }
 }
 
+article.manufacturer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .content{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    background-color: $color-background-white;
+    padding: 24px;
+    background-color: #fff;
+    gap: 24px;
+  }
+
+  img.logo{
+    display: block;
+    align-self: flex-start;
+    width: 25%;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
 .bullet{
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
@@ -356,7 +383,7 @@ nav#sidebar li{
 
 nav#sidebar a{
   font-family: 'Cormorant', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   text-decoration: none;
 

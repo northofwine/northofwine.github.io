@@ -1,0 +1,30 @@
+{% include head.html %}
+  <body>
+
+    <div id="background"></div>
+
+    {% include nav.html %}
+
+    <section id="content">
+
+      {% assign sorted = site.data.contentful.spaces.northofwine.manufacturer | sort_natural: 'name' %}
+
+      {% for manufacturer in sorted %}
+        <article class="manufacturer">
+          <img src="{{ manufacturer.image.url }}">
+          <div class="content">
+            <img class="logo" src="{{ manufacturer.logo.url }}?w=384">
+            <div>
+              <h2>{{ manufacturer.name }}</h2>
+              {{ manufacturer.description | markdownify }}
+              <a class="bullet" href="{{ manufacturer.link }}">
+                <span>{{ manufacturer.link }}</span>
+              </a>
+            </div>
+          </div>  
+        </article>
+      {% endfor %}
+
+    </section>
+  </body>
+</html>
