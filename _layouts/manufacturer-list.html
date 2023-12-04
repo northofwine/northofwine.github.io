@@ -11,9 +11,13 @@
 
       {% for manufacturer in sorted %}
         <article class="manufacturer">
+          {% if manufacturer.image %}
           <img src="{{ manufacturer.image.url }}">
+          {% endif %}
           <div class="content">
+            {% if manufacturer.logo %}
             <img class="logo" src="{{ manufacturer.logo.url }}?w=384">
+            {% endif %}
             <div>
               <h2>{{ manufacturer.name }}</h2>
               {{ manufacturer.description | markdownify }}
