@@ -482,7 +482,7 @@ nav#sidebar #logo img{
   select#types{width: calc(100% - 4px - 120px - ($paddingBodyL * 2));}
   nav#sidebar{top: $paddingBodyL;}
   nav#sidebar ul{height: calc(100vh - ($paddingBodyL * 2));}
-  article.person{
+  article.person, article.manufacturer .content{
     flex-direction: column;
     img{
       width:172px;
