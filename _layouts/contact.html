@@ -16,7 +16,7 @@
               {% if person.phone %}
                 <a class="bullet" href="tel:{{ person.phone }}">
                   {{ site.data.icons.phone }}
-                  <span>{{ person.phone | slice: 0, 3}} {{ person.phone | slice: 5, 6}} {{ person.phone | slice: 7, 8}} {{ person.phone | slice: 9, 10}} <br>{{ person.name }}</span>
+                  <span>{{ person.phone }} <br>{{ person.name }}</span>
                 </a>
               {% endif %}
             {% endfor %}
