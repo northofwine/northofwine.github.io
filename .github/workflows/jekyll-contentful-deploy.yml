@@ -57,7 +57,7 @@ jobs:
           ENV_CONTENTFUL_ENVIRONMENT: ${{ secrets.ENV_CONTENTFUL_ENVIRONMENT }}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
 
   # Deployment job
   deploy:
