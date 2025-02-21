@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
   
   # Run workflow from webhook
-  repository_dispatch:
-    types: [contentful.deploy]
+  #repository_dispatch:
+  #  types: [contentful.deploy]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
