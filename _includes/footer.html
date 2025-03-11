@@ -1,0 +1,33 @@
+<footer>
+    <ul class="horizontal">
+        <a href="facebook.com" target="_blank">
+            <img class="icon large" src="/assets/icons/facebook.svg">
+        </a>
+        <a href="instagram.com" target="_blank">
+            <img class="icon large" src="/assets/icons/instagram.svg">
+        </a>
+    </ul>
+    <dl>
+        <dt>{{ site.organization.name }}</dt>
+        <dd>{{ site.organization.id }}</dd>
+        <dd>{{ site.organization.adress.street }}<br>{{ site.organization.adress.zip }} {{ site.organization.adress.city }}</dd>
+    </dl>
+    <dl>
+        <dt>E-post</dt>
+        <dd>
+            <a href="mailto:{{ site.organization.email.default }}">
+                {{ site.organization.email.default }}
+            </a>
+        </dd>
+        <dd>
+            <a href="mailto:{{ site.organization.email.order }}">
+                {{ site.organization.email.order }}
+            </a>
+        </dd>
+        <dd>
+            <a href="mailto:{{ site.organization.email.invoice }}">
+                {{ site.organization.email.invoice }}
+            </a>
+        </dd>
+    </dl>
+</footer>

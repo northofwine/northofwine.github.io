@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <section id="sidebar">
+            {% if page.image.url %}
+                <img class="sticky" src="{{ page.image.url }}?w=480">
+            {% else %}
+                <img class="sticky" src="/assets/images/bottle.png">
+            {% endif %}
+
+        </section>
+        <div id="main">
+            <nav class="horizontal">
+                <a class="button" href="javascript:history.back()">
+                    <img class="icon" src="/assets/icons/arrow-left.svg">
+                </a>
+                <a class="button" href="/utvalg">Utvalg</a>
+                <span class="button">/</span>
+                <a class="button" href="/utvalg.html?kategori={{ page.product_type_name }}">{{ page.product_type_name }}</a>
+            </nav>
+            <section>
+                {% include details/introduction.html %}
+            </section>
+            <section>
+                {% include details/description.html %}
+            </section>
+            <hr>
+            <section>
+                {% include details/properties.html %}
+            </section>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

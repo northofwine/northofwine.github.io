@@ -1,0 +1,86 @@
+<dl class="horizontal">
+    {% if page.fullness %}
+        <dt>Fylde</dt>
+        <dd><img class="icon large" src="/assets/icons/slice-{{ page.fullness }}.svg"></dd>
+    {% endif %}
+    {% if page.freshness %}
+        <dt>Friskhet</dt>
+        <dd><img class="icon large" src="/assets/icons/slice-{{ page.freshness }}.svg"></dd>
+    {% endif %}
+    {% if page.product_type_name == 'Rødvin' %}
+        {% if page.tannins %}
+            <dt>Garvestoffer</dt>
+            <dd><img class="icon large" src="/assets/icons/slice-{{ page.tannins }}.svg"></dd>
+        {% endif %}
+    {% else %} <!-- white, rose, and sparkling -->
+        {% if page.sweetness %}
+            <dt>Sødme</dt>
+            <dd><img class="icon large" src="/assets/icons/slice-{{ page.sweetness }}.svg"></dd>
+        {% endif %}
+    {% endif %}
+</dl>
+<dl>
+    {% if page.recommended_food %}
+        <dt>Passer til</dt>
+        <dd>{{ page.recommended_food | join: ', ' | capitalize }}</dd>
+    {% endif %}
+    {% if page.odour %}
+        <dt>Lukt</dt>
+        <dd>{{ page.odour }}</dd>
+    {% endif %}
+    {% if page.taste %}
+        <dt>Smak</dt>
+        <dd>{{ page.taste }}</dd>
+    {% endif %}
+    {% if page.colour %}
+        <dt>Farge</dt>
+        <dd>{{ page.colour }}</dd>
+    {% endif %}
+</dl>
+<dl>
+    {% if page.sku %}
+        <dt>Vårt varenummer</dt>
+        <dd>{{ page.sku }}</dd>
+    {% endif %}
+    {% if page.product_id %}
+        <dt>Vinmonopolets varenummer</dt>
+        <dd>{{ page.product_id }}</dd>
+    {% endif %}
+    {% if page.grape_desc %}
+    <dt>Druer</dt>
+    <dd>
+        {% for grape in page.grape_desc %}
+            {{ grape }} {{ page.grape_pct[forloop.index0] }} %
+            {%- unless forloop.last -%}, {% endunless -%}
+        {% endfor %}
+    </dd>
+    {% endif %}
+    {% if page.storage_potential %}
+        <dt>Lagring</dt>
+        <dd>{{ page.storage_potential }}</dd>
+    {% endif %}
+    {% if page.alcohol_content %}
+        <dt>Alkohol</dt>
+        <dd>{{ page.alcohol_content | replace: '.', ',' }} %</dd>
+    {% endif %}
+    {% if page.volume %}
+        <dt>Volum</dt>
+        <dd>{{ page.volume | times: 1.0 | divided_by: 100 | replace: '.', ',' }} liter</dd>
+    {% endif %}
+    {% if page.sugar %}
+        <dt>Sukker</dt>
+        <dd>{{ page.sugar }}</dd>
+    {% endif %}
+    {% if page.acid %}
+        <dt>Syre</dt>
+        <dd>{{ page.acid }}</dd>
+    {% endif %}
+    {% if page.packaging_material %}
+        <dt>Emballasje</dt>
+        <dd>{{ page.packaging_material }}</dd>
+    {% endif %}
+    {% if page.cork_type %}
+        <dt>Kork</dt>
+        <dd>{{ page.cork_type }}</dd>
+    {% endif %}
+</dl>

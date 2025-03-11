@@ -1,0 +1,85 @@
+// Spacing
+
+$spacing-tiny: 4px;
+$spacing-small: 12px;
+$spacing-medium: 24px;
+$spacing-large: 48px;
+$spacing-huge: 96px;
+
+$spacing-tiny-dynamic-s: 4px;
+$spacing-tiny-dynamic-m: 8px;
+$spacing-tiny-dynamic-l: 12px;
+
+$spacing-small-dynamic-s: 12px;
+$spacing-small-dynamic-m: 16px;
+$spacing-small-dynamic-l: 24px;
+
+$spacing-medium-dynamic-s: 24px;
+$spacing-medium-dynamic-m: 32px;
+$spacing-medium-dynamic-l: 48px;
+
+$spacing-large-dynamic-s: 48px;
+$spacing-large-dynamic-m: 72px;
+$spacing-large-dynamic-l: 96px;
+
+// IMAGES
+
+$card-image-width-s: 96px;
+$card-image-width-m: 128px;
+$card-image-width-l: 160px;
+
+$image-card-s: 72px;
+$image-card-m: 84px;
+$image-card-l: 96px;
+
+$image-sidebar-s: 72px;
+$image-sidebar-m: 120px;
+$image-sidebar-l: 240px;
+
+$image-splash-s: 240px;
+$image-splash-m: 360px;
+$image-splash-l: 480px;
+
+// TYPOGRAPHY
+
+$fontsize-huge-s: 40px;
+$lineheight-huge-s: 48px;
+$fontsize-huge-m: 60px;
+$lineheight-huge-m: 72px;
+$fontsize-huge-l: 80px;
+$lineheight-huge-l: 96px;
+
+$fontsize-large-s: 20px;
+$lineheight-large-s: 24px;
+$fontsize-large-m: 40px;
+$lineheight-large-m: 48px;
+$fontsize-large-l: 50px;
+$lineheight-large-l: 64px;
+
+$fontsize-regular-s: 16px;
+$lineheight-regular-s: 24px;
+$fontsize-regular-m: 20px;
+$lineheight-regular-m: 32px;
+$fontsize-regular-l: 24px;
+$lineheight-regular-l: 36px;
+
+$fontsize-small-s: 12px;
+$lineheight-small-s: 16px;
+$fontsize-small-m: 16px;
+$lineheight-small-m: 20px;
+$fontsize-small-l: 20px;
+$lineheight-small-l: 24px;
+
+$fontsize-regular: 16px;
+$lineheight-regular: 24px;
+
+$line-length: 720px;
+
+// RESPONSIVITY
+
+$breakpoint-t: 360px;
+$breakpoint-m: 720px;
+$breakpoint-l: 1200px;
+
+$sidebar-width-m: 240px;
+$sidebar-width-l: 320px;

@@ -1,4 +1,6 @@
 ---
-layout: manufacturer-list
-title: "Produsenter"
+layout: list
+title: "Våre produsenter"
 ---
+
+# Våre produsenter

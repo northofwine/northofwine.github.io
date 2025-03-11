@@ -1,0 +1,21 @@
+$background-default: rgba(255,255,255,1);
+$background-inverted: rgba(0,0,0,1);
+$background-transparent: rgba(255,255,255,.5);
+$background-texture: url("/assets/images/texture.png");
+
+
+
+// Text
+$text-normal-default: rgba(40,40,40,.9);
+$text-normal-hover: rgba(0,0,0,1);
+$text-normal-active: rgba(25,25,25,.8);
+$text-normal-secondary: rgba(0,0,0,.5);
+
+$text-inverted-default: rgba(255,255,255,.9);
+$text-inverted-hover: rgba(255,255,255,1);
+$text-inverted-active: rgba(255,255,255,.8);
+$text-inverted-secondary: rgba(75, 73, 73, 0.5);
+
+// Elements
+$border-normal: rgba(0,0,0,.2);
+$border-normal-strong: rgba(0,0,0,1);

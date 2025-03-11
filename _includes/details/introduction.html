@@ -1,0 +1,14 @@
+<h1>{{ page.product_short_name }}</h1>
+
+{% if page.sales_price %}
+    {% assign price_split = page.sales_price | split: "." %}
+    {% assign integral = price_split[0] %}
+    {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+
+    <p>
+        {{ integral }},{{ fractional }} kr
+        {% if page.product_id %}
+            - tilgjengelig på <a href="https://vinmonopolet.no/p/{{ page.product_id }}">Vinmonopolet</a>
+        {% endif %}
+    </p>
+{% endif %}

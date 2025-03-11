@@ -1,4 +1,6 @@
 ---
-layout: product-list
+layout: list
 title: "Vårt utvalg"
 ---
+
+# Vårt utvalg

@@ -1,0 +1,13 @@
+{% if page.description %}
+    {{ page.description | markdownify }}
+{% endif %}
+<dl>
+    {% if page.production_method_storage %}
+        <dt>Metode</dt>
+        <dd>{{ page.production_method_storage}} </dd>
+    {% endif %}
+    {% if page.manufacturer %}
+        <dt>Produsent</dt>
+        <dd><a href="/produsenter#{{ page.manufacturer.name | slugify: 'latin' }}">{{ page.manufacturer.name }}</a></dd>
+    {% endif %}
+</dl>

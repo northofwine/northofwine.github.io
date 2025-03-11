@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+            <section id="sidebar">
+                {% if page.url == '/utvalg.html' %}
+                    {{ content }}
+                    <nav id="filter" class="sticky">
+                {% else %}
+                    {{ content | replace: '<h1', '<h1 class="sticky"' }}
+                {% endif %}
+                </nav>
+            </section>
+
+            <ul id="main">
+            {% assign products = site.data.contentful.spaces.northofwine.product | sort_natural: 'product_short_name' %}
+            {% assign manufacturers = site.data.contentful.spaces.northofwine.manufacturer | sort_natural: 'name' %}
+            {% assign people = site.data.contentful.spaces.northofwine.person | sort_natural: 'name' %}
+
+            {% if page.url == '/utvalg.html' %}
+                {% for product in products %}
+                    {% include list/product.html product=product %}
+                {% endfor %}
+            {% elsif page.url == '/produsenter.html' %}
+                {% for manufacturer in manufacturers %}
+                    {% include list/manufacturer.html product=product manufacturer=manufacturer %}
+                {% endfor %}
+            {% elsif page.url == '/omoss.html' %}
+                {% for person in people %}
+                    {% include list/person.html person=person %}
+                {% endfor %}
+            {% endif %}
+            </ul>
+
+        {% include footer.html %}
+    </body>
+    {% if page.url == '/utvalg.html' %}
+        <script>
+            filterProducts();
+            hideProducts(getQuery())
+        </script>
+    {% endif %}
+</html>

@@ -1,0 +1,37 @@
+
+{% if page.url == '/' %}
+    <header class="splash inverted">
+        <div class="controls">
+            <a href="/" class="button">
+                <img class="logo" src="/assets/icons/northofwine-left.svg">
+            </a>
+        </div>
+        <nav id="">
+            {% for item in site.data.navigation %}
+                <a class="button {% if item.url == page.url %}selected{% endif %}" href="{{ item.url }}">
+                    {{- item.title -}}
+                </a>
+            {% endfor %}
+        </nav>
+        <img class="illustration" src="/assets/images/illustration.svg">
+    </header>
+{% else %}
+    <header class="minimized">
+        <div class="controls">
+            <a class="button" href="/">
+                <img class="logo" src="/assets/icons/northofwine-left.svg">
+                {{- site.title -}}
+            </a>
+            <a id="menu" class="button" onclick="expandMenu()">
+                <img src="/assets/icons/menu.svg">
+            </a>
+        </div>
+        <nav id="menu" class="inverted">
+            {% for item in site.data.navigation %}
+                <a class="button {% if item.url == page.url %}selected{% endif %}" href="{{ item.url }}">
+                    {{- item.title -}}
+                </a>
+            {% endfor %}
+        </nav>
+    </header>
+{% endif %}

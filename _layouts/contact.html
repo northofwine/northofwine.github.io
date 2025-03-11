@@ -1,56 +1,53 @@
-{% include head.html %}
-  <body>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <section id="sidebar">
+            {{ content }}
+        </section>
+        <section id="main">
+            <dl>
+                <dt>E-post</dt>
+                <dd>
+                    <a href="mailto:{{ site.organization.email.default }}">
+                        {{ site.organization.email.default }}
+                    </a>
+                </dd>
+                <dd>
+                    <a href="mailto:{{ site.organization.email.order }}">
+                        {{ site.organization.email.order }}
+                    </a>
+                </dd>
+                <dd>
+                    <a href="mailto:{{ site.organization.email.invoice }}">
+                        {{ site.organization.email.invoice }}
+                    </a>
+                </dd>
+            </dl>
 
-    <div id="background"></div>
+            <dl>
+                <dt>Sosiale medier</dt>
+                <dd>
+                    <a href="facebook.com" target="_blank">
+                        Facebook
+                    </a>
+                </dd>
+                <dd>
+                    <a href="instagram.com" target="_blank">
+                        Instagram
+                    </a>
+                </dd>
+            </dl>
 
-    {% include nav.html %}
-
-    <section id="content">
-        <article class="person">
-          <div>
-            <h2>Kontakt</h2>
-            <h3> {{ site.data.company.name }}</h3>
-
-            {% assign sorted = site.data.contentful.spaces.northofwine.person | sort_natural: 'name'%}
-            {% for person in site.data.contentful.spaces.northofwine.person reversed %}
-              {% if person.phone %}
-                <a class="bullet" href="tel:{{ person.phone }}">
-                  {{ site.data.icons.phone }}
-                  <span>{{ person.phone }} <br>{{ person.name }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
-            <a class="bullet" href="mailto:{{ site.data.company.email }}">
-              {{ site.data.icons.email-outline }}
-              <span>{{ site.data.company.email }}</span>
-            </a>
-            <a class="bullet" href="mailto:{{ site.data.company.invoice }}">
-              {{ site.data.icons.invoice }}
-              <span>{{ site.data.company.invoice }}</span>
-            </a>
-            <p class="bullet">
-              {{ site.data.icons.map-marker }}
-              <span>
-                {{ site.data.company.street }}<br>
-                {{ site.data.company.zip }}, {{ site.data.company.city }}
-              </span>
-            </p>
-            <p class="bullet">
-              {{ site.data.icons.business }}
-              <span>Org.nr. {{ site.data.company.org-number }}</span>
-            </p>
-
-            <hr>
-
-            {% assign sorted = site.data.contentful.spaces.northofwine.person | sort_natural: 'name' %}
-
-            {% for person in sorted %}
-            <a class="bullet" href="mailto:{{ person.email }}">
-              {{ site.data.icons.email-outline }}<span>{{ person.email }}</span>
-            </a>
-            {% endfor %}
-          </div>
-        </article>
-    </section>
-  </body>
+            <dl>
+                <dt>Organisasjonsinformasjon</dt>
+                <dd>{{ site.organization.name }}</dd>
+                <dd>{{ site.organization.id }}</dd>
+                <dt>Adresse</dt>
+                <dd>{{ site.organization.adress.street }}<br>{{ site.organization.adress.zip }} {{ site.organization.adress.city }}</dd>
+            </dl>
+        </section>
+        {% include footer.html %}
+    </body>
 </html>
