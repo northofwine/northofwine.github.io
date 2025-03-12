@@ -132,6 +132,7 @@ header{
         nav{
             position: static;
             background: none;
+            z-index: 100;
         }
         .logo{width: sizes.$lineheight-huge-l;}
         .illustration{
