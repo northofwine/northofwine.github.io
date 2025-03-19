@@ -6,7 +6,7 @@
         <div class="content">
             <h3>{{ person.name }}</h2>
             <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-            <p>{{ person.description }}</p>
+            <p>{{ person.description | markdownify }}</p>
         </div>
     </div>
 </li>
