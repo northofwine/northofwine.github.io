@@ -18,9 +18,10 @@ html{
 // // Main layout
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 sizes.$spacing-medium-dynamic-s;
     gap: sizes.$spacing-medium-dynamic-s;
+    max-width: 1680px;
     // #main{gap: sizes.$spacing-medium-dynamic-m;}
 
 
@@ -37,6 +38,12 @@ body {
 
     @media (min-width: sizes.$breakpoint-l){
         padding: 0 sizes.$spacing-medium-dynamic-l;
+        gap: sizes.$spacing-medium-dynamic-l;
+        #main{gap: sizes.$spacing-medium-dynamic-l;}
+    }
+
+    @media (min-width: 1776px){
+        padding: sizes.$spacing-medium-dynamic-l;
         gap: sizes.$spacing-medium-dynamic-l;
         #main{gap: sizes.$spacing-medium-dynamic-l;}
     }
@@ -121,6 +128,7 @@ header{
     
         @media (min-width: sizes.$breakpoint-m){
             margin-top: sizes.$spacing-medium-dynamic-m;
+            min-height: 40vh;
         }
         @media (min-width: sizes.$breakpoint-l){
             margin-top: sizes.$spacing-medium-dynamic-l;
@@ -285,6 +293,10 @@ nav{
                 flex: 1 0 auto;
                 flex-direction: row;
                 justify-content: space-between;
+            }
+
+            p{
+                max-width: none;
             }
         }
     }
