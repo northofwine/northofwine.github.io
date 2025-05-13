@@ -417,6 +417,23 @@ p{
         font-family: inherit;
     }
 
+    span.pseudolink{
+        text-decoration: underline;
+        white-space: nowrap;
+        float: right;
+        &:hover{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        &::after{
+            content: url('/assets/icons/arrow-right.svg');
+            display: inline-block;
+            vertical-align: bottom;
+            height: sizes.$lineheight-regular-s;
+            margin-left: sizes.$spacing-tiny;
+        }
+    }
+
     // @media (min-width: sizes.$breakpoint-m){
     //     font-size: sizes.$fontsize-regular-m;
     //     line-height: sizes.$lineheight-regular-m;
