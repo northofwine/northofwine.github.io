@@ -29,20 +29,40 @@ function getQuery() {
 }
 
 function hideProducts(query) {
-  console.log(query)
   if(query) {
-    var removed = [];
-    var items = document.getElementById('main').getElementsByTagName('li');
-    
-    for (let item of items) {
-        if (item.className != query) {
-          removed.push(item)
-        }
-    }
+    if(query == 'Trondheimsserien') {
 
-    if (removed.length < items.length){
-      for (let item of removed) {
-          item.remove();
+      var removed = [];
+      var items = document.getElementById('main').getElementsByTagName('li');
+      
+      for (let item of items) {
+          var name = item.getElementsByTagName('a')[0].getElementsByTagName('div')[0].getElementsByTagName('h2')[0].textContent;
+          if (!name.includes('Trondheim')) {
+            removed.push(item)
+          }
+      }
+
+      if (removed.length <= items.length){
+        for (let item of removed) {
+            item.remove();
+        }
+      }
+    }
+    else {
+
+      var removed = [];
+      var items = document.getElementById('main').getElementsByTagName('li');
+      
+      for (let item of items) {
+          if (item.className != query) {
+            removed.push(item)
+          }
+      }
+
+      if (removed.length < items.length){
+        for (let item of removed) {
+            item.remove();
+        }
       }
     }
 
@@ -68,11 +88,19 @@ function filterProducts() {
     categories.indexOf(items[i].className) === -1 ? categories.push(items[i].className) : '';
   }
   categories.sort();
-  var link = document.createElement('a');
-  link.className = 'button';
-  link.href = '/utvalg.html';
-  link.textContent = 'Alle viner';
-  navigation.appendChild(link);
+  var linkAll = document.createElement('a');
+  linkAll.className = 'button';
+  linkAll.href = '/utvalg.html';
+  linkAll.textContent = 'Alle viner';
+  navigation.appendChild(linkAll);
+  var linkTrondheim = document.createElement('a');
+  linkTrondheim.className = 'button';
+  linkTrondheim.href = '?kategori=Trondheimsserien';
+  linkTrondheim.textContent = 'Trondheimsserien';
+  navigation.appendChild(linkTrondheim);
+  if (linkTrondheim.textContent == getQuery()) {
+      linkTrondheim.className += ' selected';
+  }
   for (let i = 0; i < categories.length; i++) {
     var link = document.createElement('a');
     link.className = 'button';
