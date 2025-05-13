@@ -256,6 +256,10 @@ nav{
         display: flex;
         flex-direction: row;
 
+        @media (max-width: 380px){
+            flex-direction: column;
+        }
+
         img{
             width: sizes.$card-image-width-s;
             max-height: 320px;
