@@ -1,0 +1,37 @@
+<footer>
+        <dl>
+            <dt>E-post</dt>
+            <dd>
+                <a href="mailto:{{ site.organization.email.default }}">
+                    {{ site.organization.email.default }}
+                </a>
+            </dd>
+            <dd>
+                <a href="mailto:{{ site.organization.email.order }}">
+                    {{ site.organization.email.order }}
+                </a>
+            </dd>
+            <dd>
+                <a href="mailto:{{ site.organization.email.invoice }}">
+                    {{ site.organization.email.invoice }}
+                </a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>{{ site.organization.name }}</dt>
+            <dd>{{ site.organization.id }}</dd>
+            <dd>{{ site.organization.adress.street }}<br>{{ site.organization.adress.zip }} {{ site.organization.adress.city }}</dd>
+        </dl>
+        <div class="container">
+            <a class="button" href="facebook.com" target="_blank">
+                <img class="icon large" src="/assets/icons/facebook.svg">
+            </a>
+            <a class="button" href="instagram.com" target="_blank">
+                <img class="icon large" src="/assets/icons/instagram.svg">
+            </a>
+        </div>
+        <div class="container">
+            <p class="small">Bruk av alkohol kan gi ulike skadevirkninger. Nærmere informasjon finner du hos <a href="https://helsenorge.no/rus-og-avhengighet/alkohol/alkohol-og-helse">Helsenorge</a>.</p>
+        </div>
+    </div>
+</footer>

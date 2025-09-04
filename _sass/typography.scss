@@ -1,0 +1,138 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+@use "tokens/general";
+
+html{
+    font-family: general.$font-family-default;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: general.$font-family-default;
+    font-weight: general.$font-weight-heading;
+    margin: sizes.$padding-element;
+    text-wrap: balance;
+
+    &.huge{
+        font-size: sizes.$font-size-heading-hg;
+        line-height: sizes.$font-height-heading-hg;
+    }
+    &.xlarge{
+        font-size: sizes.$font-size-heading-xl;
+        line-height: sizes.$font-height-heading-xl;
+    }
+    &.large{
+        font-size: sizes.$font-size-heading-lg;
+        line-height: sizes.$font-height-heading-lg;
+    }
+    &.medium{
+        font-size: sizes.$font-size-heading-md;
+        line-height: sizes.$font-height-heading-md;
+    }
+    &.regular{
+        font-size: sizes.$font-size-heading-rg;
+        line-height: sizes.$font-height-heading-rg;
+    }
+    &.small{
+        font-size: sizes.$font-size-heading-sm;
+        line-height: sizes.$font-height-heading-sm;
+    }
+}
+
+p{
+    font-size: sizes.$font-size-body-rg;
+    line-height: sizes.$font-height-body-rg;
+    font-weight: general.$font-weight-body;
+    margin: sizes.$padding-element;
+    max-width: 720px;
+
+    img{
+        width: sizes.$icon-rg;
+        height: sizes.$icon-rg;
+    }
+
+    &.large{
+        font-size: sizes.$font-size-body-lg;
+        line-height: sizes.$font-height-body-lg;
+    }
+
+    &.small, small{
+        font-size: sizes.$font-size-body-sm;
+        line-height: sizes.$font-height-body-sm;
+    }
+
+    strong, b{
+        font-weight: general.$font-weight-bold;
+    }
+}
+
+ul{
+    margin: 0 0 0 ;
+    padding: 0;
+
+    li{
+        margin: sizes.$padding-element;
+    }
+}
+
+a{
+    color: colors.$text-normal-default;
+    text-decoration: underline;
+    word-break: break-word;
+    &:hover{
+        color: colors.$text-normal-hover;
+        text-decoration: none;
+    }
+    &:active{color: colors.$text-normal-active;}
+}
+
+.inverted a, a.inverted{
+    color: colors.$text-inverted-default;
+    &:hover{
+        color: colors.$text-inverted-hover;
+        text-decoration: none;
+    }
+    &:active{color: colors.$text-inverted-active;}
+}
+
+dl{
+    margin: 0;
+    padding: sizes.$padding-container;
+    box-sizing: border-box;
+
+    dt{
+        font-family: general.$font-family-mono;
+        font-weight: general.$font-weight-heading;
+        font-size: sizes.$font-size-body-sm;
+        line-height: sizes.$font-height-body-sm;
+        margin: 0;
+        padding: sizes.$padding-container;
+    }
+    dd{
+        font-family: general.$font-family-default;
+        font-weight: general.$font-weight-body;
+        font-size: sizes.$font-size-body-rg;
+        line-height: sizes.$font-height-body-rg;
+        margin: 0;
+        padding: 0 sizes.$padding-container sizes.$padding-container sizes.$padding-container;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+
+        dd{
+            padding: sizes.$padding-container;
+        }
+
+        img{
+            width: calc(sizes.$font-height-body-sm * 2);
+        }
+    }
+}

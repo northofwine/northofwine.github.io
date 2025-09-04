@@ -1,23 +1,31 @@
+// function expandMenu() {
+//     var element = document.getElementsByTagName("header")[0];
+//     var icon = document.getElementById('menu').getElementsByTagName('img')[0];
+//     element.classList.toggle("minimized");
+
+//     var body = document.getElementsByTagName('body')[0];
+//     var overlay = document.createElement('div');
+
+//     if (element.classList != 'minimized'){
+//       icon.src = '/assets/icons/close.svg'
+//       overlay.id = 'overlay';
+//       overlay.onclick = expandMenu;
+//       body.appendChild(overlay);
+//     } else {
+//       icon.src = '/assets/icons/menu.svg'
+//       item = document.getElementById('overlay') ;
+//       item.remove();
+//     }
+
+//   }
 function expandMenu() {
-    var element = document.getElementsByTagName("header")[0];
-    var icon = document.getElementById('menu').getElementsByTagName('img')[0];
-    element.classList.toggle("minimized");
-
-    var body = document.getElementsByTagName('body')[0];
-    var overlay = document.createElement('div');
-
-    if (element.classList != 'minimized'){
-      icon.src = '/assets/icons/close.svg'
-      overlay.id = 'overlay';
-      overlay.onclick = expandMenu;
-      body.appendChild(overlay);
-    } else {
-      icon.src = '/assets/icons/menu.svg'
-      item = document.getElementById('overlay') ;
-      item.remove();
+    var menu = document.getElementsByTagName("header")[0].getElementsByTagName("nav")[0];
+    var open = document.getElementById("menu-open");
+    var close = document.getElementById("menu-close");
+    menu.classList.toggle("hidden");
+    open.classList.toggle("hidden");
+    close.classList.toggle("hidden");
     }
-
-  }
 
 function getQuery() {
   const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -33,7 +41,7 @@ function hideProducts(query) {
     if(query == 'Trondheimsserien') {
 
       var removed = [];
-      var items = document.getElementById('main').getElementsByTagName('li');
+      var items = document.getElementById('card-list').getElementsByTagName('li');
       
       for (let item of items) {
           var name = item.getElementsByTagName('a')[0].getElementsByTagName('div')[0].getElementsByTagName('h2')[0].textContent;
@@ -51,7 +59,7 @@ function hideProducts(query) {
     else {
 
       var removed = [];
-      var items = document.getElementById('main').getElementsByTagName('li');
+      var items = document.getElementById('card-list').getElementsByTagName('li');
       
       for (let item of items) {
           if (item.className != query) {
@@ -81,13 +89,14 @@ function hideProducts(query) {
 }
 
 function filterProducts() {
-  var items = document.getElementById('main').getElementsByTagName('li');
+  var items = document.getElementById('card-list').getElementsByTagName('li');
   var navigation = document.getElementById('filter');
   var categories = [];
   for (let i = 0; i < items.length; i++) {
     categories.indexOf(items[i].className) === -1 ? categories.push(items[i].className) : '';
   }
   categories.sort();
+  console.log(categories);
   var linkAll = document.createElement('a');
   linkAll.className = 'button';
   linkAll.href = '/utvalg.html';

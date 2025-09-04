@@ -1,0 +1,49 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+@use "tokens/general";
+
+.button{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    width: fit-content;
+    height: fit-content;
+
+    gap: sizes.$padding-button-horizontal;
+    padding: sizes.$padding-button-vertical sizes.$padding-button-horizontal;
+    margin: 0;
+
+    &:hover, &.selected{text-decoration: underline;}
+    img{
+        height: sizes.$icon-button;
+        margin: auto;
+    }
+}
+
+// Colors
+
+.button{
+    color: colors.$text-normal-default;
+    font-size: sizes.$font-size-button;
+    line-height: sizes.$font-height-button;
+    font-family: general.$font-family-mono;
+    text-decoration: none;
+
+    &.primary{
+        background-color: colors.$bg-inverted;
+        color: colors.$text-inverted-default;
+    
+        img{
+            filter: invert(1);
+        }
+    }
+}
+
+.inverted .button{
+    color: colors.$text-inverted-default;
+
+    &.primary{
+        background-color: colors.$bg-normal;
+        color: colors.$text-normal-default;
+    }
+}

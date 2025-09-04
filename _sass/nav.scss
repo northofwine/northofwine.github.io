@@ -1,0 +1,21 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+
+nav{
+    padding: sizes.$padding-container;
+}
+
+nav ul, nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav.sticky{
+    position: sticky;
+    top: calc(
+        sizes.$padding-container * 2
+        + sizes.$padding-button-vertical * 2
+        + sizes.$font-height-button
+        );
+}

@@ -1,0 +1,11 @@
+<nav class="{{ include.params }}">
+    <ul>
+        {% for item in include.list %}
+        <li>
+            <a class="button {% if item.url == page.url %}selected{% endif %}" href="{{ item.url }}">
+                {{- item.title -}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

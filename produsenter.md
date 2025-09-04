@@ -1,6 +1,5 @@
 ---
 layout: list
-title: "Våre produsenter"
+title: "Produsenter"
+headline: "Våre vinhus"
 ---
-
-# Våre produsenter

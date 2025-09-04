@@ -1,86 +1,78 @@
-<dl class="horizontal">
+<dl class="properties icons">
     {% if page.fullness %}
-        <dt>Fylde</dt>
-        <dd><img class="icon large" src="/assets/icons/slice-{{ page.fullness }}.svg"></dd>
+        {% include components/property_icon.html key='Fylde' icon=page.fullness %}
     {% endif %}
     {% if page.freshness %}
-        <dt>Friskhet</dt>
-        <dd><img class="icon large" src="/assets/icons/slice-{{ page.freshness }}.svg"></dd>
+        {% include components/property_icon.html key='Friskhet' icon=page.freshness %}
     {% endif %}
     {% if page.product_type_name == 'Rødvin' %}
         {% if page.tannins %}
-            <dt>Garvestoffer</dt>
-            <dd><img class="icon large" src="/assets/icons/slice-{{ page.tannins }}.svg"></dd>
+            {% include components/property_icon.html key='Garvestoffer' icon=page.tannins %}
         {% endif %}
     {% else %} <!-- white, rose, and sparkling -->
         {% if page.sweetness %}
-            <dt>Sødme</dt>
-            <dd><img class="icon large" src="/assets/icons/slice-{{ page.sweetness }}.svg"></dd>
+            {% include components/property_icon.html key='Sødme' icon=page.sweetness %}
         {% endif %}
     {% endif %}
 </dl>
-<dl>
+<dl class="">
     {% if page.recommended_food %}
-        <dt>Passer til</dt>
-        <dd>{{ page.recommended_food | join: ', ' | capitalize }}</dd>
+        {% assign food = page.recommended_food | join: ', ' | capitalize %}
+        {% include components/property.html key='Passer til' value=food %}
     {% endif %}
     {% if page.odour %}
-        <dt>Lukt</dt>
-        <dd>{{ page.odour }}</dd>
+        {% include components/property.html key='Lukt' value=page.odour %}
     {% endif %}
     {% if page.taste %}
-        <dt>Smak</dt>
-        <dd>{{ page.taste }}</dd>
+        {% include components/property.html key='Smak' value=page.taste %}
     {% endif %}
     {% if page.colour %}
-        <dt>Farge</dt>
-        <dd>{{ page.colour }}</dd>
+        {% include components/property.html key='Farge' value=page.colour %}
     {% endif %}
 </dl>
-<dl>
+<hr>
+<dl class="">
     {% if page.sku %}
-        <dt>Vårt varenummer</dt>
-        <dd>{{ page.sku }}</dd>
+        {% include components/property.html key='Vårt varenummer' value=page.sku %}
     {% endif %}
     {% if page.product_id %}
-        <dt>Vinmonopolets varenummer</dt>
-        <dd>{{ page.product_id }}</dd>
+        {% include components/property.html key='Vinmonopolets varenummer' value=page.product_id %}
     {% endif %}
     {% if page.grape_desc %}
-    <dt>Druer</dt>
-    <dd>
-        {% for grape in page.grape_desc %}
-            {{ grape }} {{ page.grape_pct[forloop.index0] }} %
-            {%- unless forloop.last -%}, {% endunless -%}
-        {% endfor %}
-    </dd>
+        {% capture grape_var %}
+            {% for grape in page.grape_desc %}
+                {{ grape }} {{ page.grape_pct[forloop.index0] }}%
+                {%- unless forloop.last -%}, {% endunless -%}
+            {% endfor %}
+        {% endcapture %}
+        {% include components/property.html key='Druer' value=grape_var %}
     {% endif %}
     {% if page.storage_potential %}
-        <dt>Lagring</dt>
-        <dd>{{ page.storage_potential }}</dd>
+        {% include components/property.html key='Lagring' value=page.storage_potential %}
     {% endif %}
     {% if page.alcohol_content %}
-        <dt>Alkohol</dt>
-        <dd>{{ page.alcohol_content | replace: '.', ',' }} %</dd>
+        {% assign alcohol = page.alcohol_content | replace: '.', ',' | append: ' %' %}
+        {% include components/property.html key='Alkohol' value=alcohol %}
     {% endif %}
     {% if page.volume %}
-        <dt>Volum</dt>
-        <dd>{{ page.volume | times: 1.0 | divided_by: 100 | replace: '.', ',' }} liter</dd>
+        {% assign volume = page.volume 
+            | times: 0.01 
+            | round: 2 
+            | replace: '.', ',' 
+            | append: ' liter' 
+        %}
+        {% include components/property.html key='Volum' value=volume %}
     {% endif %}
     {% if page.sugar %}
-        <dt>Sukker</dt>
-        <dd>{{ page.sugar }}</dd>
+        {% include components/property.html key='Sukker' value=page.sugar %}
     {% endif %}
     {% if page.acid %}
-        <dt>Syre</dt>
-        <dd>{{ page.acid }}</dd>
+        {% include components/property.html key='Syre' value=page.acid %}
     {% endif %}
     {% if page.packaging_material %}
-        <dt>Emballasje</dt>
-        <dd>{{ page.packaging_material }}</dd>
+        {% include components/property.html key='Emballasje' value=page.packaging_material %}
     {% endif %}
     {% if page.cork_type %}
-        <dt>Kork</dt>
-        <dd>{{ page.cork_type }}</dd>
+        {% include components/property.html key='Kork' value=page.cork_type %}
     {% endif %}
 </dl>

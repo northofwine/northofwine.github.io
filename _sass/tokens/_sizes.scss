@@ -1,0 +1,83 @@
+// Spacing
+$spacing-lg: 3rem;
+$spacing-md: 1.5rem;
+$spacing-sm: .75rem;
+$spacing-xs: .5rem;
+
+// Spacing / Dynamic
+$spacing-dynamic-lg: clamp(3rem, 1.2rem + 7.5vw, 6rem);
+$spacing-dynamic-md: clamp(1.5rem, 0.6rem + 3.75vw, 3rem);
+$spacing-dynamic-sm: clamp(0.75rem, 0.3rem + 1.875vw, 1.5rem);
+$spacing-dynamic-xs: clamp(0.5rem, 0.2rem + 1.25vw, 1rem);
+
+
+// Font / Size
+$font-size-heading-hg: clamp(3rem, 1.3735rem + 7.2289vw, 6rem);
+$font-size-heading-xl: clamp(2.5rem, 1.1446rem + 6.0241vw, 5rem);
+$font-size-heading-lg: clamp(2rem, 1.1325rem + 3.8554vw, 3.6rem);
+$font-size-heading-md: clamp(1.6rem, 1.1663rem + 1.9277vw, 2.4rem);
+$font-size-heading-rg: clamp(1.2rem, 1.0373rem + 0.7229vw, 1.5rem);
+$font-size-heading-sm: clamp(0.8rem, 0.6916rem + 0.4819vw, 1rem);
+
+$font-size-body-lg: clamp(1.25rem, 0.9111rem + 1.506vw, 1.875rem);
+$font-size-body-rg: 1rem;
+$font-size-body-sm: .75rem;
+//$font-size-body-rg: clamp(0.9375rem, 0.6834rem + 1.1295vw, 1.40625rem);
+//$font-size-body-sm: clamp(0.625rem, 0.4556rem + 0.753vw, 0.9375rem);
+$font-size-button: 1rem;
+
+// Font / Height
+$font-height-heading-hg: 1;
+$font-height-heading-xl: 1.2;
+$font-height-heading-lg: 1.25;
+$font-height-heading-md: 1.25;
+$font-height-heading-rg: 1.25;
+$font-height-heading-sm: 1.25;
+
+$font-height-body-lg: 1.6;
+$font-height-body-rg: 1.5rem;
+$font-height-body-sm: 1rem;
+// $font-height-body-rg: 1.6;
+// $font-height-body-sm: 1.6;
+$font-height-button: 1.5rem;
+
+// Padding
+$padding-button-vertical: $spacing-xs;
+$padding-button-horizontal: $spacing-sm;
+$padding-layout: $spacing-dynamic-md;
+$padding-container: $spacing-sm;
+$padding-element: $spacing-sm;
+
+// Images & icons
+$image-logo: 6rem;
+$image-product-width: 6rem;
+$image-product-height: 15rem;
+$icon-button: $font-height-button;
+$icon-rg: $font-height-body-rg;
+//$icon-rg: calc($font-size-body-rg * $font-height-body-rg);
+
+
+// Borders
+$border-width-rg: 2px;
+$border-width-sm: 1px;
+
+// Other
+$section-sidebar-width: 240px;
+$section-main-width: 720px;
+$header-height: calc(
+    $padding-container +
+    $padding-button-vertical +
+    $icon-button +
+    $padding-button-vertical +
+    $padding-container +
+    $border-width-rg +
+    $padding-layout
+);
+
+// Breakpoints
+$breakpoint-xs: 360px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1200px;
+$breakpoint-hg: 1440px;

@@ -1,0 +1,22 @@
+{% if page.url == '/' %}
+    <header class="index inverted">
+        <div class="top">
+            <img class="logo" src="/assets/icons/logo-left.svg">
+        </div>
+        {% include components/nav.html list=site.data.navigation %}
+        <img class="illustration" src="/assets/images/illustration.svg">
+    </header>
+{% else %}
+    <header class="">
+        <div class="top">
+            {% include components/button.html href='/' label='North of Wine' icon_left='logo-left' %}
+            <a id="menu-open" class="button" onclick="expandMenu()">
+                <img src="/assets/icons/menu.svg">
+            </a>
+            <a id="menu-close" class="button hidden" onclick="expandMenu()">
+                <img src="/assets/icons/close.svg">
+            </a>
+        </div>
+        {% include components/nav.html list=site.data.navigation params='hidden inverted' %}
+    </header>
+{% endif %}

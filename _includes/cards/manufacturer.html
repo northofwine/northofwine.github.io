@@ -1,0 +1,28 @@
+<li id="{{ manufacturer.name | slugify: 'latin' }}" class="card manufacturer">
+    <div class="top">
+        {% if manufacturer.image %}
+            <img class="manufacturerimage" src="{{ manufacturer.image.url }}?w=1280">
+        {% endif %}
+        <div>
+            {% if manufacturer.logo.url %}
+                <img class="logo" src="{{ manufacturer.logo.url }}?w=480">
+            {% endif %}
+            <h3 class="medium">{{ manufacturer.name }}</h2>
+            {% if manufacturer.link %}
+                {% include components/button.html href=manufacturer.link label=manufacturer.link %}
+            {% endif %}
+        </div>
+    </div>
+    {{ manufacturer.description | markdownify }}
+    {% assign filtered = products | where_exp:"product", "product.manufacturer.sys.id == manufacturer.sys.id" %}
+    {% if filtered != empty %}
+        <h3>Viner fra {{ manufacturer.name }}</h3>
+        <ul>
+            {% for product in filtered %}
+                <li>
+                    <a href="/utvalg/{{ product.slug }}">{{ product.product_short_name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>

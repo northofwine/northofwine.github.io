@@ -1,0 +1,16 @@
+<li class="card people">
+    <div class="top">
+        {% if person.image.url %}
+            <img class="personimage" src="{{ person.image.url }}?w=1280">
+        {% endif %}
+        <div>
+            <h3 class="medium">{{ person.name }}</h2>
+            {% if person.email %}
+                {% include components/button.html prefix='mailto:' href=person.email label=person.email icon_left='email-outline'%}
+            {% endif %}
+        </div>
+    </div>
+    <div>
+        <p>{{ person.description | markdownify }}</p>
+    </div>
+</li>

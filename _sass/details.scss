@@ -1,0 +1,55 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+@use "tokens/general";
+
+main.details{
+    gap: 0;
+    @media screen and (min-width: sizes.$breakpoint-sm) {
+        flex-direction: row;
+    }
+}
+
+#sidebar.details{
+    flex: 1 0 25%;
+    width: auto;
+}
+
+.productimage.large{
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    object-position: left;
+
+    @media screen and (min-width: sizes.$breakpoint-sm) {
+        object-position: center;
+        flex-direction: row;
+        position: sticky;
+        top: sizes.$header-height;
+    }
+
+    @media screen and (min-width: sizes.$breakpoint-md) {
+        width: calc(sizes.$section-sidebar-width + sizes.$padding-layout);
+    }
+}
+
+.breadcrumb{
+    position: absolute;
+    top:0;
+    right:0;
+    flex-direction: column;
+    justify-items: end;
+
+    span{
+        display: none;
+    }
+
+    @media screen and (min-width: sizes.$breakpoint-sm) {
+        position: static;
+        display: flex;
+        flex-direction: row;
+
+        span{
+            display: block;
+        }
+    }
+}

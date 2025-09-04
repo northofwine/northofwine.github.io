@@ -1,0 +1,148 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+
+#card-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: sizes.$padding-layout;
+
+    > li{margin: 0;}
+    
+    @media (min-width: sizes.$breakpoint-xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: sizes.$padding-layout;
+    }
+    
+    @media (min-width: sizes.$breakpoint-hg){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    box-sizing: border-box;
+    padding: sizes.$padding-container;
+    border: sizes.$border-width-sm solid colors.$border-normal-subtle;
+
+    text-decoration: none;
+    color: unset;
+}
+
+.product{
+    flex-direction: row;
+    &:hover *{text-decoration: underline;}
+
+    @media (max-width: sizes.$breakpoint-sm){
+        flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+
+        h2{flex: 1 1 auto;}
+
+        .bottom{
+            display: flex;
+            gap: sizes.$padding-button-horizontal;
+            width: auto;
+            justify-content: flex-end;
+            span{flex-grow: 1;}
+        }
+
+        .top{
+            @media screen and (max-width: sizes.$breakpoint-sm) {
+                position: absolute;
+                top: sizes.$padding-container;
+                right: sizes.$padding-container;
+
+                span{
+                    display: block;
+                    text-align: right;
+                }
+            }
+
+            @media screen and (min-width: sizes.$breakpoint-sm) {
+                span:not(:first-child)::before{
+                    content: "| ";
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .productimage.small{
+        width: sizes.$image-product-width;
+        height: sizes.$image-product-height;
+        object-fit: contain;
+    }
+}
+
+.people, .manufacturer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        list-style: none;
+        text-wrap: balance;
+    }
+
+    img.manufacturerimage, img.personimage{
+        padding: sizes.$padding-element;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    img.logo{
+        height: sizes.$image-logo;
+        width: auto;
+        margin: calc(sizes.$padding-container + sizes.$padding-element);
+        object-fit: contain;
+        object-position: top left;
+        position: absolute;
+        top: calc(sizes.$padding-container + sizes.$padding-element);
+        left: calc(sizes.$padding-container + sizes.$padding-element);
+        filter: brightness(0) drop-shadow(0 0 8px #fff);
+    }
+
+
+    @media (min-width: sizes.$breakpoint-lg) and (width < sizes.$breakpoint-xl){
+        .top{
+            display: flex;
+            flex-direction: row-reverse;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 auto;
+                h3{
+                    flex: 1 1 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }
+                img.logo{
+                    width: 40%;
+                }
+            }
+        }
+        img.manufacturerimage, img.personimage{width: 50%;}
+        img.logo{
+            position: static;
+            filter: brightness(0) invert(0);
+        }
+    }
+}

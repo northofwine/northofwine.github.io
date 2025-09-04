@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-    {% include head.html %}
+    {% include sections/head.html %}
     <body>
-        {% include header.html %}
-        <section class="full">
-            {{ content }}
-        </section>
-        {% include footer.html %}
+        {% include sections/header.html %}
+        <main>
+            <section class="sidebar">
+                <div class="container">
+                    <h1 class="huge">{{ page.heading }}</h1>
+                </div>
+            </section>
+            <section class="content">
+                <div class="container">
+                    {{ content }}
+                    {% include components/button.html href='/utvalg' label='Se vårt utvalg' icon_right='arrow-right' %}
+                </div>
+            </section>
+        </main>
+        {% include sections/footer.html %}
     </body>
 </html>

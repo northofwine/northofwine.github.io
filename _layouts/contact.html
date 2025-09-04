@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-    {% include head.html %}
+    {% include sections/head.html %}
     <body>
-        {% include header.html %}
+        {% include sections/header.html %}
         <section id="sidebar">
             {{ content }}
         </section>
@@ -48,6 +48,6 @@
                 <dd>{{ site.organization.adress.street }}<br>{{ site.organization.adress.zip }} {{ site.organization.adress.city }}</dd>
             </dl>
         </section>
-        {% include footer.html %}
+        {% include sections/footer.html %}
     </body>
 </html>

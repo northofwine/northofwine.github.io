@@ -1,0 +1,55 @@
+@use "tokens/sizes";
+@use "tokens/colors";
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    background-color: colors.$bg-normal;
+}
+
+header .top{
+    display: flex;
+    flex-direction: row;
+
+    padding: sizes.$padding-container;
+    justify-content: space-between;
+    border-bottom: sizes.$border-width-rg solid colors.$border-normal-strong;
+}
+
+/* INDEX HEADER */
+
+header.index{
+    position: relative;
+    flex-direction: column;
+    justify-content: left;
+    height: auto;
+    gap: sizes.$padding-container;
+    background: colors.$bg-texture;
+    background-size: cover;
+    background-position: bottom left;
+    
+    .top{
+        border: none;
+    }
+}
+
+header img.logo{
+    height: sizes.$image-logo;
+    width: sizes.$image-logo;
+}
+
+header img.illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    width: 75%;
+    object-fit: contain;
+    object-position: right;
+}

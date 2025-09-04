@@ -1,0 +1,9 @@
+<a href="{{ include.href | prepend: include.prefix }}" class="button">
+    {% if include.icon_left %}
+    <img src="/assets/icons/{{ include.icon_left }}.svg">
+    {% endif %}
+    <span>{{ include.label | replace: "@", "<wbr>@" | replace: 'https://', '' | replace: 'www.', '' }}</span>
+    {% if include.icon_right %}
+    <img src="/assets/icons/{{ include.icon_right }}.svg">
+    {% endif %}
+</a>
