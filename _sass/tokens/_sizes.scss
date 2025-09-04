@@ -22,8 +22,6 @@ $font-size-heading-sm: clamp(0.8rem, 0.6916rem + 0.4819vw, 1rem);
 $font-size-body-lg: clamp(1.25rem, 0.9111rem + 1.506vw, 1.875rem);
 $font-size-body-rg: 1rem;
 $font-size-body-sm: .75rem;
-//$font-size-body-rg: clamp(0.9375rem, 0.6834rem + 1.1295vw, 1.40625rem);
-//$font-size-body-sm: clamp(0.625rem, 0.4556rem + 0.753vw, 0.9375rem);
 $font-size-button: 1rem;
 
 // Font / Height
@@ -37,8 +35,6 @@ $font-height-heading-sm: 1.25;
 $font-height-body-lg: 1.6;
 $font-height-body-rg: 1.5rem;
 $font-height-body-sm: 1rem;
-// $font-height-body-rg: 1.6;
-// $font-height-body-sm: 1.6;
 $font-height-button: 1.5rem;
 
 // Padding
@@ -54,8 +50,6 @@ $image-product-width: 6rem;
 $image-product-height: 15rem;
 $icon-button: $font-height-button;
 $icon-rg: $font-height-body-rg;
-//$icon-rg: calc($font-size-body-rg * $font-height-body-rg);
-
 
 // Borders
 $border-width-rg: 2px;

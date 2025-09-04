@@ -1,23 +1,3 @@
-// function expandMenu() {
-//     var element = document.getElementsByTagName("header")[0];
-//     var icon = document.getElementById('menu').getElementsByTagName('img')[0];
-//     element.classList.toggle("minimized");
-
-//     var body = document.getElementsByTagName('body')[0];
-//     var overlay = document.createElement('div');
-
-//     if (element.classList != 'minimized'){
-//       icon.src = '/assets/icons/close.svg'
-//       overlay.id = 'overlay';
-//       overlay.onclick = expandMenu;
-//       body.appendChild(overlay);
-//     } else {
-//       icon.src = '/assets/icons/menu.svg'
-//       item = document.getElementById('overlay') ;
-//       item.remove();
-//     }
-
-//   }
 function expandMenu() {
     var menu = document.getElementsByTagName("header")[0].getElementsByTagName("nav")[0];
     var open = document.getElementById("menu-open");
@@ -73,18 +53,6 @@ function hideProducts(query) {
         }
       }
     }
-
-    // counter = document.createElement('p');
-    // counter.className = 'small mono counter';
-    // counter.textContent = 'Viser ' + items.length + ' av ';
-
-    // link = document.createElement('a');
-    // counter.className = 'small mono';
-    // link.textContent = (items.length + removed.length) + ' viner';
-    // link.href = '/utvalg.html';
-
-    // counter.appendChild(link);
-    // document.getElementById('main').prepend(counter);
   }
 }
 
