@@ -40,7 +40,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0
       - name: Setup Pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v5
       - name: Import Contentful data
         run: CONTENTFUL_SPACE_ID="${ENV_CONTENTFUL_SPACE_ID}" CONTENTFUL_ACCESS_TOKEN="${ENV_CONTENTFUL_ACCESS_TOKEN}" CONTENTFUL_ENVIRONMENT="${ENV_CONTENTFUL_ENVIRONMENT}" bundle exec jekyll contentful
         env:
